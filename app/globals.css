@@ -1,20 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Crushed&family=Oswald:wght@200..700&family=Paytone+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
+/* :root {
+  --foreground-rgb: 5, 7, 26;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* @media (prefers-color-scheme: dark) { */
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 5, 7, 26;
+  --background-end-rgb: 5, 7, 26;
 }
+/* } */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -30,4 +32,36 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.browser {
+  position: absolute;
+  left: 41%;
+  top: 31%;
+  width: 450px;
+  height: 562px;
+  transform: translate(-50%, -50%) perspective(1000px) rotateX(0deg)
+    rotateY(-25deg) scale(0.8);
+}
+.browser-0::before {
+  content: " ";
+  position: absolute;
+  top: 3px;
+  width: 15px;
+  height: calc(100% - 3px);
+  background: rgb(162, 162, 162);
+  right: -11px;
+  transform: perspective(500px) rotateX(0deg) rotateY(45deg);
+}
+
+.phone {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 140px;
+  height: 290px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border: 8px solid #333;
+  z-index: 30;
 }

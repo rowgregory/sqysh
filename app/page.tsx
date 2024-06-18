@@ -1,12 +1,13 @@
-import { Sqysh } from '@/public/images';
-import Image from 'next/image';
+import Banner from "./components/home/Banner";
+import Journey from './components/home/Journey';
 
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Image src={Sqysh} alt='sqysh' width={150} priority />
-    </main>
+    <div className="flex min-h-[calc(100vh-80px)] flex-col">
+      <Banner />
+      <Journey />
+    </div>
   );
-}
+};
 
-export default Home
+export default Home;
