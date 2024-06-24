@@ -1,9 +1,9 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// npx prisma generate
 // npx prisma migrate dev
 // give migration a name
+// npx prisma generate
 
 generator client {
   provider = "prisma-client-js"
@@ -14,13 +14,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id    String  @id @default(cuid())
-  name  String?
-  email String? @unique
-}
-
-model Clicks {
-  clickType  String @id
-  logoClicks Int?
+model Quote {
+  id          String   @id @default(cuid())
+  name        String
+  companyName String
+  email       String
+  phone       String
+  message     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }

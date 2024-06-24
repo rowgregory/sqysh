@@ -9,6 +9,10 @@ import RcDesktop from "./rc-desktop.png";
 import RcIpad from "./rc-ipad.png";
 import RcMobile from "./rc-mobile.png";
 import NeonRightChevron from "./button_small_chevron.png";
+import Sqysh2 from "./sqysh13.png";
+import Budz from "./budz-logo.png";
+import Lpdr from "./lpdr-logo.png";
+import Ddogs from "./ddogs-logo.png";
 
 export {
   Sqysh,
@@ -22,4 +26,8 @@ export {
   RcDesktop,
   RcMobile,
   RcIpad,
+  Sqysh2,
+  Budz,
+  Lpdr,
+  Ddogs,
 };
