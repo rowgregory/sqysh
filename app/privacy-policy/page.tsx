@@ -48,7 +48,7 @@ const PrivacyPolicy = () => {
         my users, provided that these parties agree to keep this information
         confidential. I may release information when its disclosure is necessary
         to comply with the law, enforce site policies, or protect mine or
-        others' rights, property, or safety.
+        others&apos; rights, property, or safety.
       </p>
       <h4 className='text-slate-100 font-bold text-sm mb-2'>4. Data Security</h4>
       <p className='mb-8 text-sm'>

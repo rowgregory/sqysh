@@ -7,7 +7,7 @@ const TermsOfService = () => {
       <h5 className="text-xs text-slate-500 mb-6">Last Updated: 6/21/2024</h5>
       <p className="text-slate-200 mb-7">
         Welcome to <span className="font-Paytone-One">Sqysh</span>, a software
-        development company. These Terms of Service govern your use of Sqysh's
+        development company. These Terms of Service govern your use of Sqysh&apos;s
         website and services. By accessing or using my services, you agree to
         these Terms of Service.
       </p>
@@ -15,7 +15,7 @@ const TermsOfService = () => {
         1. Use of Services
       </h2>
       <p className="text-sm mb-8">
-        You agree to use <span className="font-Paytone-One">Sqysh</span>'s
+        You agree to use <span className="font-Paytone-One">Sqysh</span>&apos;s
         services only for lawful purposes and in accordance with these Terms of
         Service and any applicable laws and regulations.
       </p>
@@ -38,7 +38,7 @@ const TermsOfService = () => {
         any indirect, incidental, special, consequential, or punitive damages,
         or any loss of profits or revenues, whether incurred directly or
         indirectly, arising from your use of or inability to use{" "}
-        <span className="font-Paytone-One">Sqysh</span>'s services.
+        <span className="font-Paytone-One">Sqysh</span>&apos;s services.
       </p>
       <h2 className="font-bold text-sm text-slate-100 mb-2">
         4. Modifications
@@ -47,7 +47,7 @@ const TermsOfService = () => {
         <span className="font-Paytone-One">Sqysh</span> reserves the right to
         modify these Terms of Service at any time. Changes will be effective
         immediately upon posting. Your continued use of{" "}
-        <span className="font-Paytone-One">Sqysh</span>'s services after the
+        <span className="font-Paytone-One">Sqysh</span>&apos;s services after the
         posting of revised Terms of Service constitutes your acceptance of the
         changes.
       </p>

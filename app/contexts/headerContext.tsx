@@ -8,10 +8,10 @@ const initialState = {
 
 export const HeaderContext = createContext({
   toggleNavigation: false,
-  setToggleNavigation: (toggle) => toggle
+  setToggleNavigation: (toggle: boolean) => toggle
 })
 
-const headerReducer = (state, action) => {
+const headerReducer = (state: any, action: any) => {
   switch (action.type) {
     case 'SET_TOGGLE_NAVIGATION':
       return {
@@ -23,10 +23,10 @@ const headerReducer = (state, action) => {
   }
 }
 
-export const HeaderProvider = (props) => {
+export const HeaderProvider = (props: any) => {
   const [state, dispatch] = useReducer(headerReducer, initialState)
 
-  const setToggleNavigation = (toggleNavigation) =>
+  const setToggleNavigation = (toggleNavigation: boolean) =>
     dispatch({ type: 'SET_TOGGLE_NAVIGATION', payload: toggleNavigation })
 
   return (
