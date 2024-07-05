@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home page -->
+  <url>
+    <loc>https://www.sqysh.io/</loc>
+    <lastmod>2024-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services page -->
+  <url>
+    <loc>https://www.sqysh.io/services</loc>
+    <lastmod>2024-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Quote page -->
+  <url>
+    <loc>https://www.sqysh.io/quote</loc>
+    <lastmod>2024-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Privacy Policy page -->
+  <url>
+    <loc>https://www.sqysh.io/privacy-policy</loc>
+    <lastmod>2024-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Terms of Service page -->
+  <url>
+    <loc>https://www.sqysh.io/terms-of-service</loc>
+    <lastmod>2024-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
