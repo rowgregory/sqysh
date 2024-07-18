@@ -10,9 +10,8 @@ const Banner = () => {
         Transform Your Digital Future with{" "}
         <span className="font-Paytone-One">Sqysh</span>
       </h1>
-      <p className="font-Raleway text-[#5c6382] md:text-xl text-center mt-6">
-        Next-gen software solutions: modular and scalable, <br /> crafted to
-        grow with your business.
+      <p className="font-Raleway text-[#838bac] md:text-xl text-center mt-6">
+        Creating tailored websites and applications<br />designed for your unique business needs
       </p>
       <div className="w-full flex justify-center">
         <Link

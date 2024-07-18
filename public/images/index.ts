@@ -13,6 +13,10 @@ import Sqysh2 from "./sqysh13.png";
 import Budz from "./budz-logo.png";
 import Lpdr from "./lpdr-logo.png";
 import Ddogs from "./ddogs-logo.png";
+import DHDesktop from "./dh-desktop.png";
+import DHIpad from "./dh-ipad.png";
+import DHMobile from "./dh-mobile.png";
+import Marquee3 from "./marquee-3.png";
 
 export {
   Sqysh,
@@ -30,4 +34,8 @@ export {
   Budz,
   Lpdr,
   Ddogs,
+  DHDesktop,
+  DHIpad,
+  DHMobile,
+  Marquee3,
 };
