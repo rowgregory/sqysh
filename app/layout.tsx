@@ -10,6 +10,21 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sqysh",
   description: "Software development",
+  metadataBase: new URL("https://www.sqysh.io/"),
+  openGraph: {
+    type: "website",
+    url: "https://www.sqysh.io/",
+    title: "Sqysh",
+    description: "Innovative Software Solutions",
+    images: [
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/devon-hunt-nextjs.appspot.com/o/images%2Fsqysh-rich-preview.png?alt=media&token=4aaefb2b-4b4c-4b1b-bee5-0c4206fe12cb",
+        width: 1200,
+        height: 630,
+        alt: "Sqysh",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
