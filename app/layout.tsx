@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "Innovative Software Solutions",
     images: [
       {
-        url: "https://firebasestorage.googleapis.com/v0/b/devon-hunt-nextjs.appspot.com/o/images%2Fsqysh-rich-preview.png?alt=media&token=4aaefb2b-4b4c-4b1b-bee5-0c4206fe12cb",
+        url: "https://firebasestorage.googleapis.com/v0/b/devon-hunt-nextjs.appspot.com/o/images%2Fsqysh-rich-preview-2.png?alt=media&token=b9c2e838-ca79-4a0d-8fe7-bf18e3529b4c",
         width: 1200,
         height: 630,
         alt: "Sqysh",
