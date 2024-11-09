@@ -17,6 +17,13 @@ import DHDesktop from "./dh-desktop.png";
 import DHIpad from "./dh-ipad.png";
 import DHMobile from "./dh-mobile.png";
 import Marquee3 from "./marquee-3.png";
+import EJMobile from "./eileen-mobile.png";
+import EJIpad from "./eileen-ipad.png";
+import EJDesktop from "./eileen-desktop.png";
+import SCMobile from "./story-mobile.png";
+import SCIpad from "./story-ipad.png";
+import SCDesktop from "./story-desktop.png";
+import Sqysh404 from "./sqysh-404.png";
 
 export {
   Sqysh,
@@ -38,4 +45,11 @@ export {
   DHIpad,
   DHMobile,
   Marquee3,
+  EJMobile,
+  EJIpad,
+  EJDesktop,
+  SCMobile,
+  SCIpad,
+  SCDesktop,
+  Sqysh404,
 };
