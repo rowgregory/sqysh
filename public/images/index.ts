@@ -11,12 +11,9 @@ import RcMobile from "./rc-mobile.png";
 import NeonRightChevron from "./button_small_chevron.png";
 import Sqysh2 from "./sqysh13.png";
 import Budz from "./budz-logo.png";
-import Lpdr from "./lpdr-logo.png";
-import Ddogs from "./ddogs-logo.png";
 import DHDesktop from "./dh-desktop.png";
 import DHIpad from "./dh-ipad.png";
 import DHMobile from "./dh-mobile.png";
-import Marquee3 from "./marquee-3.png";
 import EJMobile from "./eileen-mobile.png";
 import EJIpad from "./eileen-ipad.png";
 import EJDesktop from "./eileen-desktop.png";
@@ -24,6 +21,11 @@ import SCMobile from "./story-mobile.png";
 import SCIpad from "./story-ipad.png";
 import SCDesktop from "./story-desktop.png";
 import Sqysh404 from "./sqysh-404.png";
+import SC from "./sc.png";
+import C21NEJG from "./c21nejg.jpg";
+import PNest from "./pnest.png";
+import LPDR from "./lpdr.png";
+import DD from "./dd.jpeg";
 
 export {
   Sqysh,
@@ -39,12 +41,9 @@ export {
   RcIpad,
   Sqysh2,
   Budz,
-  Lpdr,
-  Ddogs,
   DHDesktop,
   DHIpad,
   DHMobile,
-  Marquee3,
   EJMobile,
   EJIpad,
   EJDesktop,
@@ -52,4 +51,9 @@ export {
   SCIpad,
   SCDesktop,
   Sqysh404,
+  SC,
+  C21NEJG,
+  PNest,
+  LPDR,
+  DD,
 };
