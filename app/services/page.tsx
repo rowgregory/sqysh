@@ -1,5 +1,3 @@
-"use client";
-
 import servicesData from "@/public/data/servicesData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";

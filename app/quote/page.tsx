@@ -7,15 +7,7 @@ import { Sqysh2 } from "@/public/images";
 import useRequestAQuoteForm from "../hooks/useRequestAQuoteForm";
 import RequestAQuoteForm from "../forms/RequestAQuoteForm";
 import Typewriter from "../components/common/TypeWriter";
-
-export const metadata = {
-  title: "Get a Quote | Sqysh",
-  description:
-    "Get in touch with Sqysh for a custom quote on your next project.",
-  alternates: {
-    canonical: "/quote",
-  },
-};
+import QuoteWrapper from "./page-wraper";
 
 const RequestAQuote = () => {
   const [successState, setSuccessState] = useState({ success: false, id: "" });
@@ -41,7 +33,7 @@ const RequestAQuote = () => {
   };
 
   return (
-    <div className="max-w-screen-sm w-full">
+    <QuoteWrapper>
       {successState.success ? (
         <Fragment>
           <h1 className="text-3xl font-bold font-Raleway mb-8">
@@ -86,7 +78,7 @@ const RequestAQuote = () => {
           />
         </Fragment>
       )}
-    </div>
+    </QuoteWrapper>
   );
 };
 
