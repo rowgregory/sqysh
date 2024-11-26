@@ -1,9 +1,18 @@
-'use client'
+"use client";
 
-import servicesData from '@/public/data/servicesData';
+import servicesData from "@/public/data/servicesData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import SqyshQuoteBtn from '../components/common/SqyshQuoteBtn';
+import SqyshQuoteBtn from "../components/common/SqyshQuoteBtn";
+
+export const metadata = {
+  title: "Our Services | Sqysh",
+  description:
+    "Discover how Sqysh can help you with custom web development and digital solutions.",
+  alternates: {
+    canonical: "/services",
+  },
+};
 
 const Services = () => {
   return (
@@ -18,7 +27,9 @@ const Services = () => {
         Blending Creativity and Technology to Accelerate Business Growth
       </p>
       <SqyshQuoteBtn />
-      <h2 className='text-2xl text-slate-300 uppercase font-bold mt-40 mb-4'>Project Scope <br /> & Services</h2>
+      <h2 className="text-2xl text-slate-300 uppercase font-bold mt-40 mb-4">
+        Project Scope <br /> & Services
+      </h2>
       <div className="w-full grid grid-cols-12 aspect-square gap-5">
         {servicesData.map((obj: any, i: number) => (
           <section

@@ -1,5 +1,14 @@
 import React from "react";
 
+export const metadata = {
+  title: "Sqysh | Full-Stack Web Solutions",
+  description:
+    "Custom digital solutions for entrepreneurs and small businesses.",
+  alternates: {
+    canonical: "/terms-of-service",
+  },
+};
+
 const TermsOfService = () => {
   return (
     <div className="mt-32 w-full max-w-screen-md">
@@ -7,9 +16,9 @@ const TermsOfService = () => {
       <h5 className="text-xs text-slate-500 mb-6">Last Updated: 6/21/2024</h5>
       <p className="text-slate-200 mb-7">
         Welcome to <span className="font-Paytone-One">Sqysh</span>, a software
-        development company. These Terms of Service govern your use of Sqysh&apos;s
-        website and services. By accessing or using my services, you agree to
-        these Terms of Service.
+        development company. These Terms of Service govern your use of
+        Sqysh&apos;s website and services. By accessing or using my services,
+        you agree to these Terms of Service.
       </p>
       <h2 className="font-bold text-sm text-slate-100 mb-2">
         1. Use of Services
@@ -47,9 +56,9 @@ const TermsOfService = () => {
         <span className="font-Paytone-One">Sqysh</span> reserves the right to
         modify these Terms of Service at any time. Changes will be effective
         immediately upon posting. Your continued use of{" "}
-        <span className="font-Paytone-One">Sqysh</span>&apos;s services after the
-        posting of revised Terms of Service constitutes your acceptance of the
-        changes.
+        <span className="font-Paytone-One">Sqysh</span>&apos;s services after
+        the posting of revised Terms of Service constitutes your acceptance of
+        the changes.
       </p>
       <h2 className="font-bold text-sm text-slate-100 mb-2">
         5. Governing Law

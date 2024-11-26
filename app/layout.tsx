@@ -178,9 +178,6 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     capable: true,
   },
-  alternates: {
-    canonical: "https://sqysh.io",
-  },
   other: {
     "apple-mobile-web-app-capable": "yes", // Add this for legacy support
     "mobile-web-app-capable": "yes", // This will explicitly cover modern cases

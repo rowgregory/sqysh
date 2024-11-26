@@ -8,6 +8,15 @@ import useRequestAQuoteForm from "../hooks/useRequestAQuoteForm";
 import RequestAQuoteForm from "../forms/RequestAQuoteForm";
 import Typewriter from "../components/common/TypeWriter";
 
+export const metadata = {
+  title: "Get a Quote | Sqysh",
+  description:
+    "Get in touch with Sqysh for a custom quote on your next project.",
+  alternates: {
+    canonical: "/quote",
+  },
+};
+
 const RequestAQuote = () => {
   const [successState, setSuccessState] = useState({ success: false, id: "" });
   const { inputs, handleInput, validateInputs, setErrors, errors } =
@@ -20,14 +29,14 @@ const RequestAQuote = () => {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      setLoading(true)
+      setLoading(true);
       const response = await createQuote(inputs);
-      setLoading(false)
+      setLoading(false);
       setSuccessState({ success: true, id: response.id });
       window.scrollTo(0, 0);
     } else {
       console.log("Validation failed", validationErrors);
-      window.scrollTo({ behavior: 'smooth', top: 250 });
+      window.scrollTo({ behavior: "smooth", top: 250 });
     }
   };
 
