@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /_next/
+Disallow: /api/
+Disallow: /static/
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.map$
+Disallow: /*.woff$
+Disallow: /*.woff2$
+Disallow: /*.svg$
+Disallow: /*.jpg$
+Disallow: /*.png$
+Disallow: /*.gif$
+
+Allow: /
+
+Sitemap: https://www.sqysh.io/sitemap.xml
