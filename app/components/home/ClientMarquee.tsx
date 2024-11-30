@@ -1,7 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
-import { C21NEJG, SC, PNest, LPDR, DD } from "@/public/images";
+import { C21NEJG, SC, PNest, LPDR, DD, SB } from "@/public/images";
 
 const ClientMarquee = () => {
   return (
@@ -33,6 +33,12 @@ const ClientMarquee = () => {
       <Image
         src={SC}
         alt="Grant Story with Story Construction"
+        width={180}
+        className="aspect-square bg-white object-contain p-1 mr-2"
+      />
+      <Image
+        src={SB}
+        alt="Pam Driscoll with Saltwater Bookkeeping"
         width={180}
         className="aspect-square bg-white object-contain p-1 mr-2"
       />

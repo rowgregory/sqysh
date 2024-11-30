@@ -20,6 +20,9 @@ import {
   RcDesktop,
   RcIpad,
   RcMobile,
+  SBDesktop,
+  SBiPad,
+  SBmobile,
   SCDesktop,
   SCIpad,
   SCMobile,
@@ -66,7 +69,14 @@ const carouselData = [
     mobile: SCMobile,
     ipad: SCIpad,
     alt: `Grant Story with Story Construction`,
-    linkKey: "https:/storyconstruction.vercel.app/",
+    linkKey: "https://storyconstruction.vercel.app/",
+  },
+  {
+    desktop: SBDesktop,
+    mobile: SBmobile,
+    ipad: SBiPad,
+    alt: `Pam Driscoll with Saltwater Bookkeeping`,
+    linkKey: "https://saltwaterbookkeeping.com",
   },
 ];
 
