@@ -1,9 +1,5 @@
-'use client'
-
-import { Sqysh } from "@/public/images";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -13,7 +9,7 @@ const Header = () => {
       <div className="flex items-center justify-between mx-auto shadow-[0_5px_20px_5px_#000] sm:shadow-[0_30px_20px_-15px_#000] max-w-screen-2xl px-3 sm:px-6 md:px-12 lg:px-20 xl:px-28">
         <section className="flex items-center">
           <Link className="flex items-center" href="/" as="/" scroll={false}>
-            <Image src={Sqysh} alt="sqysh" width={60} priority />
+            <div className="bg-sqysh bg-cover bg-center bg-no-repeat w-16 h-16" />
             <p className="text-2xl ml-3 font-bold font-Paytone-One">Sqysh</p>
           </Link>
         </section>

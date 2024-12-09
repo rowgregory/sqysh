@@ -10,13 +10,14 @@ const Banner = () => {
         Transform Your Digital Future with{" "}
         <span className="font-Paytone-One">Sqysh</span>
       </h1>
-      <p className="font-Raleway text-[#838bac] md:text-xl text-center mt-6">
-        Creating tailored websites and applications<br />designed for your unique business needs
+      <p className="font-Raleway text-[#838bac] text-sm md:text-xl text-center mt-6">
+        Creating tailored websites and applications designed for your unique
+        business needs
       </p>
       <div className="w-full flex justify-center">
         <Link
           href="/quote"
-          className="btn-anim py-4 px-8 bg-[linear-gradient(to_right,_#25aae1,_#4481eb,_#04befe,_#3f86ed)] text-white font-bold uppercase text-xl font-Raleway rounded-full mt-12 mb-20 group"
+          className="btn-anim py-4 px-8 bg-[linear-gradient(to_right,_#25aae1,_#4481eb,_#04befe,_#3f86ed)] text-white font-bold uppercase text-base sm:text-xl font-Raleway rounded-full mt-12 mb-20 group"
         >
           Request a <span className="font-Paytone-One">Sqysh</span> Quote{" "}
           <FontAwesomeIcon

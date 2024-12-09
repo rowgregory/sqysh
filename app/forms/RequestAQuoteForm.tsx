@@ -7,7 +7,6 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Spinner } from 'flowbite-react';
 
 const RequestAQuoteForm = ({
   errors,
@@ -25,8 +24,9 @@ const RequestAQuoteForm = ({
   return (
     <form className="mt-10">
       <div
-        className={`flex items-center border-b ${errors.name ? "border-red-700" : "border-slate-700"
-          } h-16 mb-8`}
+        className={`flex items-center border-b ${
+          errors.name ? "border-red-700" : "border-slate-700"
+        } h-16 mb-8`}
       >
         <FontAwesomeIcon
           icon={faUser}
@@ -41,8 +41,9 @@ const RequestAQuoteForm = ({
         />
       </div>
       <div
-        className={`flex items-center border-b ${errors.companyName ? "border-red-700" : "border-slate-700"
-          } h-16 mb-8`}
+        className={`flex items-center border-b ${
+          errors.companyName ? "border-red-700" : "border-slate-700"
+        } h-16 mb-8`}
       >
         <FontAwesomeIcon
           icon={faBuilding}
@@ -57,8 +58,9 @@ const RequestAQuoteForm = ({
         />
       </div>
       <div
-        className={`flex items-center border-b ${errors.email ? "border-red-700" : "border-slate-700"
-          } h-16 mb-8`}
+        className={`flex items-center border-b ${
+          errors.email ? "border-red-700" : "border-slate-700"
+        } h-16 mb-8`}
       >
         <FontAwesomeIcon
           icon={faEnvelope}
@@ -73,8 +75,9 @@ const RequestAQuoteForm = ({
         />
       </div>
       <div
-        className={`flex items-center border-b ${errors.phone ? "border-red-700" : "border-slate-700"
-          } h-16 mb-9`}
+        className={`flex items-center border-b ${
+          errors.phone ? "border-red-700" : "border-slate-700"
+        } h-16 mb-9`}
       >
         <FontAwesomeIcon
           icon={faPhone}
@@ -89,8 +92,9 @@ const RequestAQuoteForm = ({
         />
       </div>
       <div
-        className={`flex items-start border-b ${errors.message ? "border-red-700" : "border-slate-700"
-          } mb-8`}
+        className={`flex items-start border-b ${
+          errors.message ? "border-red-700" : "border-slate-700"
+        } mb-8`}
       >
         <FontAwesomeIcon
           icon={faMessage}
@@ -110,11 +114,6 @@ const RequestAQuoteForm = ({
         onClick={submit}
         className="btn-anim rounded-full bg-[linear-gradient(to_right,_#29323c,_#485563,_#2b5876,_#4e4376)] px-7 py-4 text-lg font-bold flex items-center"
       >
-        {loading && (
-          <span>
-            <Spinner aria-label="Loading quote request" size="sm" className='mr-1' color='pink' />
-          </span>
-        )}{" "}
         SUBMIT{loading && "TING..."}
       </button>
     </form>

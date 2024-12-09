@@ -11,7 +11,12 @@ Disallow: /*.svg$
 Disallow: /*.jpg$
 Disallow: /*.png$
 Disallow: /*.gif$
+Disallow: /*?*
 
-Allow: /
+Allow: /$
+Allow: /services
+Allow: /quote
+Allow: /privacy-policy
+Allow: /terms-of-service
 
 Sitemap: https://www.sqysh.io/sitemap.xml

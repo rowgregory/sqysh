@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Get in touch with Sqysh for a custom quote on your next project.",
   alternates: {
-    canonical: "/quote",
+    canonical: "https://sqysh.io/quote",
   },
 };
 

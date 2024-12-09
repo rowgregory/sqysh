@@ -1,119 +1,104 @@
 "use client";
 
-import React from "react";
-import { Carousel } from "flowbite-react";
-import Image from "next/image";
-import {
-  DdogsDesktop,
-  DdogsIpad,
-  DdogsMobile,
-  DHDesktop,
-  DHIpad,
-  DHMobile,
-  EJDesktop,
-  EJIpad,
-  EJMobile,
-  LpdrDesktop,
-  LpdrIpad,
-  LpdrMobile,
-  NeonRightChevron,
-  RcDesktop,
-  RcIpad,
-  RcMobile,
-  SBDesktop,
-  SBiPad,
-  SBmobile,
-  SCDesktop,
-  SCIpad,
-  SCMobile,
-} from "@/public/images";
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const carouselData = [
   {
-    desktop: LpdrDesktop,
-    mobile: LpdrMobile,
-    ipad: LpdrIpad,
+    img: "/images/ci1.png",
     alt: "Little Paws Dachshund Rescue",
     linkKey: "https://www.littlepawsdr.org",
   },
   {
-    desktop: DdogsDesktop,
-    mobile: DdogsMobile,
-    ipad: DdogsIpad,
+    img: "/images/ci2.png",
     alt: `Danielle's Dogs`,
     linkKey: "https://danielles-dogs.herokuapp.com/",
   },
   {
-    desktop: RcDesktop,
-    mobile: RcMobile,
-    ipad: RcIpad,
+    img: "/images/ci3.png",
     alt: `Royal Caribbean`,
     linkKey: "https://royal-caribbean-clone.vercel.app/",
   },
   {
-    desktop: DHDesktop,
-    mobile: DHMobile,
-    ipad: DHIpad,
-    alt: `Devon Hunt with Nest Forward`,
+    img: "/images/ci4.png",
+    alt: `Devon Hunt with Proper Nest`,
     linkKey: "https://www.devonhuntrealtor.com/",
   },
   {
-    desktop: EJDesktop,
-    mobile: EJMobile,
-    ipad: EJIpad,
+    img: "/images/ci5.png",
     alt: `Eileen Jonah with Century 21 North East`,
     linkKey: "https://www.jonahgroupre.com/",
   },
   {
-    desktop: SCDesktop,
-    mobile: SCMobile,
-    ipad: SCIpad,
+    img: "/images/ci6.png",
     alt: `Grant Story with Story Construction`,
     linkKey: "https://storyconstruction.vercel.app/",
   },
   {
-    desktop: SBDesktop,
-    mobile: SBmobile,
-    ipad: SBiPad,
+    img: "/images/ci7.png",
     alt: `Pam Driscoll with Saltwater Bookkeeping`,
     linkKey: "https://saltwaterbookkeeping.com",
   },
+  {
+    img: "/images/ci8.png",
+    alt: `Stu Ginsburg with Platorum`,
+    linkKey: "https://platorum.com",
+  },
 ];
 
+const PrevArrow = ({ onClick }: any) => (
+  <button
+    onClick={onClick}
+    className="hidden md:flex items-center justify-center absolute z-10 -left-20 lg:-left-36 top-1/2 bg-sunny rounded-full w-12 h-12
+    transform -translate-y-1/2  translate-x-20 transition-all duration-300"
+  >
+    <div className="bg-neon-chevron rotate-180 aspect-square w-8 h-8 bg-cover bg-center bg-no-repeat"></div>
+  </button>
+);
+
+const NextArrow = ({ onClick }: any) => (
+  <button
+    onClick={onClick}
+    className="hidden md:flex items-center justify-center absolute z-10 -right-20 lg:-right-36 top-1/2 bg-sunny rounded-full w-12 h-12
+    transform -translate-y-1/2  -translate-x-20 transition-all duration-300"
+  >
+    <div className="bg-neon-chevron aspect-square w-8 h-8 bg-cover bg-center bg-no-repeat"></div>
+  </button>
+);
+
 const ProductCarousel = () => {
+  const slider = useRef<Slider | null>(null);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
   return (
-    <Carousel
-      leftControl={
-        <Image src={NeonRightChevron} alt="Prev slide" className="rotate-180" />
-      }
-      rightControl={<Image src={NeonRightChevron} alt="Next slide" />}
-      className="h-[425px] sm:h-[575px]"
-    >
-      {carouselData.map((obj: any, i: number) => (
-        <div
-          key={i}
-          className="relative  my-24"
-          onClick={() => window.open(obj.linkKey, "_blank")}
-        >
-          <div className="browser browser-0 z-20"></div>
-          <div className="browser z-20">
-            <Image src={obj.desktop} width={450} priority alt={obj.alt} />
-          </div>
-          <div className="ipad">
-            <Image src={obj.ipad} priority alt={obj.alt} />
-          </div>
-          <div className="phone">
-            <Image
-              src={obj.mobile}
-              width={150}
-              priority
-              alt={obj.alt}
-              className="object-cover h-full w-full rounded-[6px]"
+    <div className="slider-container relative w-full h-[300px] sm:h-[600px] 1070:h-[900px]">
+      <PrevArrow onClick={() => slider?.current?.slickPrev()} />
+      <Slider ref={slider} {...settings}>
+        {carouselData.map((obj: any, i: number) => (
+          <div
+            key={i}
+            className="relative w-full"
+            onClick={() => window.open(obj.linkKey, "_blank")}
+          >
+            <div
+              style={{ backgroundImage: `url(${obj.img})` }}
+              className="h-[300px] w-[300px] sm:w-[600px] 1070:w-[900px] sm:h-[600px] 1070:h-[900px] aspect-square bg-contain bg-center bg-no-repeat"
             />
           </div>
-        </div>
-      ))}
-    </Carousel>
+        ))}
+      </Slider>
+      <NextArrow onClick={() => slider?.current?.slickNext()} />
+    </div>
   );
 };
 

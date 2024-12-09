@@ -15,6 +15,20 @@ body {
   background: #050719;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 6px;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3f3f46;
+}
+
 @media screen and (min-width: 520px) {
   body {
     color: rgb(var(--foreground-rgb));
@@ -56,132 +70,16 @@ textarea:focus {
   box-shadow: none !important;
 }
 
-[data-testid="carousel"] > div {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-[data-testid="carousel-item"] > div {
-  margin-block: 0 !important;
-}
-
-.browser {
-  position: absolute;
-  left: 37%;
-  top: 30%;
-  width: 300px;
-  height: 420px;
-  transform: translate(-50%, -50%) perspective(1000px) rotateX(0deg)
-    rotateY(-25deg) scale(0.8);
-
-  /* Enable anti-aliasing */
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.browser-0::before {
-  content: " ";
-  position: absolute;
-  top: 2px;
-  width: 11px;
-  height: 370px;
-  background: rgb(162, 162, 162);
-  right: -9px;
-  transform: perspective(500px) rotateX(0deg) rotateY(45deg);
-}
-
-.ipad {
-  position: absolute;
-  left: 47%;
-  width: 175px;
-  height: 300px;
-  top: -135px;
-}
-
-.phone {
-  position: absolute;
-  top: -36px;
-  left: 50%;
-  width: 100px;
-  height: 200px;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  border: 6px solid #333;
-  z-index: 30;
-}
-
-@media screen and (min-width: 775px) {
-  .browser {
-    position: absolute;
-    left: 41%;
-    top: 31%;
-    width: 420px;
-    height: 562px;
-    transform: translate(-50%, -50%) perspective(1000px) rotateX(0deg)
-      rotateY(-25deg) scale(0.8);
-
-    /* Enable anti-aliasing */
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .browser-0::before {
-    content: " ";
-    position: absolute;
-    top: 4px;
-    width: 11px;
-    height: calc(100% - 50px);
-    background: rgb(162, 162, 162);
-    right: -11px;
-    transform: perspective(500px) rotateX(0deg) rotateY(45deg);
-  }
-
-  .ipad {
-    position: absolute;
-    left: 54%;
-    top: -156px;
-    z-index: 10;
-    height: 400px;
-    width: 225px;
-  }
-
-  .phone {
-    position: absolute;
-    top: -58px;
-    left: 50%;
-    width: 140px;
-    height: 290px;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    border: 6px solid #333;
-    z-index: 30;
-  }
-}
-
 .btn-anim {
   background-size: 300% 100%;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .btn-anim:hover {
   background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -217,4 +115,20 @@ a.nav-link:focus::after {
 .line {
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke-width: 5.5;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.slick-dots > li > button:before {
+  color: white !important;
+}
+
+.slick-prev:before,
+.slick-next:before,
+.slick-arrow {
+  display: none !important;
 }

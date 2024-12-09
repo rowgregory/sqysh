@@ -18,7 +18,7 @@ const Home = () => {
     <div className="flex min-h-[calc(100vh-80px)] flex-col">
       <Banner />
       <ProductCarousel />
-      <div className="w-full my-5 h-[1px] bg-gray-white-gray "></div>
+      <div className="w-full h-[1px] bg-gray-white-gray mt-28"></div>
       <TrustedByTopClients />
       <IHelpEnhance />
       <Journey />

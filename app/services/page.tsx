@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Discover how Sqysh can help you with custom web development and digital solutions.",
   alternates: {
-    canonical: "/services",
+    canonical: "https://sqysh.io/services",
   },
 };
 

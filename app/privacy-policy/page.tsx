@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Custom digital solutions for entrepreneurs and small businesses.",
   alternates: {
-    canonical: "/privacy-policy",
+    canonical: "https://sqysh.io/privacy-policy",
   },
 };
 

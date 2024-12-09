@@ -1,7 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
-import { C21NEJG, SC, PNest, LPDR, DD, SB } from "@/public/images";
+import { C21NEJG, SC, PNest, LPDR, DD, SB, Platorum } from "@/public/images";
 
 const ClientMarquee = () => {
   return (
@@ -41,6 +41,12 @@ const ClientMarquee = () => {
         alt="Pam Driscoll with Saltwater Bookkeeping"
         width={180}
         className="aspect-square bg-white object-contain p-1 mr-2"
+      />
+      <Image
+        src={Platorum}
+        alt="Stu Ginsburg with Platorum"
+        width={180}
+        className="aspect-square bg-black object-contain p-1 mr-2"
       />
     </Marquee>
   );
