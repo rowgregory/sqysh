@@ -191,6 +191,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="fb:app_id" content="953131993018901" />
+      </head>
       <body className={inter.className}>
         <HeaderProvider>
           <PageWrapper>{children}</PageWrapper>
