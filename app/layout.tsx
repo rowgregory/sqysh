@@ -151,7 +151,7 @@ export const metadata: Metadata = {
     title: "Sqysh",
     description:
       "Tailored digital solutions that help businesses grow through custom websites and applications. Let us bring your ideas to life with the latest technologies and expertise.",
-    url: "https://sqysh.io",
+    url: "https://sqysh.io/",
     siteName: "Sqysh",
     images: [
       {
@@ -193,7 +193,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta property="fb:app_id" content="953131993018901" />
-        <link rel="canonical" href="https://sqysh.io/" />
+        <meta property="og:url" content="http://sqysh.io/" />
       </head>
       <body className={inter.className}>
         <HeaderProvider>
