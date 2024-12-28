@@ -193,6 +193,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta property="fb:app_id" content="953131993018901" />
+        <link rel="canonical" href="https://sqysh.io" />
       </head>
       <body className={inter.className}>
         <HeaderProvider>
