@@ -1,6 +1,6 @@
 {
   "name": "sqysh",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "npm run generate && next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
+    "test": "vitest",
     "data:delete": "node seeder -d",
     "generate": "prisma generate"
   },
@@ -20,7 +20,6 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@hotjar/browser": "^1.0.9",
     "@prisma/client": "^5.22.0",
-    "@testing-library/jest-dom": "^6.6.3",
     "jsonwebtoken": "^9.0.2",
     "next": "^15.0.3",
     "node-mocks-http": "^1.14.1",
@@ -32,20 +31,23 @@
     "uifx": "^2.0.7"
   },
   "devDependencies": {
-    "@testing-library/react": "^16.0.0",
+    "@eslint/eslintrc": "^3",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.3.0",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-slick": "^0.23.13",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
-    "jest-fetch-mock": "^3.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "jsdom": "^26.0.0",
     "postcss": "^8",
     "prisma": "^5.15.1",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.1.1"
   }
 }

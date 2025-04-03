@@ -12,57 +12,62 @@ import {
   TC,
 } from "@/public/images";
 
+const clientMarqueeData = [
+  {
+    img: LPDR,
+    alt: "Little Paws Dachshund Rescue",
+    className: "bg-white",
+  },
+  {
+    img: DD,
+    alt: `Daniele's Dogs`,
+    className: "bg-[#f8d8df]",
+  },
+  {
+    img: PNest,
+    alt: "Devon Hunt with Proper Nest",
+    className: "bg-white",
+  },
+  {
+    img: C21NEJG,
+    alt: "Eileen Jonah with Century 21 North East Jonah Group",
+    className: "bg-[#303030]",
+  },
+  {
+    img: SC,
+    alt: "Grant Story with Story Construction",
+    className: "bg-white",
+  },
+  {
+    img: SB,
+    alt: "Pam Driscoll with Saltwater Bookkeeping",
+    className: "bg-white",
+  },
+  {
+    img: Platorum,
+    alt: "Stu Ginsburg with Platorum",
+    className: "bg-black",
+  },
+  {
+    img: TC,
+    alt: "Adrianna DelDotto with Thoroughly Cleaned, LLC",
+    className: "bg-white",
+  },
+];
+
 const ClientMarquee = () => {
   return (
     <Marquee autoFill={true}>
-      <Image
-        src={LPDR}
-        alt="Little Paws Dachshund Rescue"
-        width={180}
-        className="aspect-square bg-white object-contain p-1 mr-2"
-      />
-      <Image
-        src={DD}
-        alt={`Daniele's Dogs`}
-        width={180}
-        className="aspect-square bg-[#f8d8df] object-contain p-1 mr-2"
-      />
-      <Image
-        src={PNest}
-        alt="Devon Hunt with Proper Nest"
-        width={180}
-        className="aspect-square bg-white object-contain p-1 mr-2"
-      />
-      <Image
-        src={C21NEJG}
-        alt="Eileen Jonah with Century 21 North East Jonah Group"
-        width={180}
-        className="aspect-square bg-[#303030] object-contain p-1 mr-2"
-      />
-      <Image
-        src={SC}
-        alt="Grant Story with Story Construction"
-        width={180}
-        className="aspect-square bg-white object-contain p-1 mr-2"
-      />
-      <Image
-        src={SB}
-        alt="Pam Driscoll with Saltwater Bookkeeping"
-        width={180}
-        className="aspect-square bg-white object-contain p-1 mr-2"
-      />
-      <Image
-        src={Platorum}
-        alt="Stu Ginsburg with Platorum"
-        width={180}
-        className="aspect-square bg-black object-contain p-1 mr-2"
-      />
-      <Image
-        src={TC}
-        alt="Adrianna DelDotto with Thoroughly Cleaned, LLC"
-        width={180}
-        className="aspect-square bg-white object-contain p-1 mr-2"
-      />
+      {clientMarqueeData.map((clientMarquee, i) => (
+        <Image
+          key={i}
+          src={clientMarquee.img}
+          alt={clientMarquee.alt}
+          width={180}
+          height={180}
+          className={`${clientMarquee.className} aspect-square object-contain p-1 mr-2`}
+        />
+      ))}
     </Marquee>
   );
 };
