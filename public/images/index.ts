@@ -10,6 +10,7 @@ import LPDR from "./lpdr.png";
 import DD from "./dd.jpeg";
 import SB from "./SB.png";
 import Platorum from "./platorum.png";
+import TC from "./tc.png";
 
 export {
   Sqysh,
@@ -24,4 +25,5 @@ export {
   DD,
   SB,
   Platorum,
+  TC,
 };

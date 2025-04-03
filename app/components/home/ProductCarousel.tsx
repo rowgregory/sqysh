@@ -46,6 +46,11 @@ const carouselData = [
     alt: `Stu Ginsburg with Platorum`,
     linkKey: "https://platorum.com",
   },
+  {
+    img: "/images/ci9.png",
+    alt: `Adrinna DelDotto with Thoroughly Cleaned, LLC`,
+    linkKey: "https://thoroughlycleaned.vercel.app",
+  },
 ];
 
 const PrevArrow = ({ onClick }: any) => (
