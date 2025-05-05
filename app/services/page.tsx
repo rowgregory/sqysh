@@ -6,7 +6,7 @@ import SqyshQuoteBtn from "../components/common/SqyshQuoteBtn";
 export const metadata = {
   title: "Our Services | Sqysh",
   description:
-    "Discover how Sqysh can help you with custom web development and digital solutions.",
+    "Discover how Sqysh can help you with custom web development and digital solutions!",
   alternates: {
     canonical: "https://sqysh.io/services",
   },
