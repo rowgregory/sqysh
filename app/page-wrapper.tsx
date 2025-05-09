@@ -20,11 +20,11 @@ const PageWrapper: FC<PageWrapperProps> = ({ children }) => {
   }, []);
 
   return (
-    <div className="max-w-screen-2xl w-full mx-auto sm:px-6 md:px-12 lg:px-20 xl:px-28">
+    <div className="min-h-dvh">
       <Header />
       <Burger />
       <MobileNavMenu />
-      <main className="w-full mt-32 sm:mt-40 pb-40 px-3 md:px-0 min-h-[calc(100vh-335px)]">
+      <main className="px-3 max-w-screen-2xl w-full mx-auto sm:px-6 md:px-12 lg:px-20 xl:px-28 2xl:px-0">
         {children}
       </main>
       <Footer />

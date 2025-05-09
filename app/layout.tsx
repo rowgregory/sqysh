@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Changa, Inter } from "next/font/google";
 import "./globals.css";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import PageWrapper from "./page-wrapper";
 import { HeaderProvider } from "./contexts/headerContext";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "900"],
+  preload: false,
+  variable: "--font-inter",
+});
+const changa = Changa({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+  preload: false,
+  variable: "--font-changa",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sqysh.io"),
@@ -195,7 +205,7 @@ export default function RootLayout({
         <meta property="fb:app_id" content="953131993018901" />
         <meta property="og:url" content="https://sqysh.io/" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${changa.variable}`}>
         <HeaderProvider>
           <PageWrapper>{children}</PageWrapper>
         </HeaderProvider>

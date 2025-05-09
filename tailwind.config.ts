@@ -9,10 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        "Paytone-One": ['"Paytone One"', "sans-serif"],
-        Raleway: ['"Raleway"', "sans-serif"],
-        Oswald: ['"Oswald"', "sans-serif"],
-        Cabin: ['"Cabin"', "sans-serif"],
+        inter: ["var(--font-inter)"],
+        changa: ["var(--font-changa)"],
       },
       backgroundImage: {
         "gray-white-gray":
@@ -22,6 +20,10 @@ const config: Config = {
       },
       screens: {
         1070: "1070px",
+      },
+      borderWidth: {
+        1: "1px",
+        3: "3px",
       },
     },
   },

@@ -5,14 +5,15 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="pt-8 md:pt-16">
-      <h1 className="font-Cabin text-[36px] text-5xl md:text-7xl lg:text-8xl text-center fold-bold tracking-wide leading-tight">
-        Transform Your Digital Future with{" "}
-        <span className="font-Paytone-One">Sqysh</span>
+    <div className="pt-8 md:pt-24">
+      <h1
+        className="font-Cabin text-[36px] text-5xl md:text-7xl lg:text-8xl text-center fold-bold tracking-wide leading-tight"
+        style={{ textShadow: "#fff 1px 0 10px" }}
+      >
+        Custom Websites & <br /> Mobile Apps
       </h1>
-      <p className="font-Raleway text-[#838bac] text-sm md:text-xl text-center mt-6">
-        Creating tailored websites and applications designed for your unique
-        business needs
+      <p className="font-Raleway text-zinc-300 text-sm md:text-xl text-center mt-6">
+        Design. Develop. Deploy.
       </p>
       <div className="w-full flex justify-center">
         <Link

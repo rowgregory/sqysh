@@ -15,7 +15,7 @@ export const metadata = {
 
 const Home = () => {
   return (
-    <div className="flex min-h-[calc(100vh-80px)] flex-col">
+    <div className="flex min-h-[calc(100vh-84px)] flex-col pb-32">
       <Banner />
       <ProductCarousel />
       <div className="w-full h-[1px] bg-gray-white-gray mt-28"></div>

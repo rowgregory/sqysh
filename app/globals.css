@@ -11,35 +11,9 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #050719;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  border-radius: 6px;
-  border: 3px solid rgba(0, 0, 0, 0);
-}
-
-::-webkit-scrollbar-track {
-  background-color: #3f3f46;
-}
-
-@media screen and (min-width: 520px) {
-  body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-      0deg,
-      rgba(8, 13, 42, 1) 0%,
-      rgba(5, 7, 25, 1) 100%
-    );
-    background-size: cover;
-    background-attachment: fixed;
-  }
+  color: white;
+  background: #000;
+  font-family: "Inter";
 }
 
 @layer utilities {

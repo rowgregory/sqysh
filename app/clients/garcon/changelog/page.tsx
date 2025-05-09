@@ -24,14 +24,17 @@ const changelogData = [
     message:
       "Created YouTube, TikTok, and Snapchat channels; updated profile and hero images with correct sizes and filled in all necessary initial setup details. Gained access to Instagram by logging into Keenans personal facebook account. Updated Fb Hero image with horizontal logo. Responded to facebook message from People360 Inc. Updated shared credentials google sheet under gs*********@gmail.com.",
   },
+  {
+    date: "5-9-2025",
+    message:
+      "Paused the printing of the physical Canva tickets. Pro actively commented on a Facebook post from Bad Dad Brewing Co. Followed everyone back that started following the Instagram account within the past three weeks. Proactively commented on an Instagram post from mass_hydro about their Spring Sale. Deleted Instagram scam messages. Reached out to @sistersnacking on Instagram to share the Garcon Super Slice promo and sent them the 15% off ticket. Proactively commented on a Witch City Walking Tours Instagram post. Officially starting the Udemy course today. Plan to work on the first post about Garcon Super Slice being featured at Suffolk Downs for the 2024 season. Created two new pages to show work in the cue, and the schedule for posting. Followed Big Woods Pizza on Facebook and liked their most recent post.",
+  },
 ];
 
 const GarconChangeLog = () => {
   return (
     <div className="w-full">
-      <h1 className="text-xl mb-4">
-        Garcon Super Slice Pizza Pie Parlor Changelog
-      </h1>
+      <h1 className="text-3xl font-bold mb-6">Changelog</h1>
       <div className="flex flex-col">
         {changelogData?.map((log, i) => (
           <div
@@ -41,7 +44,7 @@ const GarconChangeLog = () => {
             <div className="font-semibold text-right pr-4 border-r border-[#555]">
               {log.date}
             </div>
-            <div className="pl-4">{log.message}</div>
+            <div className="pl-4 text-zinc-200">{log.message}</div>
           </div>
         ))}
       </div>
