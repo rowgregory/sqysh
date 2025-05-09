@@ -22,7 +22,7 @@ const changelogData = [
   {
     date: "5-8-2025",
     message:
-      "Created YouTube, TikTok, and Snapchat channels; updated profile and hero images with correct sizes and filled in all necessary initial setup details. Gained access to Instagram by logging into Keenans personal facebook account. Updated Fb Hero image with horizontal logo. Responded to facebook message from People360 Inc.",
+      "Created YouTube, TikTok, and Snapchat channels; updated profile and hero images with correct sizes and filled in all necessary initial setup details. Gained access to Instagram by logging into Keenans personal facebook account. Updated Fb Hero image with horizontal logo. Responded to facebook message from People360 Inc. Updated shared credentials google sheet under gs*********@gmail.com.",
   },
 ];
 

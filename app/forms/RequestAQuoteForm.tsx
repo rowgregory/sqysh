@@ -22,7 +22,7 @@ const RequestAQuoteForm = ({
   loading: any;
 }) => {
   return (
-    <form className="mt-10">
+    <form onSubmit={submit} className="mt-10">
       <div
         className={`flex items-center border-b ${
           errors.name ? "border-red-700" : "border-slate-700"
@@ -77,7 +77,7 @@ const RequestAQuoteForm = ({
       <div
         className={`flex items-center border-b ${
           errors.phone ? "border-red-700" : "border-slate-700"
-        } h-16 mb-9`}
+        } h-16 mb-8`}
       >
         <FontAwesomeIcon
           icon={faPhone}
@@ -98,7 +98,7 @@ const RequestAQuoteForm = ({
       >
         <FontAwesomeIcon
           icon={faMessage}
-          className={`${errors.message ? "text-red-700" : ""} mt-3`}
+          className={`${errors.message ? "text-red-700" : ""} mr-3`}
         />
         <textarea
           rows={5}
@@ -110,8 +110,8 @@ const RequestAQuoteForm = ({
         />
       </div>
       <button
+        type="submit"
         disabled={loading}
-        onClick={submit}
         className="btn-anim rounded-full bg-[linear-gradient(to_right,_#29323c,_#485563,_#2b5876,_#4e4376)] px-7 py-4 text-lg font-bold flex items-center"
       >
         SUBMIT{loading && "TING..."}

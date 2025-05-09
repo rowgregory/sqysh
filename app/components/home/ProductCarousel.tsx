@@ -55,6 +55,7 @@ const carouselData = [
 
 const PrevArrow = ({ onClick }: any) => (
   <button
+    type="button"
     onClick={onClick}
     className="hidden md:flex items-center justify-center absolute z-10 -left-20 lg:-left-36 top-1/2 bg-sunny rounded-full w-12 h-12
     transform -translate-y-1/2  translate-x-20 transition-all duration-300"
@@ -65,6 +66,7 @@ const PrevArrow = ({ onClick }: any) => (
 
 const NextArrow = ({ onClick }: any) => (
   <button
+    type="button"
     onClick={onClick}
     className="hidden md:flex items-center justify-center absolute z-10 -right-20 lg:-right-36 top-1/2 bg-sunny rounded-full w-12 h-12
     transform -translate-y-1/2  -translate-x-20 transition-all duration-300"
