@@ -5,6 +5,10 @@ const changelogData = [
     date: " 5-7-2025",
     message: `Initialized GitHub repo, obtained client assets, set up Vercel, and pushed changes to make the site live immediately.`,
   },
+  {
+    date: " 5-9-2025",
+    message: `Imported color palette to tailwind config file and Canva. Imported barlow_condensed font family and font weight styles 100-900. Create HomeHero sunray spiral.`,
+  },
 ];
 
 const RosiePaws = () => {

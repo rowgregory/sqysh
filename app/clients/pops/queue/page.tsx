@@ -7,7 +7,7 @@ const queueData = [
   },
   {
     date: " 5-9-2025",
-    message: `Add in 50th anniversay logo. Make camp page dynamic so Robyn can edit all text. Create "Media" page which will consist of a dynamic video player, scrolling comments, and a photo carousel. Add in additional field the camp application asking for which instrument they play.`,
+    message: `Add the 50th anniversary logo. Make the Camp page dynamic so Robyn can edit all text. Create a Media page with a video player, scrolling comments, and a photo carousel. Add an instrument field to the Camp application. Remove the magnifying glass icon. Remove 'Robyn' from the logo and make it smaller. Move the Login/Register link to a more discreet location. Add interactive maps to the Venue page with dynamic latitude and longitude fields. Include a link to a tool that converts addresses to coordinates. Split the Board Members page into two pages.`,
   },
 ];
 
