@@ -29,6 +29,11 @@ const changelogData = [
     message:
       "Paused the printing of the physical Canva tickets. Pro actively commented on a Facebook post from Bad Dad Brewing Co. Followed everyone back that started following the Instagram account within the past three weeks. Proactively commented on an Instagram post from mass_hydro about their Spring Sale. Deleted Instagram scam messages. Reached out to @sistersnacking on Instagram to share the Garcon Super Slice promo and sent them the 15% off ticket. Proactively commented on a Witch City Walking Tours Instagram post. Officially starting the Udemy course today. Plan to work on the first post about Garcon Super Slice being featured at Suffolk Downs for the 2024 season. Created two new pages to show work in the cue, and the schedule for posting. Followed Big Woods Pizza on Facebook and liked their most recent post.",
   },
+  {
+    date: "5-11-2025",
+    message:
+      "Respond to Angel Nelson's pizza donation request through Facebook Messenger and pass the message along to Keenan via email.",
+  },
 ];
 
 const GarconChangeLog = () => {

@@ -7,7 +7,11 @@ const changelogData = [
   },
   {
     date: " 5-9-2025",
-    message: `Imported color palette to tailwind config file and Canva. Imported barlow_condensed font family and font weight styles 100-900. Create HomeHero sunray spiral.`,
+    message: `Imported color palette to tailwind config file and Canva. Imported barlow_condensed font family and font weight styles 100-900. Create HomeHero spiral sunray. One full rotation takes 2 miinutes`,
+  },
+  {
+    date: " 5-11-2025",
+    message: `Find transparent texture to overlay the sprial sunray to give it a grainy texture.`,
   },
 ];
 

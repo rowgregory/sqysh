@@ -1,4 +1,3 @@
-import Sqysh from "./sqysh.png";
 import NeonRightChevron from "./button_small_chevron.png";
 import Sqysh2 from "./sqysh13.png";
 import Budz from "./budz-logo.png";
@@ -13,7 +12,6 @@ import Platorum from "./platorum.png";
 import TC from "./tc.png";
 
 export {
-  Sqysh,
   NeonRightChevron,
   Sqysh2,
   Budz,

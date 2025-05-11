@@ -4,7 +4,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
-import Picture from "./common/Picture";
 import useCustomPathname from "../hooks/useCustomPathname";
 
 const Header = () => {
@@ -24,12 +23,7 @@ const Header = () => {
         <div className="flex items-center justify-between mx-auto max-w-screen-2xl">
           <section className="flex items-center">
             <Link className="flex items-center" href="/" as="/" scroll={false}>
-              <Picture
-                src="/images/logo.png"
-                className="h-16 w-full py-1.5"
-                priority={false}
-                alt="Sqysh"
-              />
+              <div className="bg-sqysh bg-no-repeat bg-cover bg-center w-[148px] h-[64px]" />
             </Link>
           </section>
           {isInvalidPath && (

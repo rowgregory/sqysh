@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,7 +15,7 @@ const config: Config = {
       backgroundImage: {
         "gray-white-gray":
           "radial-gradient(circle, rgba(180,180,180,1) 0%, #05071a 100%)",
-        sqysh: `url('/images/sqysh.png')`,
+        sqysh: `url('/images/logo.png')`,
         "neon-chevron": `url('/images/button_small_chevron.png')`,
       },
       screens: {
@@ -27,5 +27,4 @@ const config: Config = {
       },
     },
   },
-};
-export default config;
+} satisfies Config;
