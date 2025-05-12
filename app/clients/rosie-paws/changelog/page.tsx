@@ -3,7 +3,7 @@ import React from "react";
 const changelogData = [
   {
     date: " 5-7-2025",
-    message: `Initialized GitHub repo, obtained client assets, set up Vercel, and pushed changes to make the site live immediately.`,
+    message: `Initialized GitHub repo, obtained client assets, set up Vercel, and pushed changes to make the site live immediately`,
   },
   {
     date: "5-9-2025",
@@ -11,14 +11,14 @@ const changelogData = [
   },
   {
     date: "5-11-2025",
-    message: `Find transparent texture to overlay the sprial sunray to give it a grainy texture.`,
+    message: `Find transparent texture to overlay the sprial sunray to give it a grainy texture`,
   },
 ];
 
 const RosiePaws = () => {
   return (
     <div className="w-full">
-      <h1 className="text-xl mb-4">Rosie Paws Changelog</h1>
+      <h1 className="text-3xl font-bold mb-6">Rosie Paws Changelog</h1>
       <div className="flex flex-col">
         {changelogData?.map((log, i) => (
           <div
@@ -28,7 +28,15 @@ const RosiePaws = () => {
             <div className="font-semibold text-right pr-4 border-r border-[#555]">
               {log.date}
             </div>
-            <div className="pl-4">{log.message}</div>
+            <div className="text-zinc-200 pl-4">
+              <ul className="list-disc pl-5">
+                {log.message.split(".").map((sentence, index) => (
+                  <li key={index} className="text-sm ">
+                    {sentence.trim()}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))}
       </div>

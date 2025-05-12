@@ -6,7 +6,7 @@ const GarconSchedule = () => {
   const weeklyTasks = [
     {
       platform: "Facebook & Instagram",
-      days: ["Tuesday", "Thursday", "Saturday"],
+      days: ["Monday", "Thursday", "Saturday"],
       time: "9:00 AM – 10:30 AM",
       tasks: ["Post 3x per week", "Respond to all messages and comments"],
     },
