@@ -5,6 +5,10 @@ const changelogData = [
     date: "5-9-2025",
     message: `Explain how to update the concert card date via the Concert form. Replace HomeHero image component with a div background image for better layout control. Received new 50th anniversary logo. Include steps to enable push notifications. Explain who whos what in terms of copyrights.`,
   },
+  {
+    date: "5-11-2025",
+    message: `Fix EditableTextArea component's value and textKeyBlock attributes for consistent updating.`,
+  },
 ];
 
 const PopsChangelog = () => {
