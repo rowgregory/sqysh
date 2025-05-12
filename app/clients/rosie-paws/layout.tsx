@@ -10,6 +10,7 @@ const RosiePawsLayout: FC<ChildrenProps> = ({ children }) => {
   const activeQueuePath = path === "/clients/rosie-paws/queue";
   const activeChangelogPath = path === "/clients/rosie-paws/changelog";
   const activeDeadlinesPath = path === "/clients/rosie-paws/deadlines";
+  const activeApiPath = path === "/clients/rosie-paws/api";
 
   return (
     <>
@@ -38,6 +39,14 @@ const RosiePawsLayout: FC<ChildrenProps> = ({ children }) => {
           } p-3 min-w-28 text-center`}
         >
           Deadlines
+        </Link>
+        <Link
+          href="/clients/rosie-paws/api"
+          className={`${
+            activeApiPath ? "text-sky-500 bg-[#121212]" : ""
+          } p-3 min-w-28 text-center`}
+        >
+          Api
         </Link>
       </div>
       {children}
