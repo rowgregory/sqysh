@@ -37,7 +37,7 @@ const changelogData = [
   {
     date: "5-12-2025",
     message:
-      "Upload first video of house made basil aioli to Facebook and Instagram ~ 9am. Follow everyone back on Instagram who followed us within the past two days. Reply back to Instagram message who was from a first time customer yesterday who raved about the restaurant and will be back. Emailed Keenan a second time to respond about the Salem 8th graders semi formal dance pizza proposition.",
+      "Upload first video of house made basil aioli to Facebook and Instagram ~ 9am. Follow everyone back on Instagram who followed us within the past two days. Reply back to Instagram message who was from a first time customer yesterday who raved about the restaurant and will be back. Emailed Keenan a second time to respond about the Salem 8th graders semi formal dance pizza proposition. Add 7 second TikTok and Snapchat Basil Aioli short video. Created facebook post to let poeple know to follow us on TikTok & Snapchat. Replied to Carol's comment on Facebook. Add the Basil Aoili short video to Facebook & Instagram stories.",
   },
 ];
 

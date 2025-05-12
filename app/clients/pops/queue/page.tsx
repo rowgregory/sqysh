@@ -2,8 +2,10 @@ import React from "react";
 
 const queueData = [
   {
-    date: " 5-8-2025",
+    date: "5-8-2025",
     message: `Build additional seat maps for two venues.`,
+    isCompleted: true,
+    completeTime: "May 12, 2025",
   },
   {
     date: " 5-9-2025",
@@ -19,19 +21,37 @@ const PopsQueue = () => {
   return (
     <>
       <h1 className="text-3xl font-bold mb-6">In Queue</h1>
-      <div className="flex flex-col">
+      <ul className="flex flex-col">
         {queueData?.map((queue, i) => (
-          <div
+          <li
             key={i}
-            className="grid grid-cols-[1fr_4fr] gap-y-4 py-3 text-[#b2b2b2] font-lato text-sm"
+            className="list-desc grid grid-cols-[1fr_4fr] gap-y-4 py-3 text-[#b2b2b2] font-lato text-sm"
           >
-            <div className="font-semibold text-right pr-4 border-r border-[#555]">
+            <div
+              className={`${
+                queue.isCompleted ? "text-lime-500" : ""
+              } font-semibold text-right pr-4 border-r border-[#555]`}
+            >
               {queue.date}
             </div>
-            <div className="pl-4 text-zinc-200">{queue.message}</div>
-          </div>
+            <div
+              className={`${
+                queue.isCompleted
+                  ? "text-lime-500 line-through"
+                  : "text-zinc-200"
+              } pl-4`}
+            >
+              <ul className="list-disc pl-5">
+                {queue.message.split(".").map((sentence, index) => (
+                  <li key={index} className="text-sm ">
+                    {sentence.trim()}.
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </>
   );
 };
