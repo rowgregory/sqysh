@@ -9,6 +9,7 @@ const RosiePawsLayout: FC<ChildrenProps> = ({ children }) => {
   const path = useCustomPathname();
   const activeQueuePath = path === "/clients/rosie-paws/queue";
   const activeChangelogPath = path === "/clients/rosie-paws/changelog";
+  const activeDeadlinesPath = path === "/clients/rosie-paws/deadlines";
 
   return (
     <>
@@ -29,6 +30,14 @@ const RosiePawsLayout: FC<ChildrenProps> = ({ children }) => {
           } p-3 min-w-28 text-center`}
         >
           Changelog
+        </Link>
+        <Link
+          href="/clients/rosie-paws/deadlines"
+          className={`${
+            activeDeadlinesPath ? "text-sky-500 bg-[#121212]" : ""
+          } p-3 min-w-28 text-center`}
+        >
+          Deadlines
         </Link>
       </div>
       {children}

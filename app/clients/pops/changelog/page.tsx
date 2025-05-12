@@ -9,6 +9,10 @@ const changelogData = [
     date: "5-11-2025",
     message: `Fix EditableTextArea component's value and textKeyBlock attributes for consistent updating.`,
   },
+  {
+    date: "5-12-2025",
+    message: `Create additional sections for two seat maps. Received 50th anniversary asset. Emailed Robyn what to do with it.`,
+  },
 ];
 
 const PopsChangelog = () => {
