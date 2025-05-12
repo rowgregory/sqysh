@@ -2,6 +2,26 @@ import React from "react";
 
 const apiData = [
   {
+    title: "Auth",
+    endpoints: [
+      {
+        method: "POST",
+        route: "/api/auth/register",
+        description: "Register a new user with name, email, and password.",
+      },
+      {
+        method: "POST",
+        route: "/api/auth/login",
+        description: "Authenticate a user and return a token or session.",
+      },
+      {
+        method: "POST",
+        route: "/api/auth/forgot-password",
+        description: "Send a password reset email to the user.",
+      },
+    ],
+  },
+  {
     title: "Blog",
     endpoints: [
       {
