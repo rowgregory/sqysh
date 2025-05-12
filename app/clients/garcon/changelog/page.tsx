@@ -34,6 +34,11 @@ const changelogData = [
     message:
       "Respond to Angel Nelson's pizza donation request through Facebook Messenger and pass the message along to Keenan via email. Started following Anzios Brick Oven Pizza and liked their post from today. Completed section 1 from Udemy course. Learned motion path and masking. Social media schedule starts tomorrow with the video I sent Keenan.",
   },
+  {
+    date: "5-12-2025",
+    message:
+      "Upload first video of house made basil aioli to Facebook and Instagram ~ 9am. Follow everyone back on Instagram who followed us within the past two days.",
+  },
 ];
 
 const GarconChangeLog = () => {
