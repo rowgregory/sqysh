@@ -32,7 +32,7 @@ const changelogData = [
   {
     date: "5-11-2025",
     message:
-      "Respond to Angel Nelson's pizza donation request through Facebook Messenger and pass the message along to Keenan via email.",
+      "Respond to Angel Nelson's pizza donation request through Facebook Messenger and pass the message along to Keenan via email. Started following Anzios Brick Oven Pizza and liked their post from today. Completed section 1 from Udemy course. Learned motion path and masking. Social media schedule starts tomorrow with the video I sent Keenan.",
   },
 ];
 
