@@ -39,6 +39,11 @@ const changelogData = [
     message:
       "Upload first video of house made basil aioli to Facebook and Instagram ~ 9am. Follow everyone back on Instagram who followed us within the past two days. Reply back to Instagram message who was from a first time customer yesterday who raved about the restaurant and will be back. Emailed Keenan a second time to respond about the Salem 8th graders semi formal dance pizza proposition. Add 7 second TikTok and Snapchat Basil Aioli short video. Created facebook post to let poeple know to follow us on TikTok & Snapchat. Replied to Carol's comment on Facebook. Add the Basil Aoili short video to Facebook & Instagram stories. Replied back to Angel Nelson how we'll donate 8 pizzas to the Collins Middle School in Salem for their semi formal dance on June 13th.",
   },
+  {
+    date: "5-13-2025",
+    message:
+      "Create short video of the rainbow sugar cookies. Posted to TikTop, Snapchat, and then also Facebook and Instagram stories.",
+  },
 ];
 
 const GarconChangeLog = () => {
