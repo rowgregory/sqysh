@@ -3,15 +3,15 @@ import React from "react";
 const notesData = [
   {
     date: "5-9-2025",
-    message: `Explain how to update the concert card date via the Concert form. Explain who owns what in terms of copyrights. I retain ownership of the codebase, while you own all the content you provide — including any data entered into forms and anything displayed on the website`,
+    message: `Explain how to update the concert card date via the Concert form. Explain who owns what in terms of copyrights; I retain ownership of the codebase, while you own all the content you provide — including any data entered into forms and anything displayed on the website`,
   },
   {
     date: "5-12-2025",
-    message: `Received 50th anniversary asset. Emailed Robyn asking what to do with it`,
+    message: `Receive 50th anniversary asset. Email Robyn asking what to do with it`,
   },
   {
     date: "5-13-2025",
-    message: `Requested horizontal gold and white 50th anniversary logos from Matthew to put in the header. Thnk about where to put the Admin Dashboard link`,
+    message: `Request horizontal gold and white 50th anniversary logos from Matthew to put in the header. Thnk about where to put the Admin Dashboard link`,
   },
 ];
 
