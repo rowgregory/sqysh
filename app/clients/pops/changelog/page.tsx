@@ -3,7 +3,7 @@ import React from "react";
 const changelogData = [
   {
     date: "5-9-2025",
-    message: `Replace HomeHero image component with a div background image for better layout control. Received new 50th anniversary logo. Include steps to enable push notifications.`,
+    message: `Replace HomeHero image component with a div background image for better layout control. Received new 50th anniversary logo. Include steps to enable push notifications`,
   },
   {
     date: "5-11-2025",
@@ -11,11 +11,11 @@ const changelogData = [
   },
   {
     date: "5-12-2025",
-    message: `Create additional sections for two seat maps.`,
+    message: `Create additional sections for two seat maps`,
   },
   {
     date: "5-13-2025",
-    message: `Reduce the height of the HeaderTop component. Add ternary to HeaderLower component so gold logo displays on home page and white on all others. Hide call box office if screen is < 1200; call office button is still in the FixedHeader component which reveals itself as soon as you scroll, and in the NavigationDrawer, and on all the concerts; this was done to avoid the header navigation links from overlapping. Make link text in NavigationDrawer component 18 pixels. Center links in middle of screen. Update Newsletter link to say Connect With Us. Update all other links that previously had /newsletter. All camp page text now editable. Update camp application file HTML structure to match new data. Remove red checkmark and student conductor bullet point editable text. Breadcrumb component height reduced. Add advertising pdf to repository. Link download button to pdf for instant downloading`,
+    message: `Reduce the height of the HeaderTop component. Add ternary to HeaderLower component so gold logo displays on home page and white on all others. Hide call box office if screen is < 1200; call office button is still in the FixedHeader component which reveals itself as soon as you scroll, and in the NavigationDrawer, and on all the concerts; this was done to avoid the header navigation links from overlapping. Make link text in NavigationDrawer component 18 pixels and center links in middle of screen. Update Newsletter link to say Connect With Us. Update all other links that previously had '/newsletter'. All camp page text now editable. Update camp application file HTML structure to match new data. Remove red checkmark and student conductor bullet point editable text. Breadcrumb component height reduced. Add advertising pdf to repository and add link download button to pdf for instant downloading`,
   },
 ];
 

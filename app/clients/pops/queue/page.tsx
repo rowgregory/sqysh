@@ -83,6 +83,15 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "5-13-2025",
+    sentences: [
+      {
+        text: "Add other sections of seat maps to Venues page",
+        isCompleted: false,
+      },
+    ],
+  },
 ];
 
 const PopsQueue = () => {
