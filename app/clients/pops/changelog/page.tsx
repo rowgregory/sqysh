@@ -17,6 +17,10 @@ const changelogData = [
     date: "5-13-2025",
     message: `Reduce the height of the HeaderTop component. Add ternary to HeaderLower component so gold logo displays on home page and white on all others. Hide call box office if screen is < 1200; call office button is still in the FixedHeader component which reveals itself as soon as you scroll, and in the NavigationDrawer, and on all the concerts; this was done to avoid the header navigation links from overlapping. Make link text in NavigationDrawer component 18 pixels and center links in middle of screen. Update Newsletter link to say Connect With Us. Update all other links that previously had '/newsletter'. All camp page text now editable. Update camp application file HTML structure to match new data. Remove red checkmark and student conductor bullet point editable text. Breadcrumb component height reduced. Add advertising pdf to repository and add link download button to pdf for instant downloading. Add new ticket banner video showing important dates`,
   },
+  {
+    date: "5-14-2025",
+    message: `Add the instrument attribute to the CampApplication model. Migrate the Prisma schema to Raleway and regenerate the schema. Add validation for the instrument field and include it in Step 4 of the application form. Test and validate that the form receives the new attribute, with 30 minutes of testing. Remove the success state from fetching and deleting camp applications. Split staff members into a separate page and move PublicTeamMemberCard into its own file for modularity. Add optional chaining to the concerts map function to handle empty arrays. Increase the negative margin on HomeHero so the image fits perfectly within the screen. Add missing camp values to AdminCampApplicationViewDrawer. Update the getNavigationLinks function to include new paths for board members and staff, and add these paths to the showFooter and showHeader functions. Add missing venue seat maps to the Venue page`,
+  },
 ];
 
 const PopsChangelog = () => {

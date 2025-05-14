@@ -28,7 +28,7 @@ const queueData = [
       },
       {
         text: "Add an instrument field to the Camp application",
-        isCompleted: false,
+        isCompleted: true,
       },
       { text: "Remove the magnifying glass icon", isCompleted: true },
       {
@@ -53,7 +53,7 @@ const queueData = [
       },
       {
         text: "Create staff page",
-        isCompleted: false,
+        isCompleted: true,
       },
     ],
   },
@@ -88,7 +88,7 @@ const queueData = [
     sentences: [
       {
         text: "Add other sections of seat maps to Venues page",
-        isCompleted: false,
+        isCompleted: true,
       },
     ],
   },
@@ -97,7 +97,7 @@ const queueData = [
     sentences: [
       {
         text: "Fix mislabled rows in Second half of neel seat map.",
-        isCompleted: false,
+        isCompleted: true,
       },
     ],
   },

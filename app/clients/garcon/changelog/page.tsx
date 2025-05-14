@@ -44,6 +44,11 @@ const changelogData = [
     message:
       "Create short video of the rainbow sugar cookies. Posted to TikTop, Snapchat, and then also Facebook and Instagram stories.",
   },
+  {
+    date: "5-14-2025",
+    message:
+      "Create short video of chef preparing a pizza. Posted to TikTop, Snapchat. Followed Woodcock Brothers Brewery on Fb.",
+  },
 ];
 
 const GarconChangeLog = () => {

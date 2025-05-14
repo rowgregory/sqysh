@@ -18,12 +18,8 @@ const Footer = () => {
   );
 
   return (
-    <div className="pb-10 px-4">
-      <footer
-        className={`${
-          isInvalidPath ? "hidden" : "flex"
-        } flex-col mx-auto max-w-screen-2xl`}
-      >
+    <div className={`${isInvalidPath ? "hidden" : "flex"} pb-10 px-4`}>
+      <footer className={`flex-col mx-auto max-w-screen-2xl`}>
         <div className="flex flex-col lg:flex-row items-center justify-between gap-5">
           <div className="flex items-center">
             <Link className="flex items-center" href="/" as="/" scroll={false}>
