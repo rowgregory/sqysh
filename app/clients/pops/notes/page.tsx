@@ -13,6 +13,10 @@ const notesData = [
     date: "5-13-2025",
     message: `Request horizontal gold and white 50th anniversary logos from Matthew to put in the header. Thnk about where to put the Admin Dashboard link`,
   },
+  {
+    date: "5-14-2025",
+    message: `Terry reaches out to let me know that row K is listed twice in the second half of Neel, and M is marked as K`,
+  },
 ];
 
 const PopsNotes = () => {
