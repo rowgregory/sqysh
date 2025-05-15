@@ -101,6 +101,27 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "5-15-2025",
+    sentences: [
+      {
+        text: "Adjust spacing on landing page.",
+        isCompleted: false,
+      },
+      {
+        text: "Reposition 'Have A Question' background image so singer is visible on mobile.",
+        isCompleted: false,
+      },
+      {
+        text: "Replace fixed header logo with new 50th logo.",
+        isCompleted: false,
+      },
+      {
+        text: "Change name of 'Summper Camp' link to 'Camping With the Pops'",
+        isCompleted: false,
+      },
+    ],
+  },
 ];
 
 const PopsQueue = () => {

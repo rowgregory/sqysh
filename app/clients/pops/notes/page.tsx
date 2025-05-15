@@ -17,6 +17,10 @@ const notesData = [
     date: "5-14-2025",
     message: `Terry reaches out to let me know that row K is listed twice in the second half of Neel, and M is marked as K. Robyn emailed a group asking to Zoom to introduce Sundays@Neel Inititive; Responded right away. Followed up with a personal email to clarify if the Sundays@Neel initiative involves new technical work outside the current scope; Asked for early insight before the Zoom call to prepare accordingly. Robyn semi-confirms that the Sundays@Neel initiative falls within the existing project scope; more details at the meeting tomorrow morning`,
   },
+  {
+    date: "5-15-2025",
+    message: `Joined a 30-minute Zoom call led by Robyn and her team to discuss the new Sundays@Neels initiative. Used the new AI-powered 4K webcam. Follow up by emailing Robyn about potential upcoming work on my end.`,
+  },
 ];
 
 const PopsNotes = () => {

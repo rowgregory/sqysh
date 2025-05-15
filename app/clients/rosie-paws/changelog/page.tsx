@@ -17,6 +17,10 @@ const changelogData = [
     date: "5-12-2025",
     message: `The backend configuration for Stripe were set up, including the installation of necessary packages and configuration of environment variables for the Stripe secret key and webhook secret. Stripe routes were added to handle customer creation, subscription management, and payment method setup. A webhook handler was implemented to process relevant events and update subscription statuses accordingly. Ngrok was installed and configured for local webhook testing, and the webhook endpoint was registered in the Stripe dashboard using the ngrok forwarding URL. The system was configured to properly verify webhook signatures and handle raw request buffering. Additionally, the foundation for admin pages was started, focusing on the necessary structures for managing and viewing user subscriptions. Dicussed potential monthly plan prices and tier packages with Jaci. This app is designed for end of life care, so it's possible that users may no longer use the app as their pets' journeys come to a close, therefore, making the tiers all monthly is the best decision; users will not have to worry about getting their money back; they'll be able to reflect and look at all the data colleted`,
   },
+  {
+    date: "5-14-2025",
+    message: `Install Recharts to enable data visualizations on the dashboard. Begin building out the main dashboard layout. Create a "Today" section that shows gross volume and key summary stats. Add a "Recent Payments" section to display the latest transactions. Position two graphs alongside it to compare the current week's gross and net sales against previous weeks`,
+  },
 ];
 
 const RosiePaws = () => {

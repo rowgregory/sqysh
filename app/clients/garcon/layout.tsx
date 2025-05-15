@@ -7,7 +7,6 @@ import Link from "next/link";
 
 const GarconLayout: FC<ChildrenProps> = ({ children }) => {
   const path = useCustomPathname();
-  const activeQueuePath = path === "/clients/garcon/queue";
   const activeSchedulePath = path === "/clients/garcon/schedule";
   const activeChangelogPath = path === "/clients/garcon/changelog";
   const activeObligationsPath = path === "/clients/garcon/obligations";
@@ -18,14 +17,6 @@ const GarconLayout: FC<ChildrenProps> = ({ children }) => {
         Garçon Super Slice Pizza Parlor
       </h1>
       <div className="flex items-center mb-7 border-b-1 border-zinc-600 w-full">
-        <Link
-          href="/clients/garcon/queue"
-          className={`${
-            activeQueuePath ? "text-sky-500 bg-[#121212]" : ""
-          } p-3 min-w-28 text-center`}
-        >
-          Queue
-        </Link>
         <Link
           href="/clients/garcon/schedule"
           className={`${

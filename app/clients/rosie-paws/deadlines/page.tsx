@@ -4,7 +4,7 @@ const deadlinesData = [
   {
     date: "5-20-2025",
     message:
-      "Rough draft or visual for the Rosie Paws app due to show at the end of Jaci's lecture. Should highlight key features and interface ideas",
+      "Rough draft or visual for the Rosie Paws app due to show at the end of Jaci's lecture. Should highlight key features and interface ideas. Including landing page, login page, register page, admin dashboard, client dashboard, admin pet list, client create pet drawer, and view my pets (client)",
   },
   {
     date: "6-20-2025",
