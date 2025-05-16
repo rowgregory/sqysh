@@ -3,7 +3,7 @@ import React from "react";
 const notesData = [
   {
     date: "5-16-2025",
-    message: `I got signed out of Instagram, and when I try to log in through the Meta Business Suite, it prompts me to log in again. The Facebook credentials I use don’t work. I'm still able to respond to messages and comments on Instagram through the Meta Business Suite, but I can't proactively comment or follow anyone. Will be coming in the store to try and resolve this in person.`,
+    message: `I got signed out of Instagram, and when I try to log in through the Meta Business Suite, it prompts me to log in again. The Facebook credentials I use don’t work. I'm still able to respond to messages and comments on Instagram through the Meta Business Suite, but I can't proactively comment or follow anyone. Will be coming in the store to try and resolve this in person`,
   },
 ];
 
