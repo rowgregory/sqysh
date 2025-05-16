@@ -21,6 +21,10 @@ const changelogData = [
     date: "5-14-2025",
     message: `Install Recharts to enable data visualizations on the dashboard. Begin building out the main dashboard layout. Create a "Today" section that shows gross volume and key summary stats. Add a "Recent Payments" section to display the latest transactions. Position two graphs alongside it to compare the current week's gross and net sales against previous weeks`,
   },
+  {
+    date: "5-16-2025",
+    message: `Add the /api/pet/fetch-my-pets GET route to retrieve pets owned by the logged-in user, requiring authentication. Create the /api/pet/fetch-all-pets GET route to fetch all pets in the system, restricted to admin users. Add the /api/pet/create POST route to allow logged-in users to create new pets. Implement authentication API routes for user login, logout, and registration. Create header logo and home hero logo in Canva. Add admin and client dashboard links to header for demonstration`,
+  },
 ];
 
 const RosiePaws = () => {

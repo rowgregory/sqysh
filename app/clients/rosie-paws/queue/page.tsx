@@ -6,11 +6,11 @@ const queueData = [
     sentences: [
       {
         text: "Implement Header component for the landing page.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Develop HomeHero section for the landing page.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Construct About section for the landing page.",
@@ -60,15 +60,15 @@ const queueData = [
       },
       {
         text: "Implement logout functionality with redirection to login page.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Establish API routes for authentication workflows.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Establish API routes for pet management.",
-        isCompleted: false,
+        isCompleted: true,
       },
     ],
   },
