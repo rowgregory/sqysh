@@ -10,6 +10,7 @@ const GarconLayout: FC<ChildrenProps> = ({ children }) => {
   const activeSchedulePath = path === "/clients/garcon/schedule";
   const activeChangelogPath = path === "/clients/garcon/changelog";
   const activeObligationsPath = path === "/clients/garcon/obligations";
+  const activeNotesPath = path === "/clients/garcon/notes";
 
   return (
     <>
@@ -40,6 +41,14 @@ const GarconLayout: FC<ChildrenProps> = ({ children }) => {
           } p-3 min-w-28 text-center`}
         >
           Obligations
+        </Link>
+        <Link
+          href="/clients/garcon/notes"
+          className={`${
+            activeNotesPath ? "text-sky-500 bg-[#121212]" : ""
+          } p-3 min-w-28 text-center`}
+        >
+          Notes
         </Link>
       </div>
       {children}

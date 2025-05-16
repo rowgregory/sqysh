@@ -45,6 +45,10 @@ const changelogData = [
     date: "5-15-2025",
     message: `Create short video of new peach seltzer. Post to TikTok, Snap, Fb, and Insta. Follow BricknFire Pizza Company - Mobile on Fb. Follow willydoublel on Insta. Reach out to @theprosciuttopapi on Insta and send the 15% coupon. Follow back samantha04 & nicole_surgent on Insta`,
   },
+  {
+    date: "5-16-2025",
+    message: `Proactively comment and like on Longboards' buffalo wings post on Fb. Proactively comment and like on Bricktown Brewerys' Tomatilo Chicken Enchiladas post on Fb. Follow thefamouspizzabackup on TikTok. Follow thefamouspizza on TikTok. No messages or comments to respond to`,
+  },
 ];
 
 const GarconChangeLog = () => {

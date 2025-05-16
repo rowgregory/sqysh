@@ -1,0 +1,39 @@
+import React from "react";
+
+const notesData = [
+  {
+    date: "5-16-2025",
+    message: `I got signed out of Instagram, and when I try to log in through the Meta Business Suite, it prompts me to log in again. The Facebook credentials I use don’t work. I'm still able to respond to messages and comments on Instagram through the Meta Business Suite, but I can't proactively comment or follow anyone. Will be coming in the store to try and resolve this in person.`,
+  },
+];
+
+const GarconsNotes = () => {
+  return (
+    <div className="w-full">
+      <h1 className="text-3xl font-bold mb-6">Notes</h1>
+      <div className="flex flex-col">
+        {notesData?.map((note, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-[1fr_4fr] gap-y-4 py-3 text-[#b2b2b2] font-lato text-sm"
+          >
+            <div className="font-semibold text-right pr-4 border-r border-[#555]">
+              {note.date}
+            </div>
+            <div className={`text-zinc-200 pl-4`}>
+              <ul className="list-disc pl-5">
+                {note.message.split(".").map((sentence, index) => (
+                  <li key={index} className="text-sm text-sky-400">
+                    {sentence.trim()}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default GarconsNotes;
