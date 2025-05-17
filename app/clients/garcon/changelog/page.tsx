@@ -49,6 +49,10 @@ const changelogData = [
     date: "5-16-2025",
     message: `Proactively comment and like on Longboards' buffalo wings post on Fb. Proactively comment and like on Bricktown Brewerys' Tomatilo Chicken Enchiladas post on Fb. Follow thefamouspizzabackup on TikTok. Follow thefamouspizza on TikTok. No messages or comments to respond to`,
   },
+  {
+    date: "5-16-2025",
+    message: `Post across all five socials. Upload long video to YouTube. Add Facebook post to promote it`,
+  },
 ];
 
 const GarconChangeLog = () => {
