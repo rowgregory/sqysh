@@ -14,21 +14,17 @@ const queueData = [
       },
       {
         text: "Construct About section for the landing page.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Implement Footer component for the landing page.",
-        isCompleted: false,
+        isCompleted: true,
       },
     ],
   },
   {
     date: "5-12-2025",
     sentences: [
-      {
-        text: "Implement authentication using JSON Web Tokens for signup, login, and session handling.",
-        isCompleted: false,
-      },
       {
         text: "Configure PostgreSQL schema with Prisma and define necessary data models.",
         isCompleted: true,
@@ -38,8 +34,8 @@ const queueData = [
         isCompleted: true,
       },
       {
-        text: "Develop the admin dashboard interface.",
-        isCompleted: false,
+        text: "Start building admin dashboard interface.",
+        isCompleted: true,
       },
       {
         text: "Integrate backend Stripe logic for payment processing.",
@@ -51,24 +47,33 @@ const queueData = [
     date: "5-15-2025",
     sentences: [
       {
-        text: "Develop client dashboard interface.",
-        isCompleted: false,
+        text: "Start building client dashboard interface.",
+        isCompleted: true,
       },
       {
         text: "Create pet profile form and drawer for client-side pet creation.",
         isCompleted: false,
       },
       {
-        text: "Implement logout functionality with redirection to login page.",
-        isCompleted: true,
-      },
-      {
-        text: "Establish API routes for authentication workflows.",
-        isCompleted: true,
-      },
-      {
         text: "Establish API routes for pet management.",
         isCompleted: true,
+      },
+    ],
+  },
+  {
+    date: "5-18-2025",
+    sentences: [
+      {
+        text: "Create interface for guardians to see their recently created pet.",
+        isCompleted: false,
+      },
+      {
+        text: "Create admin view all pets page",
+        isCompleted: false,
+      },
+      {
+        text: "Show mock data of what subscriptions will look like on the backend for admin.",
+        isCompleted: false,
       },
     ],
   },

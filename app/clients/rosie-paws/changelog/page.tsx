@@ -25,6 +25,10 @@ const changelogData = [
     date: "5-16-2025",
     message: `Add the /api/pet/fetch-my-pets GET route to retrieve pets owned by the logged-in user, requiring authentication. Create the /api/pet/fetch-all-pets GET route to fetch all pets in the system, restricted to admin users. Add the /api/pet/create POST route to allow logged-in users to create new pets. Implement authentication API routes for user login, logout, and registration. Create header logo and home hero logo in Canva. Add admin and client dashboard links to header for demonstration`,
   },
+  {
+    date: "5-18-2025",
+    message: `Developed Header, HomeHero, About, Subscription, and Footer blocks for the landing page.`,
+  },
 ];
 
 const RosiePaws = () => {
