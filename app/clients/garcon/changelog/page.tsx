@@ -50,14 +50,22 @@ const changelogData = [
     message: `Proactively comment and like on Longboards' buffalo wings post on Fb. Proactively comment and like on Bricktown Brewerys' Tomatilo Chicken Enchiladas post on Fb. Follow thefamouspizzabackup on TikTok. Follow thefamouspizza on TikTok. No messages or comments to respond to`,
   },
   {
-    date: "5-16-2025",
+    date: "5-17-2025",
     message: `Post across all five socials. Upload long video to YouTube. Add Facebook post to promote it`,
+  },
+  {
+    date: "5-18-2025",
+    message: `Proactively comment on West Hillsborough Pizza Fb post. Follow Coffee Culture Fb page, and proactively comment on Fb post`,
+  },
+  {
+    date: "5-19-2025",
+    message: `Post on Fb and Insta about the home made chips. Post video version to public story on Fb and Insta stories, as weell as TikTok, and Snap`,
   },
 ];
 
 const GarconChangeLog = () => {
   return (
-    <div className="w-full">
+    <div className="w-full pb-28">
       <h1 className="text-3xl font-bold mb-6">Changelog</h1>
       <div className="flex flex-col">
         {changelogData?.map((log, i) => (

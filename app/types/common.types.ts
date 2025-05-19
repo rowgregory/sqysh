@@ -1,13 +1,7 @@
-import {
-  ChangeEvent,
-  Dispatch,
-  LegacyRef,
-  ReactNode,
-  SetStateAction,
-} from "react";
+import { ChangeEvent, Dispatch, ReactNode, SetStateAction } from "react";
 
 interface VideoProps {
-  videoRef: LegacyRef<HTMLVideoElement>;
+  videoRef: any;
   src: string;
   className: string;
 }
