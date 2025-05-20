@@ -24,7 +24,7 @@ const queueData = [
       },
       {
         text: "Create a Media page with a video player, scrolling comments, and a photo carousel",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Add an instrument field to the Camp application",
