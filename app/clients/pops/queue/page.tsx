@@ -102,18 +102,27 @@ const queueData = [
     sentences: [
       {
         text: "Adjust spacing on landing page.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Reposition 'Have A Question' background image so singer is visible on mobile.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Replace fixed header logo with new 50th logo.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Change name of 'Summper Camp' link to 'Camping With the Pops'",
+        isCompleted: true,
+      },
+    ],
+  },
+  {
+    date: "5-20-2025",
+    sentences: [
+      {
+        text: "Adjust the structure of the team member form so each bullet point in the description allows multiple sentences. Currently, descriptions are parsed by splitting a single paragraph by periods, but the admin wants to explicitly enter separate sentences for each point. This requires a new data structure that supports an array of bullet point entries, each containing full sentence(s)",
         isCompleted: false,
       },
     ],
