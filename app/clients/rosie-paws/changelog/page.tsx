@@ -29,6 +29,10 @@ const changelogData = [
     date: "5-18-2025",
     message: `Developed Header, HomeHero, About, Subscription, and Footer blocks for the landing page.`,
   },
+  {
+    date: "5-20-2025",
+    message: `Create API routes for authentication and pet management to support core app functionality. Build admin and guardian dashboards to improve user experience. Implement dynamic graphs showing gross volume, net sales, and guardian pet data. Enable guardians to add new pets, view pet details, and record pain scoring, view all record pain scorings, and view the pain scorings on a graph on the dashboard page`,
+  },
 ];
 
 const RosiePaws = () => {

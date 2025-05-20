@@ -61,6 +61,10 @@ const changelogData = [
     date: "5-19-2025",
     message: `Post on Fb and Insta about the home made chips. Post video version to public story on Fb and Insta stories, as weell as TikTok, and Snap`,
   },
+  {
+    date: "5-20-2025",
+    message: `Post on TikTok & Snap about the garlic knots`,
+  },
 ];
 
 const GarconChangeLog = () => {

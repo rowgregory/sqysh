@@ -52,7 +52,7 @@ const queueData = [
       },
       {
         text: "Create pet profile form and drawer for client-side pet creation.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Establish API routes for pet management.",
@@ -65,14 +65,47 @@ const queueData = [
     sentences: [
       {
         text: "Create interface for guardians to see their recently created pet.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Create admin view all pets page",
+        isCompleted: true,
+      },
+    ],
+  },
+  {
+    date: "5-20-2025",
+    sentences: [
+      {
+        text: "Develop water intake form",
         isCompleted: false,
       },
       {
-        text: "Show mock data of what subscriptions will look like on the backend for admin.",
+        text: "Develop create water intake drawer",
+        isCompleted: false,
+      },
+      {
+        text: "Build api route to create water intake",
+        isCompleted: false,
+      },
+      {
+        text: "Add create water intake api route to petApi file and petSlice file",
+        isCompleted: false,
+      },
+      {
+        text: "Add create water intake to redux state",
+        isCompleted: false,
+      },
+      {
+        text: "Develop guardian view all water intake logs page",
+        isCompleted: false,
+      },
+      {
+        text: "Build api route to view all logged in users water intakes",
+        isCompleted: false,
+      },
+      {
+        text: "Add water intake graph to guardian dashboaard",
         isCompleted: false,
       },
     ],
