@@ -58,7 +58,7 @@ const queueData = [
     sentences: [
       {
         text: "Fix concert details page not showing the correct address on the Open Layer map when clicking on the ConcertDetailsLocator component",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Update text from 'extending' to 'extended' on the landing page. Make this text",
