@@ -71,7 +71,7 @@ const queueData = [
       { text: "Link advertising sheet to download button", isCompleted: true },
       {
         text: "Recreate specs and prices for Advertise With Us page",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Update Newsletter nav link to say Connect With Us",
