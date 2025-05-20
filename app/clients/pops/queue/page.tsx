@@ -37,19 +37,15 @@ const queueData = [
       },
       {
         text: "Add interactive maps to the Venue page with dynamic latitude and longitude fields",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Add longitude & latitude to Prisma Venue modal.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
-        text: "Add a link to a tool that converts addresses to coordinates so the venue location works properly with the Open Layer map on the Venues page",
-        isCompleted: false,
-      },
-      {
-        text: "Add longitude & latitude inputs fields to Venue form so map works",
-        isCompleted: false,
+        text: "Add open cage api so the address would automatically generate longitute and latitude for Open Layer maps",
+        isCompleted: true,
       },
       {
         text: "Create staff page",

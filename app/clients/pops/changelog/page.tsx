@@ -21,6 +21,10 @@ const changelogData = [
     date: "5-14-2025",
     message: `Add the instrument attribute to the CampApplication model. Migrate the Prisma schema to Raleway and regenerate the schema. Add validation for the instrument field and include it in Step 4 of the application form. Test and validate that the form receives the new attribute, with 30 minutes of testing. Remove the success state from fetching and deleting camp applications. Split staff members into a separate page and move PublicTeamMemberCard into its own file for modularity. Add optional chaining to the concerts map function to handle empty arrays. Increase the negative margin on HomeHero so the image fits perfectly within the screen. Add missing camp values to AdminCampApplicationViewDrawer. Update the getNavigationLinks function to include new paths for board members and staff, and add these paths to the showFooter and showHeader functions. Add missing venue seat maps to the Venue page`,
   },
+  {
+    date: "5-20-2025",
+    message: `The OpenCage Data API is integrated into the venue creation and update process, automatically converting venue addresses into accurate geographic coordinates. The venue creation/update flow is updated to fetch and store latitude and longitude for each new venue, improving location accuracy. Error handling is added to the geocoding process to ensure data integrity. Additionally, a media page is built featuring a PhotoCarousel, a VideoMedia player, and a TestimonialCarousel to showcase multimedia content and enhance user engagement`,
+  },
 ];
 
 const PopsChangelog = () => {
