@@ -146,6 +146,30 @@ const queueData = [
         text: "Update privacy statement with more relaxed wording",
         isCompleted: false,
       },
+      {
+        text: "Add new Sundays@Neel link to HeaderLower component.",
+        isCompleted: false,
+      },
+      {
+        text: "Add new option in concert form dropdown to include Sundays@Neel.",
+        isCompleted: false,
+      },
+      {
+        text: "Build new page starting with full screen with PageBanner (some feature design by Matthew)",
+        isCompleted: false,
+      },
+      {
+        text: "Develop content of page which will consist of two columns. Main large column on the left(col-span-8) and right side column(col-span-4). Elements will shift to mobile view at 990px.",
+        isCompleted: false,
+      },
+      {
+        text: "Create variety of concert cards for main content. i.e. Full column width image with description below. Small image on left with description on the right. Full column width carousel(requires more than one for this particular concert) with description below",
+        isCompleted: false,
+      },
+      {
+        text: "Add new boolean(true or false) attribute to Prisma Concert model called isLive which will allow admin to create/update a concert without it being visible to the public. Once the switch is flipped, the concert will be visible on the frontend.",
+        isCompleted: false,
+      },
     ],
   },
 ];
