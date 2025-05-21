@@ -21,6 +21,10 @@ const notesData = [
     date: "5-15-2025",
     message: `Joined a 30-minute Zoom call led by Robyn and her team to discuss the new Sundays@Neels initiative. Used the new AI-powered 4K webcam. Follow up by emailing Robyn about potential upcoming work on my end.`,
   },
+  {
+    date: "5-21-2025",
+    message: `Receive email from Robyn about more updates. Emailed back at 11:07am.`,
+  },
 ];
 
 const PopsNotes = () => {

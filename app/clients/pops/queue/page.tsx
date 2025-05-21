@@ -122,7 +122,28 @@ const queueData = [
     date: "5-20-2025",
     sentences: [
       {
-        text: "Adjust the structure of the team member form so each bullet point in the description allows multiple sentences. Currently, descriptions are parsed by splitting a single paragraph by periods, but the admin wants to explicitly enter separate sentences for each point. This requires a new data structure that supports an array of bullet point entries, each containing full sentence(s)",
+        text: "Instead of parsing the description by splitting on periods, i'll update the structure of the team member form to allow the admin to manually define bullet points using a custom delimiter (e.g., /// or a pipe |). This change will let each bullet point contain one or more full sentences, without the system auto-splitting based on periods.",
+        isCompleted: false,
+      },
+    ],
+  },
+  {
+    date: "5-21-2025",
+    sentences: [
+      {
+        text: "Update all gray/zinc text to white",
+        isCompleted: false,
+      },
+      {
+        text: "Update Charir Sponsorships table to use the gold color from the 50th logo",
+        isCompleted: false,
+      },
+      {
+        text: "Update form switch colors so they have more contrast",
+        isCompleted: false,
+      },
+      {
+        text: "Update privacy statement with more relaxed wording",
         isCompleted: false,
       },
     ],
