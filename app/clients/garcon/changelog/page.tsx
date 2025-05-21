@@ -65,6 +65,10 @@ const changelogData = [
     date: "5-20-2025",
     message: `Post on TikTok & Snap about the garlic knots`,
   },
+  {
+    date: "5-21-2025",
+    message: `Post on TikTok & Snap, Fb post, FB story, Insta post, and Insta story with a video of the rainbow sugar cookie platter with Ai falling cookies. Liked three posts from pages we follow.`,
+  },
 ];
 
 const GarconChangeLog = () => {

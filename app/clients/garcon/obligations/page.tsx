@@ -2,6 +2,10 @@ import React from "react";
 
 const obligationsData = [
   {
+    date: "5-30-2025",
+    message: `Take photos and videos at Suffolk Downs`,
+  },
+  {
     date: "6-13-2025",
     message: `Prepare 8 pizzas for donation to Collins Middle School’s semi-formal dance on June 13th`,
   },
