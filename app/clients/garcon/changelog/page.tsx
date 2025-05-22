@@ -69,6 +69,10 @@ const changelogData = [
     date: "5-21-2025",
     message: `Post on TikTok & Snap, Fb post, FB story, Insta post, and Insta story with a video of the rainbow sugar cookie platter with Ai falling cookies. Liked three posts from pages we follow.`,
   },
+  {
+    date: "5-22-2025",
+    message: `Create a video of a rotating stack of seven pizzas with Yummy by Justin Bieber playing in the background and post it to TikTok, Snapchat, Facebook Stories, and Instagram Stories. Stu reaches out to let me know that people can’t check into Garçon Superslice Pizza Pie Parlor on Facebook. I look into it and notice the business Page’s previous address has the map pin placed in the middle of the ocean, which is likely why check-ins aren’t working. I try to update the address to 14 Derby St, Salem, MA 01907, but Facebook says I’m no longer allowed to change it—even though I’ve only edited it once or twice before. I attempt the change through both the “Edit Page Info” section and Meta Business Suite, but neither works. Since the issue isn’t ad-related, I can’t access live support, so I submit a “Report a Problem” request explaining the situation and asking for help updating the address.  Like all new Facebook posts in the feed and respond to someone’s comments on Snap`,
+  },
 ];
 
 const GarconChangeLog = () => {
