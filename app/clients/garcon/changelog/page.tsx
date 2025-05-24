@@ -77,6 +77,10 @@ const changelogData = [
     date: "5-23-2025",
     message: `Instagram access is restored; posting remained available via Meta Business Suite, but proactive outreach wasn’t possible for a few days. Reach out to @tasteofmassachusetts on Insta to share the 15% off in-store discount, sent over the discount ticket, and asked if they’re planning to visit Salem for Halloween. Follow @tasteofmassachusetts on Instagram and like all recent posts in the feed related to local businesses and food. A 4-second video ad for Ales was created and published across TikTok, Snapchat, Facebook, Instagram Stories, and YouTube Shorts; the video features a can of Ales placed on a rock in front of a lush tropical landscape with a cascading waterfall, capturing the beer’s crisp and refreshing vibe. Respond to question from user on Fb`,
   },
+  {
+    date: "5-24-2025",
+    message: `Create honey video using AI animation and post it across Fb, Insta, TikTok, Snapchat, and all stories. Like all restaurant posts in the Fb feed and follow everyone back on Instagram`,
+  },
 ];
 
 const GarconChangeLog = () => {
