@@ -81,6 +81,10 @@ const changelogData = [
     date: "5-24-2025",
     message: `Create honey video using AI animation and post it across Fb, Insta, TikTok, Snapchat, and all stories. Like all restaurant posts in the Fb feed and follow everyone back on Instagram`,
   },
+  {
+    date: "5-25-2025",
+    message: `Subscribe to Descript to produce a full-length YouTube video featuring an interview with Chef Keenan Langlois of Garcon Super Slice. The video showcases his passion for handmade pizza, fresh ingredients, and culinary philosophy. After publishing it to YouTube, I create and post announcements across all social media platforms to promote the interview and drive traffic to the video`,
+  },
 ];
 
 const GarconChangeLog = () => {
