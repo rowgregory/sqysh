@@ -85,6 +85,10 @@ const changelogData = [
     date: "5-25-2025",
     message: `Subscribe to Descript to produce a full-length YouTube video featuring an interview with Chef Keenan Langlois of Garcon Super Slice. The video showcases his passion for handmade pizza, fresh ingredients, and culinary philosophy. After publishing it to YouTube, I create and post announcements across all social media platforms to promote the interview and drive traffic to the video`,
   },
+  {
+    date: "5-26-2025",
+    message: `An animated video of a Garçon Super Slice is created and shared across all platforms. It’s posted to TikTok, Snapchat, Facebook, and Instagram, including both Facebook and Instagram Stories, to maximize visibility and bring more people into the shop. Like all food related posts on Fb. Follow back everyone recently followed us on Insta. Proavticely comment on Witch City Walking Tours Insta post. Proactively commet on TheRoofSalem Insta post`,
+  },
 ];
 
 const GarconChangeLog = () => {
