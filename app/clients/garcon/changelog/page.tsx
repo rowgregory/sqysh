@@ -89,6 +89,10 @@ const changelogData = [
     date: "5-26-2025",
     message: `An animated video of a Garçon Super Slice is created and shared across all platforms. It’s posted to TikTok, Snapchat, Facebook, and Instagram, including both Facebook and Instagram Stories, to maximize visibility and bring more people into the shop. Like all food related posts on Fb. Follow back everyone recently followed us on Insta. Proavticely comment on Witch City Walking Tours Insta post. Proactively commet on TheRoofSalem Insta post`,
   },
+  {
+    date: "5-26-2025",
+    message: `Create video showcasing pizza coming out of the oven and post it on TikTok and Snapchat. Also make Facebook post telling people to follow us on Snapchat. Like all Fb posts related to food`,
+  },
 ];
 
 const GarconChangeLog = () => {

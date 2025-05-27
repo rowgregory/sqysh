@@ -5,6 +5,10 @@ const notesData = [
     date: "5-16-2025",
     message: `I got signed out of Instagram, and when I try to log in through the Meta Business Suite, it prompts me to log in again. The Facebook credentials I use don’t work. I'm still able to respond to messages and comments on Instagram through the Meta Business Suite, but I can't proactively comment or follow anyone. Will be coming in the store to try and resolve this in person`,
   },
+  {
+    date: "5-27-2025",
+    message: `Received comment on TikTok saying “need more real food posts”; I wasn’t sure who it was, so I asked Stu, and he said it was Keenan’s sister; I reached out to Keenan right away to explain the situation, letting him know the comment came off as a troll at first and that it’s not a good look for people close to staff to be posting things like that publicly; Told him it could misalign the brand and asked that it doesn’t happen again`,
+  },
 ];
 
 const GarconsNotes = () => {
