@@ -91,7 +91,7 @@ const changelogData = [
   },
   {
     date: "5-27-2025",
-    message: `Create video showcasing pizza coming out of the oven and post it on TikTok and Snapchat. Also make Facebook post telling people to follow us on Snapchat. Like all Fb posts related to food`,
+    message: `Create video showcasing pizza coming out of the oven and post it on TikTok and Snapchat. Also make Facebook post telling people to follow us on Snapchat. Like all Fb posts related to food. Remove unused business assets in Meta Business Suite. Change personal page to Keenan's name so there is only one Garçon SuperSlice page. Rename group to Garçon SuperSlice Community to avoid confusion with the business page`,
   },
   {
     date: "5-28-2025",
