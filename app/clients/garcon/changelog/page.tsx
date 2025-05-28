@@ -51,7 +51,7 @@ const changelogData = [
   },
   {
     date: "5-17-2025",
-    message: `Post across all five socials. Upload long video to YouTube. Add Facebook post to promote it`,
+    message: `Post across all five socials. Upload long video to YouTube. Add Fb post to promote it`,
   },
   {
     date: "5-18-2025",
@@ -71,11 +71,11 @@ const changelogData = [
   },
   {
     date: "5-22-2025",
-    message: `Create a video of a rotating stack of seven pizzas with Yummy by Justin Bieber playing in the background and post it to TikTok, Snapchat, Facebook Stories, and Instagram Stories. Stu reaches out to let me know that people can’t check into Garçon Superslice Pizza Pie Parlor on Facebook; I look into it and notice the business Page’s previous address has the map pin placed in the middle of the ocean, which is likely why check-ins aren’t working; I try to update the address to 14 Derby St, Salem, MA 01907, but Facebook says I’m no longer allowed to change it—even though I’ve only edited it once or twice before; I attempt the change through both the “Edit Page Info” section and Meta Business Suite, but neither works; Since the issue isn’t ad-related, I can’t access live support, so I submit a “Report a Problem” request explaining the situation and asking for help updating the address.  Like all new Facebook posts in the feed and respond to someone’s comments on Snap. Have dialogue with Carole Gorevitz on Fb messenger; mentioned she is a friend and has been passing out Garcon menues; she loves the social media posts`,
+    message: `Create a video of a rotating stack of seven pizzas with Yummy by Justin Bieber playing in the background and post it to TikTok, Snapchat, Fb Stories, and Instagram Stories. Stu reaches out to let me know that people can’t check into Garçon Superslice Pizza Pie Parlor on Fb; I look into it and notice the business Page’s previous address has the map pin placed in the middle of the ocean, which is likely why check-ins aren’t working; I try to update the address to 14 Derby St, Salem, MA 01907, but Fb says I’m no longer allowed to change it—even though I’ve only edited it once or twice before; I attempt the change through both the “Edit Page Info” section and Meta Business Suite, but neither works; Since the issue isn’t ad-related, I can’t access live support, so I submit a “Report a Problem” request explaining the situation and asking for help updating the address.  Like all new Fb posts in the feed and respond to someone’s comments on Snap. Have dialogue with Carole Gorevitz on Fb messenger; mentioned she is a friend and has been passing out Garcon menues; she loves the social media posts`,
   },
   {
     date: "5-23-2025",
-    message: `Instagram access is restored; posting remained available via Meta Business Suite, but proactive outreach wasn’t possible for a few days. Reach out to @tasteofmassachusetts on Insta to share the 15% off in-store discount, sent over the discount ticket, and asked if they’re planning to visit Salem for Halloween. Follow @tasteofmassachusetts on Instagram and like all recent posts in the feed related to local businesses and food. A 4-second video ad for Ales was created and published across TikTok, Snapchat, Facebook, Instagram Stories, and YouTube Shorts; the video features a can of Ales placed on a rock in front of a lush tropical landscape with a cascading waterfall, capturing the beer’s crisp and refreshing vibe. Respond to question from user on Fb`,
+    message: `Instagram access is restored; posting remained available via Meta Business Suite, but proactive outreach wasn’t possible for a few days. Reach out to @tasteofmassachusetts on Insta to share the 15% off in-store discount, sent over the discount ticket, and asked if they’re planning to visit Salem for Halloween. Follow @tasteofmassachusetts on Instagram and like all recent posts in the feed related to local businesses and food. A 4-second video ad for Ales was created and published across TikTok, Snapchat, Fb, Instagram Stories, and YouTube Shorts; the video features a can of Ales placed on a rock in front of a lush tropical landscape with a cascading waterfall, capturing the beer’s crisp and refreshing vibe. Respond to question from user on Fb`,
   },
   {
     date: "5-24-2025",
@@ -87,15 +87,15 @@ const changelogData = [
   },
   {
     date: "5-26-2025",
-    message: `An animated video of a Garçon Super Slice is created and shared across all platforms. It’s posted to TikTok, Snapchat, Facebook, and Instagram, including both Facebook and Instagram Stories, to maximize visibility and bring more people into the shop. Like all food related posts on Fb. Follow back everyone recently followed us on Insta. Proavticely comment on Witch City Walking Tours Insta post. Proactively commet on TheRoofSalem Insta post`,
+    message: `An animated video of a Garçon Super Slice is created and shared across all platforms. It’s posted to TikTok, Snapchat, Fb, and Instagram, including both Fb and Instagram Stories, to maximize visibility and bring more people into the shop. Like all food related posts on Fb. Follow back everyone recently followed us on Insta. Proavticely comment on Witch City Walking Tours Insta post. Proactively commet on TheRoofSalem Insta post`,
   },
   {
     date: "5-27-2025",
-    message: `Create video showcasing pizza coming out of the oven and post it on TikTok and Snapchat. Also make Facebook post telling people to follow us on Snapchat. Like all Fb posts related to food. Remove unused business assets in Meta Business Suite. Change personal page to Keenan's name so there is only one Garçon SuperSlice page. Rename group to Garçon SuperSlice Community to avoid confusion with the business page`,
+    message: `Create video showcasing pizza coming out of the oven and post it on TikTok and Snapchat. Also make Fb post telling people to follow us on Snapchat. Like all Fb posts related to food. Remove unused business assets in Meta Business Suite. Change personal page to Keenan's name so there is only one Garçon SuperSlice page. Rename group to Garçon SuperSlice Community to avoid confusion with the business page`,
   },
   {
     date: "5-28-2025",
-    message: `Create video of steak and cheese. Post to TikTok, Snapchat, Instagram Stories, and Facebook Stories. Share Facebook Story a customer tagged us in. Respond to message on TikTok`,
+    message: `Create video of steak and cheese. Post to TikTok, Snap, Insta Stories, and Fb Stories. Share Fb Story a customer tagged us in. Respond to message on TikTok. Accept over 50 friend requests on the Fb personal page. Send 86 friends a request to like the Fb business page`,
   },
 ];
 
