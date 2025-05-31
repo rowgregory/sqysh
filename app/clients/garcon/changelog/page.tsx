@@ -98,8 +98,12 @@ const changelogData = [
     message: `Create video of steak and cheese. Post to TikTok, Snap, Insta Stories, and Fb Stories. Share Fb Story a customer tagged us in. Respond to message on TikTok. Accept over 50 friend requests on the Fb personal page. Send 86 friends a request to like the Fb business page`,
   },
   {
-    date: "5-28-2025",
+    date: "5-29-2025",
     message: `Create a short video featuring the Funghi pizza and post it to both Facebook and Instagram, including stories. Follow back all Instagram accounts and like all food-related posts in the Facebook feed to increase engagement`,
+  },
+  {
+    date: "5-31-2025",
+    message: `Create a short video featuring the tent at Suffolk Downs and post it to both Facebook and Instagram, including stories, and TikTok and Snap`,
   },
 ];
 
