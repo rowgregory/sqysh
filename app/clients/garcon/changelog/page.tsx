@@ -105,6 +105,10 @@ const changelogData = [
     date: "5-31-2025",
     message: `Create a short video featuring the tent at Suffolk Downs and post it to both Facebook and Instagram, including stories, and TikTok and Snap`,
   },
+  {
+    date: "6-2-2025",
+    message: `Create video showcasing the meatball and ricotta pizza, highlighting its texture and toppings with close-up shots and smooth transitions. Post the video on Facebook, Instagram, TikTok, and Snapchat, as well as to both Facebook and Instagram Stories. Like all related posts in the Facebook and Instagram feeds to boost engagement and visibility`,
+  },
 ];
 
 const GarconChangeLog = () => {
