@@ -109,6 +109,10 @@ const changelogData = [
     date: "6-2-2025",
     message: `Create video showcasing the meatball and ricotta pizza, highlighting its texture and toppings with close-up shots and smooth transitions. Post the video on Facebook, Instagram, TikTok, and Snapchat, as well as to both Facebook and Instagram Stories. Like all related posts in the Facebook and Instagram feeds to boost engagement and visibility`,
   },
+  {
+    date: "6-3-2025",
+    message: `Create video showcasing video game themed ai pizza. Post the video on TikTok, and Snapchat, as well as to both Facebook and Instagram Stories`,
+  },
 ];
 
 const GarconChangeLog = () => {
