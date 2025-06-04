@@ -113,6 +113,10 @@ const changelogData = [
     date: "6-3-2025",
     message: `Create video showcasing video game themed ai pizza. Post the video on TikTok, and Snapchat, as well as to both Facebook and Instagram Stories`,
   },
+  {
+    date: "6-4-2025",
+    message: `Create video showcasing the Linguiça carmelized onion pizza. Post the video on TikTok, and Snapchat, as well as to both Facebook and Instagram Stories. Like all Fb posts related to food`,
+  },
 ];
 
 const GarconChangeLog = () => {
