@@ -176,6 +176,10 @@ const queueData = [
         text: "Add instructional text in the team member form to guide admins on how and where to use the pipe in the team member description",
         isCompleted: true,
       },
+      {
+        text: "Add Hotjar script",
+        isCompleted: true,
+      },
     ],
   },
 ];

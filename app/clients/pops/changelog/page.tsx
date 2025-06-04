@@ -27,7 +27,7 @@ const changelogData = [
   },
   {
     date: "6-04-2025",
-    message: `Revise the privacy policy language for better clarity. Update the chair sponsorships table header background color to align with the 50th anniversary logo. Improve form switch colors to provide stronger contrast. Modify the team member description parsing to use a pipe (|) after each period, enabling bullet point formatting on the frontend, and add instructional text in the form to guide admins on how and where to use the pipe. Change all gray text to white to improve overall readability across the site`,
+    message: `Revise the privacy policy language for better clarity. Update the chair sponsorships table header background color to align with the 50th anniversary logo. Improve form switch colors to provide stronger contrast. Modify the team member description parsing to use a pipe (|) after each period, enabling bullet point formatting on the frontend, and add instructional text in the form to guide admins on how and where to use the pipe. Change all gray text to white to improve overall readability across the site. Create Hotjar account. Add script to website. Push new code to Github and Vercel`,
   },
 ];
 

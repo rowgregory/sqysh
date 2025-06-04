@@ -31,7 +31,7 @@ const notesData = [
   },
   {
     date: "6-4-2025",
-    message: `Received an email back from Robyn saying she asked to talk this afternoon at some point. Responded letting her know I’m available anytime and happy to chat whenever works best for her`,
+    message: `Received an email back from Robyn saying she asked to talk this afternoon at some point. Responded letting her know I’m available anytime and happy to chat whenever works best for her. Talk to Robyn on the phone. Explained Fb Pixel isn't something someone from another company can come and just install on our website. Focused the converstaion on Hotjar and the free tool it provides`,
   },
 ];
 
