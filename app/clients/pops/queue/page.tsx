@@ -34,6 +34,7 @@ const queueData = [
       {
         text: "Move the Login/Register link to a more discreet location",
         isCompleted: false,
+        isResolved: true,
       },
       {
         text: "Add interactive maps to the Venue page with dynamic latitude and longitude fields",
@@ -63,10 +64,6 @@ const queueData = [
       {
         text: "Update text from 'extending' to 'extended' on the landing page. Make this text",
         isCompleted: true,
-      },
-      {
-        text: "Update colors of the table header text on the Chair Sponsorship page",
-        isCompleted: false,
       },
       { text: "Link advertising sheet to download button", isCompleted: true },
       {
@@ -123,7 +120,7 @@ const queueData = [
     sentences: [
       {
         text: "Instead of parsing the description by splitting on periods, i'll update the structure of the team member form to allow the admin to manually define bullet points using a custom delimiter (e.g., /// or a pipe |). This change will let each bullet point contain one or more full sentences, without the system auto-splitting based on periods.",
-        isCompleted: false,
+        isCompleted: true,
       },
     ],
   },
@@ -132,19 +129,19 @@ const queueData = [
     sentences: [
       {
         text: "Update all gray/zinc text to white",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Update Charir Sponsorships table to use the gold color from the 50th logo",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Update form switch colors so they have more contrast",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Update privacy statement with more relaxed wording",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Add new Sundays@Neel link to HeaderLower component.",
@@ -169,6 +166,15 @@ const queueData = [
       {
         text: "Add new boolean(true or false) attribute to Prisma Concert model called isLive which will allow admin to create/update a concert without it being visible to the public. Once the switch is flipped, the concert will be visible on the frontend.",
         isCompleted: false,
+      },
+    ],
+  },
+  {
+    date: "6-4-2025",
+    sentences: [
+      {
+        text: "Add instructional text in the team member form to guide admins on how and where to use the pipe in the team member description",
+        isCompleted: true,
       },
     ],
   },

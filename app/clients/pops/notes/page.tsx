@@ -25,6 +25,14 @@ const notesData = [
     date: "5-21-2025",
     message: `Receive email from Robyn about more updates. Emailed back at 11:07am. Receive email back from Robyn discussing the new color for the "Renew now to retain your current seats" section and colors on the newsletter form`,
   },
+  {
+    date: "6-3-2025",
+    message: `Received an email from Caryn requesting a Zoom meeting with herself, me, and someone named Jacuelyn Best—who is not listed on the website as a board member and whom I haven’t previously been introduced to. Will clarity on the chat today that taking unexpected Zoom calls about technology not outlined in the proposal is outside the scope of my role. I will explain that any new features or technical discussions should first be reviewed and approved between me and Robyn before moving forward`,
+  },
+  {
+    date: "6-4-2025",
+    message: `Received an email back from Robyn saying she asked to talk this afternoon at some point. Responded letting her know I’m available anytime and happy to chat whenever works best for her`,
+  },
 ];
 
 const PopsNotes = () => {
