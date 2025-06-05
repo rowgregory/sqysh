@@ -33,6 +33,10 @@ const changelogData = [
     date: "5-20-2025",
     message: `Create API routes for authentication and pet management to support core app functionality. Build admin and guardian dashboards to improve user experience. Implement dynamic graphs showing gross volume, net sales, and guardian pet data. Enable guardians to add new pets, view pet details, and record pain scoring, view all record pain scorings, and view the pain scorings on a graph on the dashboard page`,
   },
+  {
+    date: "6-4-2025",
+    message: `Add functionality to create and view feedings. Implement API routes to handle feeding creation and retrieval. Integrate feeding features with Redux Toolkit for state management. Add frontend form validation to ensure feeding data is correctly submitted. Feedings are displayed in reverse chronological order for easier tracking`,
+  },
 ];
 
 const RosiePaws = () => {

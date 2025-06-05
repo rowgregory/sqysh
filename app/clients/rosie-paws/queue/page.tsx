@@ -110,6 +110,43 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "6-4-2025",
+    sentences: [
+      {
+        text: "Develop feedings form",
+        isCompleted: true,
+      },
+      {
+        text: "Develop create feedings drawer",
+        isCompleted: true,
+      },
+      {
+        text: "Build api route to create feedings",
+        isCompleted: true,
+      },
+      {
+        text: "Add create feedings api route to petApi file and petSlice file",
+        isCompleted: true,
+      },
+      {
+        text: "Add create feedings to redux state",
+        isCompleted: true,
+      },
+      {
+        text: "Develop guardian view all feedings logs page",
+        isCompleted: true,
+      },
+      {
+        text: "Build api route to view all logged in users feedingss",
+        isCompleted: true,
+      },
+      {
+        text: "Add feedings graph to guardian dashboaard",
+        isCompleted: true,
+      },
+    ],
+  },
 ];
 
 const RosiePawsQueue = () => {
