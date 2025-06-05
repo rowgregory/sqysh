@@ -10,6 +10,7 @@ const PopsLayout: FC<ChildrenProps> = ({ children }) => {
   const activeQueuePath = path === "/clients/pops/queue";
   const activeChangelogPath = path === "/clients/pops/changelog";
   const activeNotesPath = path === "/clients/pops/notes";
+  const activeAnalyticsPath = path === "/clients/pops/analytics";
 
   return (
     <>
@@ -40,6 +41,14 @@ const PopsLayout: FC<ChildrenProps> = ({ children }) => {
           } p-3 min-w-28 text-center`}
         >
           Notes
+        </Link>
+        <Link
+          href="/clients/pops/analytics"
+          className={`${
+            activeAnalyticsPath ? "text-sky-500 bg-[#121212]" : ""
+          } p-3 min-w-28 text-center`}
+        >
+          Analytics
         </Link>
       </div>
       <main className="min-h-[calc(100dvh-273px)]">{children}</main>

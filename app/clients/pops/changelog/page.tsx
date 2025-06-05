@@ -26,8 +26,12 @@ const changelogData = [
     message: `The OpenCage Data API is integrated into the venue creation and update process, automatically converting venue addresses into accurate geographic coordinates. The venue creation/update flow is updated to fetch and store latitude and longitude for each new venue, improving location accuracy. Error handling is added to the geocoding process to ensure data integrity. Additionally, a media page is built featuring a PhotoCarousel, a VideoMedia player, and a TestimonialCarousel to showcase multimedia content and enhance user engagement. Use longitude and latitude from the concert details page to populate coordinates for map`,
   },
   {
-    date: "6-04-2025",
+    date: "6-4-2025",
     message: `Revise the privacy policy language for better clarity. Update the chair sponsorships table header background color to align with the 50th anniversary logo. Improve form switch colors to provide stronger contrast. Modify the team member description parsing to use a pipe (|) after each period, enabling bullet point formatting on the frontend, and add instructional text in the form to guide admins on how and where to use the pipe. Change all gray text to white to improve overall readability across the site. Create Hotjar account. Add script to website. Push new code to Github and Vercel`,
+  },
+  {
+    date: "6-5-2025",
+    message: `Create an analytics overview page showcasing GA4, Meta Pixel, and Hotjar as powerful tools for understanding user behavior. Each section highlights what the tool does, why it matters, and how it can help businesses make smarter decisions. The goal is to give clients a clear, side by side look at what each platform offers so they can decide which ones to move forward with implementing. This page serves as a pitch to demonstrate the value of integrating GA4 & Pixel into the site`,
   },
 ];
 

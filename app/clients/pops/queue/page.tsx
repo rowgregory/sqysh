@@ -182,6 +182,15 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "6-5-2025",
+    sentences: [
+      {
+        text: "Createe analytics page",
+        isCompleted: true,
+      },
+    ],
+  },
 ];
 
 const PopsQueue = () => {
