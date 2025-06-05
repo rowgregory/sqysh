@@ -117,6 +117,10 @@ const changelogData = [
     date: "6-4-2025",
     message: `Create video showcasing the Linguiça carmelized onion pizza. Post the video on TikTok, and Snapchat, as well as to both Facebook and Instagram Stories. Like all Fb posts related to food`,
   },
+  {
+    date: "6-5-2025",
+    message: `Create video showcasing the Fried Eggplant & Feta pizza. Post the video on TikTok, and Snapchat, as well as to both Facebook and Instagram Stories and posts. Like all Fb and Insta posts related to food`,
+  },
 ];
 
 const GarconChangeLog = () => {
