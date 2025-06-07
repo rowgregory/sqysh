@@ -37,6 +37,10 @@ const changelogData = [
     date: "6-4-2025",
     message: `Add functionality to create and view feedings. Implement API routes to handle feeding creation and retrieval. Integrate feeding features with Redux Toolkit for state management. Add frontend form validation to ensure feeding data is correctly submitted. Feedings are displayed in reverse chronological order for easier tracking`,
   },
+  {
+    date: "6-7-2025",
+    message: `Add functionality to create and view blood sugar readings. Implement API routes to handle blood sugar creation and retrieval. Integrate blood sugar features with Redux Toolkit for state management. Add frontend form validation to ensure feeding data is correctly submitted. Update dashboard UI. Add Pet Selector component. Add UI for subscription, profile, and settings pages`,
+  },
 ];
 
 const RosiePaws = () => {

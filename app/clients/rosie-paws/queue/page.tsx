@@ -147,6 +147,55 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "6-7-2025",
+    sentences: [
+      {
+        text: "Develop blood sugar form",
+        isCompleted: true,
+      },
+      {
+        text: "Develop create blood sugar drawer",
+        isCompleted: true,
+      },
+      {
+        text: "Build api route to create blood sugar",
+        isCompleted: true,
+      },
+      {
+        text: "Add create blood sugar api route to petApi file and petSlice file",
+        isCompleted: true,
+      },
+      {
+        text: "Add create blood sugar to redux state",
+        isCompleted: true,
+      },
+      {
+        text: "Develop guardian view all blood sugar logs page",
+        isCompleted: true,
+      },
+      {
+        text: "Build api route to view all logged in users blood sugars",
+        isCompleted: true,
+      },
+      {
+        text: "Add blood sugar graph to guardian dashboaard",
+        isCompleted: true,
+      },
+      {
+        text: "Create guardian subscriptions page UI",
+        isCompleted: true,
+      },
+      {
+        text: "Create guardian profile page UI",
+        isCompleted: true,
+      },
+      {
+        text: "Create guardian settings page UI",
+        isCompleted: true,
+      },
+    ],
+  },
 ];
 
 const RosiePawsQueue = () => {
