@@ -125,6 +125,10 @@ const changelogData = [
     date: "6-6-2025",
     message: `Create video showcasing the Pickled Pepper Pineapple Porchetta pizza. Post the video on TikTok, and Snapchat, as well as to both Facebook and Instagram Stories and posts. Like all Fb and Insta posts related to food. Follow everyone back on TikTok`,
   },
+  {
+    date: "6-9-2025",
+    message: `Reach out to @jesslitras on Insta telling her Garçon SuperSlice has a promo; sent her the promo ticket; asked her if she was going to Salem for Halloween. Follow back everyone that followed the account recently; Like all insta posts in feed related to food. Remove hidden message requests on Insta. Like all facebook posts`,
+  },
 ];
 
 const GarconChangeLog = () => {
