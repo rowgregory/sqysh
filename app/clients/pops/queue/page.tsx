@@ -186,8 +186,21 @@ const queueData = [
     date: "6-5-2025",
     sentences: [
       {
-        text: "Createe analytics page",
+        text: "Createe analytics pages explaining what each three tools do and how they can benefit The Pops!",
         isCompleted: true,
+      },
+    ],
+  },
+  {
+    date: "6-12-2025",
+    sentences: [
+      {
+        text: "Add new block with button that will route users to audience view season ticket packages",
+        isCompleted: false,
+      },
+      {
+        text: "Motify header call box office button to toggle to the buy season tickets link. Need to double check that",
+        isCompleted: false,
       },
     ],
   },

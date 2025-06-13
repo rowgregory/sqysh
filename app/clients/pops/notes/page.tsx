@@ -37,6 +37,10 @@ const notesData = [
     date: "6-5-2025",
     message: `Received voicemail from Caryn explaining the situation with the demo; she had questions about the analytics tool; decided to create pages for Caryn and & Robyn to look through`,
   },
+  {
+    date: "6-11-2025",
+    message: `Receive calls from Robyn regarding the switches on the campaigns page. Explained that the switch toggles the button from call box office -> buy tickets. The link for buy tickets can be updated any time in the campgin form. Robyn and Terry were going to get the season ticket packages up and running on Audience View. Tried to steer Robyn in the right direction regarding the saturday packages, but was unsuccessful. Discussed new block with a button leading to the audience view packages will be available by this weekend`,
+  },
 ];
 
 const PopsNotes = () => {

@@ -129,6 +129,14 @@ const changelogData = [
     date: "6-9-2025",
     message: `Reach out to @jesslitras on Insta telling her Garçon SuperSlice has a promo; sent her the promo ticket; asked her if she was going to Salem for Halloween. Follow back everyone that followed the account recently; Like all insta posts in feed related to food. Remove hidden message requests on Insta. Like all facebook posts`,
   },
+  {
+    date: "6-11-2025",
+    message: `Attempted to set up LightBox but restaurant was packed!`,
+  },
+  {
+    date: "6-12-2025",
+    message: `Devon went in and photographed pizza slices, beers, cupcakes, cookies, and eggplant parm sub. Create video of egglplant parm sub and post on TikTok, Snap, Fb, and Insta. Follow everyone back on Tiktok and Insta. Like all messages from people tagging us in posts. Like all fb posts related to food and friends`,
+  },
 ];
 
 const GarconChangeLog = () => {
