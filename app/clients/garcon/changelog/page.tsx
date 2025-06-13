@@ -137,6 +137,10 @@ const changelogData = [
     date: "6-12-2025",
     message: `Devon went in and photographed pizza slices, beers, cupcakes, cookies, and eggplant parm sub. Create video of egglplant parm sub and post on TikTok, Snap, Fb, and Insta. Follow everyone back on Tiktok and Insta. Like all messages from people tagging us in posts. Like all fb posts related to food and friends`,
   },
+  {
+    date: "6-13-2025",
+    message: `Create video about Reeds Ginger Beer. Post on TikTok, Snap, Fb & Insta stories. Follow back everyone TikTok and Insta. Like all Fb posts in feed. Like all Insta posts in feed`,
+  },
 ];
 
 const GarconChangeLog = () => {
