@@ -141,6 +141,10 @@ const changelogData = [
     date: "6-13-2025",
     message: `Create video about Reeds Ginger Beer. Post on TikTok, Snap, Fb & Insta stories. Follow back everyone TikTok and Insta. Like all Fb posts in feed. Like all Insta posts in feed`,
   },
+  {
+    date: "6-14-2025",
+    message: `Create video about Rainbow cupcakes. Post on TikTok, Snap, Fb & Insta stories. Follow back everyone TikTok and Insta. Like all Fb posts in feed. Like all Insta posts in feed. Upload 10 shorts to Youtube`,
+  },
 ];
 
 const GarconChangeLog = () => {
