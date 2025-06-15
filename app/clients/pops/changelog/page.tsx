@@ -33,6 +33,10 @@ const changelogData = [
     date: "6-5-2025",
     message: `Create an analytics overview page showcasing GA4, Meta Pixel, and Hotjar as powerful tools for understanding user behavior. Each section highlights what the tool does, why it matters, and how it can help businesses make smarter decisions. The goal is to give clients a clear, side by side look at what each platform offers so they can decide which ones to move forward with implementing. This page serves as a pitch to demonstrate the value of integrating GA4 & Pixel into the site`,
   },
+  {
+    date: "6-14-2025",
+    message: `This release introduces the comprehensive SeasonPackageBanner component that enhances administrative control across the platform. The admin dashboard receives significant updates with new graphical capabilities, now displaying interactive charts optimized for both desktop and mobile viewing that track daily metrics. Admin gain complete control over the season package banner through a dedicated backend card interface featuring toggle switches for visibility management - one switch allows administrators to make the banner visible only to admin users for testing and editing purposes, while a second switch makes the banner publicly visible to all users. When in admin-only mode, administrators can click directly on the banner text or button text within the component for real-time editing. The platform now features a powerful Header Button Studio that provides admin with comprehensive control over header button configurations, styling, and behavior. The Header Button Studio serves as a centralized command center for all header button management across the application. This administrative tool empowers admin to create, customize, and deploy header buttons without requiring developer intervention. The studio provides an intuitive interface where administrators can define button text, colors, hover states, and destinations. Admin can preview button appearances in real-time`,
+  },
 ];
 
 const PopsChangelog = () => {

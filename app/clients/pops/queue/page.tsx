@@ -192,15 +192,47 @@ const queueData = [
     ],
   },
   {
-    date: "6-12-2025",
+    date: "6-14-2025",
     sentences: [
       {
-        text: "Add new block with button that will route users to audience view season ticket packages",
-        isCompleted: false,
+        text: "Add SeasonPackageBanner component with real-time text editing capabilities for admin",
+        isCompleted: true,
       },
       {
-        text: "Motify header call box office button to toggle to the buy season tickets link. Need to double check that",
-        isCompleted: false,
+        text: "Update admin dashboard with interactive graph optimized for both desktop and mobile viewing",
+        isCompleted: true,
+      },
+      {
+        text: "Implement daily metrics tracking and performance data visualization in dashboard charts",
+        isCompleted: true,
+      },
+      {
+        text: "Create season package banner admin control card with visibility toggle switches",
+        isCompleted: true,
+      },
+      {
+        text: "Add admin-only visibility switch to allow banner testing before public release",
+        isCompleted: true,
+      },
+      {
+        text: "Implement public visibility switch to make banner accessible to all users",
+        isCompleted: true,
+      },
+      {
+        text: "Enable direct text editing functionality when clicking on banner text in admin mode",
+        isCompleted: true,
+      },
+      {
+        text: "Develop Header Button Studio for comprehensive header button management",
+        isCompleted: true,
+      },
+      {
+        text: "Implement real-time button preview capabilities in Header Button Studio",
+        isCompleted: true,
+      },
+      {
+        text: "Add button customization controls for text, colors, hover states, and destinations",
+        isCompleted: true,
       },
     ],
   },
