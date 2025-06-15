@@ -236,6 +236,19 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "6-14-2025",
+    sentences: [
+      {
+        text: "Update Login/Register link with light gray lucide-icon right arrow button with redux dispatch function",
+        isCompleted: true,
+      },
+      {
+        text: "Build InconspicuousSignInDrawer component for admin only. This will hopefully resolve the issue of users getting confused why they land at a login page they don't have credentials for",
+        isCompleted: true,
+      },
+    ],
+  },
 ];
 
 const PopsQueue = () => {

@@ -41,6 +41,14 @@ const notesData = [
     date: "6-11-2025",
     message: `Receive calls from Robyn regarding the switches on the campaigns page. Explained that the switch toggles the button from call box office -> buy tickets. The link for buy tickets can be updated any time in the campgin form. Robyn and Terry were going to get the season ticket packages up and running on Audience View. Tried to steer Robyn in the right direction regarding the saturday packages, but was unsuccessful. Discussed new block with a button leading to the audience view packages will be available by this weekend`,
   },
+  {
+    date: "6-11-2025",
+    message: `Receive email from Terry asking when the new seasosn package banner will be ready. Emailed back saying it will be ready later that night.`,
+  },
+  {
+    date: "6-15-2025",
+    message: `Robyn reached out over text explaining the issue with the Login/Register at the top. Initially we were going to just change the naming to "Admin" but then thought to put a light gray arrow which opens an InconspicuousSignInDrawer for adnim only. Robyn liked it. Robyn also explained how they are having an issue with Audience View not loading their seat maps correctly and only loading all seats at $120. wtf. They are waiting on an AV ticket. >;|`,
+  },
 ];
 
 const PopsNotes = () => {
