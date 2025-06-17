@@ -147,7 +147,11 @@ const changelogData = [
   },
   {
     date: "6-15-2025",
-    message: `Create video about Grim Reaping Coffee Co Cold Brew in a can. Post on TikTok, Snap, Fb & Insta stories. amd Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed`,
+    message: `Create video about Grim Reaping Coffee Co Cold Brew in a can. Post on TikTok, Snap, Fb & Insta stories. and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed`,
+  },
+  {
+    date: "6-16-2025",
+    message: `Create video about different pizzas; focos was on cheese. Post on TikTok, Snap, Fb & Insta stories. Like all Fb posts in feed. Like all Insta posts in feed. Reach out to @e_kitched92 with the 15% promo ticket on Insta`,
   },
 ];
 
