@@ -43,11 +43,15 @@ const notesData = [
   },
   {
     date: "6-11-2025",
-    message: `Receive email from Terry asking when the new seasosn package banner will be ready. Emailed back saying it will be ready later that night.`,
+    message: `Receive email from Terry asking when the new seasosn package banner will be ready. Emailed back saying it will be ready later that night`,
   },
   {
     date: "6-15-2025",
     message: `Robyn reached out over text explaining the issue with the Login/Register at the top. Initially we were going to just change the naming to "Admin" but then thought to put a light gray arrow which opens an InconspicuousSignInDrawer for adnim only. Robyn liked it. Robyn also explained how they are having an issue with Audience View not loading their seat maps correctly and only loading all seats at $120. wtf. They are waiting on an AV ticket. >;|`,
+  },
+  {
+    date: "6-19-2025",
+    message: `Message Robyn about the GoldenButton fix; patrons can now click anywhere on the button to take them to AV. Discuss upcoming season ticket package user flow and propose implementing the GoldenModal with date selection to direct patrons to targeted AV pages based on their chosen performance day`,
   },
 ];
 

@@ -142,16 +142,20 @@ const changelogData = [
     message: `Create video about Reeds Ginger Beer. Post on TikTok, Snap, Fb & Insta stories. Follow back everyone TikTok and Insta. Like all Fb posts in feed. Like all Insta posts in feed`,
   },
   {
-    date: "6-14-2025",
+    date: "6-16-2025",
     message: `Create video about Rainbow cupcakes. Post on TikTok, Snap, Fb & Insta stories. Follow back everyone TikTok and Insta. Like all Fb posts in feed. Like all Insta posts in feed. Upload 10 shorts to Youtube`,
   },
   {
-    date: "6-15-2025",
+    date: "6-17-2025",
     message: `Create video about Grim Reaping Coffee Co Cold Brew in a can. Post on TikTok, Snap, Fb & Insta stories. and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed`,
   },
   {
-    date: "6-16-2025",
+    date: "6-18-2025",
     message: `Create video about different pizzas; focos was on cheese. Post on TikTok, Snap, Fb & Insta stories. Like all Fb posts in feed. Like all Insta posts in feed. Reach out to @e_kitched92 with the 15% promo ticket on Insta`,
+  },
+  {
+    date: "6-19-2025",
+    message: `Create video about Sunday Sauce beer by Stoneface Brewing Co; Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed`,
   },
 ];
 

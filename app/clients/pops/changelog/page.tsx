@@ -37,6 +37,10 @@ const changelogData = [
     date: "6-14-2025",
     message: `This release introduces the comprehensive SeasonPackageBanner component that enhances administrative control across the platform. The admin dashboard receives significant updates with new graphical capabilities, now displaying interactive charts optimized for both desktop and mobile viewing that track daily metrics. Admin gain complete control over the season package banner through a dedicated backend card interface featuring toggle switches for visibility management - one switch allows administrators to make the banner visible only to admin users for testing and editing purposes, while a second switch makes the banner publicly visible to all users. When in admin-only mode, administrators can click directly on the banner text or button text within the component for real-time editing. The platform now features a powerful Header Button Studio that provides admin with comprehensive control over header button configurations, styling, and behavior. The Header Button Studio serves as a centralized command center for all header button management across the application. This administrative tool empowers admin to create, customize, and deploy header buttons without requiring developer intervention. The studio provides an intuitive interface where administrators can define button text, colors, hover states, and destinations. Admin can preview button appearances in real-time`,
   },
+  {
+    date: "6-19-2025",
+    message: `Modify click handler logic; EditableTextarea only calls e.stopPropagation() and e.preventDefault() when the user is authenticated. For non logged in users, the event bubbles up to the parent button, allowing the external link to open; updated cursor styling so entire button shows the cursor; remove pointer-events-auto from the EditableTextArea as it's not needed and could interfere with the click behavior; Now the behavior will be admin users can click on the text to open the editable modal and public users can click anywhere on the button, including the text, to open the external link`,
+  },
 ];
 
 const PopsChangelog = () => {
