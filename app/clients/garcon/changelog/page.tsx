@@ -157,6 +157,14 @@ const changelogData = [
     date: "6-19-2025",
     message: `Create video about Sunday Sauce beer by Stoneface Brewing Co; Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed`,
   },
+  {
+    date: "6-21-2025",
+    message: `Create video of Garcon @ Suffolk Downs; Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed`,
+  },
+  {
+    date: "6-23-2025",
+    message: `Create video of homemade dressings; Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed. Reach out to @pizzablonde on Insta and tell her about the 15% off promo and send her the ticket`,
+  },
 ];
 
 const GarconChangeLog = () => {
