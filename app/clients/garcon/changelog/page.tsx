@@ -165,6 +165,14 @@ const changelogData = [
     date: "6-23-2025",
     message: `Create video of homemade dressings; Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed. Reach out to @pizzablonde on Insta and tell her about the 15% off promo and send her the ticket`,
   },
+  {
+    date: "6-24-2025",
+    message: `Create video brick oven pizza theme with fire sound effects. Post to TikTok, Snap, FB & Insta stories`,
+  },
+  {
+    date: "6-25-2025",
+    message: `Create video of pride theme desserts and post on TikTok, Snap, FB & Insta stories. Follow everyone back on TikTok. Like all Fb and Insta feed items`,
+  },
 ];
 
 const GarconChangeLog = () => {
