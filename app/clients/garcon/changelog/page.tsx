@@ -171,7 +171,27 @@ const changelogData = [
   },
   {
     date: "6-25-2025",
-    message: `Create video of pride theme desserts and post on TikTok, Snap, FB & Insta stories. Follow everyone back on TikTok. Like all Fb and Insta feed items`,
+    message: `Create video of pride themed desserts. Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed.`,
+  },
+  {
+    date: "6-26-2025",
+    message: `Create video of eggplant parm sub and Grim Reaper Coffee & Reds Ale. Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed. Handle conversation about customer wanting to buy a dozen chocolate chip cookies`,
+  },
+  {
+    date: "6-27-2025",
+    message: `Create video of delicious cheese pizza. Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed.`,
+  },
+  {
+    date: "6-28-2025",
+    message: `Create video of start dreaming and eating pizza. Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed.`,
+  },
+  {
+    date: "6-30-2025",
+    message: `Create video of art wall. Follow back everyone on TikTok. Post on TikTok, Snap, Fb & Insta stories and Fb and Insta posts. Like all Fb posts in feed. Like all Insta posts in feed.`,
+  },
+  {
+    date: "7-1-2025",
+    message: `Create video of pepperoni pizza and post on TikTok, Fb story and Insta story. Like all facebook posts in feed. Comment on two of them. Reach out to @thepizzahulk on insta and send him the 15% off promo ticket and asked if he was coming to Salem for Halloween`,
   },
 ];
 

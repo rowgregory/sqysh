@@ -9,6 +9,10 @@ const notesData = [
     date: "5-27-2025",
     message: `Received comment on TikTok saying “need more real food posts”; I wasn’t sure who it was, so I asked Stu, and he said it was Keenan’s sister; I reached out to Keenan right away to explain the situation, letting him know the comment came off as a troll at first and that it’s not a good look for people close to staff to be posting things like that publicly; Told him it could misalign the brand and asked that it doesn’t happen again`,
   },
+  {
+    date: "6-28-2025",
+    message: `Messaged Keenan about opening a Venmo account for the restaurant. Waiting to hear back`,
+  },
 ];
 
 const GarconsNotes = () => {
