@@ -193,6 +193,10 @@ const changelogData = [
     date: "7-1-2025",
     message: `Create video of pepperoni pizza and post on TikTok, Fb story and Insta story. Like all facebook posts in feed. Comment on two of them. Reach out to @thepizzahulk on insta and send him the 15% off promo ticket and asked if he was coming to Salem for Halloween`,
   },
+  {
+    date: "7-7-2025",
+    message: `Create video of two back to back saturday Dj's. Post everywhere. Like all fb, and insta posts. Pro actively comment on two of them.`,
+  },
 ];
 
 const GarconChangeLog = () => {

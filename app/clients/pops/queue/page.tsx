@@ -249,6 +249,39 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "6-07-2025",
+    sentences: [
+      {
+        text: "Create select all camp applications button with bulk delete",
+        isCompleted: true,
+      },
+      {
+        text: "Create export to CSV button for camp applications",
+        isCompleted: true,
+      },
+      {
+        text: "Build camp application feature toggle card with two toggle switches for admin and the public",
+        isCompleted: true,
+      },
+      {
+        text: "Build hidden gems page",
+        isCompleted: true,
+      },
+      {
+        text: "Create PushSubscription Prisma model and schema",
+        isCompleted: true,
+      },
+      {
+        text: "Build push notification subscription API endpoint",
+        isCompleted: true,
+      },
+      {
+        text: "Deploy PushSubscription model to production database",
+        isCompleted: true,
+      },
+    ],
+  },
 ];
 
 const PopsQueue = () => {

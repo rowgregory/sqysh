@@ -13,6 +13,14 @@ const notesData = [
     date: "6-28-2025",
     message: `Messaged Keenan about opening a Venmo account for the restaurant. Waiting to hear back`,
   },
+  {
+    date: "7-02-2025",
+    message: `Went into restaurant to take photos of products`,
+  },
+  {
+    date: "7-06-2025",
+    message: `Stu sends over two flyers to post for the upcoming DJ's`,
+  },
 ];
 
 const GarconsNotes = () => {
