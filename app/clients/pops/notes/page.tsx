@@ -57,6 +57,14 @@ const notesData = [
     date: "7-3-2025",
     message: `Robyn reaches out saying to close camp applications page and they are full. YAY. She wants to be able to delete the camp applications and then reopen it for next year. She transferred each submission to a spreadsheet so I will create an export to CSV button. Also mentioned that the push notifications were not working for the camp application. Will look into that. Will need Robyn to go in and put in a card for Google Firebase video and image uploading`,
   },
+  {
+    date: "7-21-2025",
+    message: `Reach out to Robyn to switch direct deposit account`,
+  },
+  {
+    date: "7-22-2025",
+    message: `Robyn reaches out needing a button on the Advertise page.`,
+  },
 ];
 
 const PopsNotes = () => {

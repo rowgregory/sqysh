@@ -282,6 +282,15 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "7-22-2025",
+    sentences: [
+      {
+        text: "Create button on Advertise page to direct people to buy advertising",
+        isCompleted: false,
+      },
+    ],
+  },
 ];
 
 const PopsQueue = () => {
