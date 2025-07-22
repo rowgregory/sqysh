@@ -287,7 +287,7 @@ const queueData = [
     sentences: [
       {
         text: "Create button on Advertise page to direct people to buy advertising",
-        isCompleted: false,
+        isCompleted: true,
       },
     ],
   },

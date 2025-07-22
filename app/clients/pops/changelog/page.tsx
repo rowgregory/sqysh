@@ -41,6 +41,10 @@ const changelogData = [
     date: "6-19-2025",
     message: `Modify click handler logic; EditableTextarea only calls e.stopPropagation() and e.preventDefault() when the user is authenticated. For non logged in users, the event bubbles up to the parent button, allowing the external link to open; updated cursor styling so entire button shows the cursor; remove pointer-events-auto from the EditableTextArea as it's not needed and could interfere with the click behavior; Now the behavior will be admin users can click on the text to open the editable modal and public users can click anywhere on the button, including the text, to open the external link`,
   },
+  {
+    date: "7-22-2025",
+    message: `Add Framer Motion animations with staggered reveals and hover effects, implement responsive call-to-action button with adaptive text ("Advertise Now" on mobile, "Start Advertising" on desktop), refactor repetitive code blocks into efficient loops, modernize pricing table with card-based design and interactive states, improve mobile responsiveness with adaptive sizing and spacing, and link CTA button directly to advertising purchase portal`,
+  },
 ];
 
 const PopsChangelog = () => {
