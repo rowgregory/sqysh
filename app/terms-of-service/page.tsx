@@ -11,9 +11,9 @@ export const metadata = {
 
 const TermsOfService = () => {
   return (
-    <div className="mt-32 w-full max-w-screen-md">
+    <div className="mt-32 w-full max-w-screen-md px-3 pb-20 mx-auto">
       <h1 className="text-xl font-bold">Terms of Service</h1>
-      <h5 className="text-xs text-slate-500 mb-6">Last Updated: 6/21/2024</h5>
+      <h5 className="text-xs text-slate-500 mb-6">Last Updated: 7/23/2025</h5>
       <p className="text-slate-200 mb-7">
         Welcome to <span className="font-Paytone-One">Sqysh</span>, a software
         development company. These Terms of Service govern your use of

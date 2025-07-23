@@ -1,10 +1,9 @@
 "use client";
 
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 import useCustomPathname from "../hooks/useCustomPathname";
+import SqyshQuoteBtn from "./common/SqyshQuoteBtn";
 
 const Header = () => {
   const path = useCustomPathname();
@@ -37,17 +36,7 @@ const Header = () => {
                   Services
                 </Link>
               </div>
-              <Link
-                href="/quote"
-                className="btn-anim py-1.5 px-4 bg-[linear-gradient(to_right,_#25aae1,_#4481eb,_#04befe,_#3f86ed)] text-white font-bold uppercase font-Raleway rounded-full group hidden sm:block"
-              >
-                Request a <span className="font-Paytone-One">Sqysh</span> Quote{" "}
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="text-white w-3 h-3 -rotate-45 group-hover:rotate-[0deg] duration-200"
-                  data-testid="quote-arrow-icon"
-                />
-              </Link>
+              <SqyshQuoteBtn />
             </section>
           )}
         </div>

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import Link from "next/link";
 
 const Banner = () => {
   const containerRef = useRef(null);
@@ -236,7 +237,10 @@ const Banner = () => {
             />
 
             {/* Button text */}
-            <span className="relative z-10 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-center">
+            <Link
+              href="/quote"
+              className="relative z-10 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-center"
+            >
               <span className="text-sm sm:text-base md:text-xl">
                 Get in touch with
               </span>
@@ -270,7 +274,7 @@ const Banner = () => {
               >
                 →
               </motion.span>
-            </span>
+            </Link>
 
             {/* Ripple effect */}
             <motion.div

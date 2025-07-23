@@ -15,7 +15,7 @@ interface QuoteWrapperProps {
 
 const QuoteWrapper: FC<QuoteWrapperProps> = ({ children }) => {
   return (
-    <div className="max-w-screen-sm w-full min-h-[calc(100vh-84px)] pt-8 md:pt-24">
+    <div className="max-w-screen-sm mx-auto w-full min-h-[calc(100vh-84px)] pt-8 md:pt-24 px-3">
       {children}
     </div>
   );
