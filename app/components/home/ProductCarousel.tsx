@@ -55,7 +55,7 @@ const PrevArrow = ({ onClick }: any) => (
   <button
     type="button"
     onClick={onClick}
-    className="hidden md:flex items-center justify-center absolute z-10 -left-20 lg:-left-36 top-1/2 bg-sunny rounded-full w-12 h-12
+    className="hidden md:flex items-center justify-center absolute z-10 -left-20 lg:-left-20 top-1/2 bg-sunny rounded-full w-12 h-12
     transform -translate-y-1/2  translate-x-20 transition-all duration-300"
   >
     <div className="bg-neon-chevron rotate-180 aspect-square w-8 h-8 bg-cover bg-center bg-no-repeat"></div>
@@ -66,7 +66,7 @@ const NextArrow = ({ onClick }: any) => (
   <button
     type="button"
     onClick={onClick}
-    className="hidden md:flex items-center justify-center absolute z-10 -right-20 lg:-right-36 top-1/2 bg-sunny rounded-full w-12 h-12
+    className="hidden md:flex items-center justify-center absolute z-10 -right-20 lg:-right-20 top-1/2 bg-sunny rounded-full w-12 h-12
     transform -translate-y-1/2  -translate-x-20 transition-all duration-300"
   >
     <div className="bg-neon-chevron aspect-square w-8 h-8 bg-cover bg-center bg-no-repeat"></div>
@@ -86,7 +86,7 @@ const ProductCarousel = () => {
     autoplaySpeed: 3000,
   };
   return (
-    <div className="slider-container relative w-full h-[300px] sm:h-[600px] 1070:h-[900px]">
+    <div className="slider-container relative w-full  py-32">
       <PrevArrow onClick={() => slider?.current?.slickPrev()} />
       <Slider ref={slider} {...settings}>
         {carouselData.map((obj: any, i: number) => (

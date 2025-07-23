@@ -10,6 +10,7 @@ import {
   SB,
   Platorum,
   TC,
+  ThePops,
 } from "@/public/images";
 
 const clientMarqueeData = [
@@ -52,6 +53,11 @@ const clientMarqueeData = [
     img: TC,
     alt: "Adrianna DelDotto with Thoroughly Cleaned, LLC",
     className: "bg-white",
+  },
+  {
+    img: ThePops,
+    alt: "Robyn Bell with The Pops Orchestra of Bradenton & Sarasota",
+    className: "bg-black",
   },
 ];
 

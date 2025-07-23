@@ -21,6 +21,7 @@
     "@hotjar/browser": "^1.0.9",
     "@prisma/client": "^5.7.1",
     "@reduxjs/toolkit": "^2.2.4",
+    "framer-motion": "^12.4.3",
     "jsonwebtoken": "^9.0.2",
     "next": "^15.0.3",
     "react": "^19.0.0",

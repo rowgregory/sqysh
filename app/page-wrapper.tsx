@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MobileNavMenu from "./components/MobileNavMenu";
 import Burger from "./components/Burger";
+import { useCreateTrafficSourceMutation } from "./redux/services/trafficSourceApi";
 
 interface PageWrapperProps {
   children: ReactNode;
@@ -15,18 +16,39 @@ const siteId = 5096445;
 const hotjarVersion = 6;
 
 const PageWrapper: FC<PageWrapperProps> = ({ children }) => {
+  const [createTrafficSource] = useCreateTrafficSourceMutation();
+
   useEffect(() => {
     Hotjar.init(siteId, hotjarVersion);
   }, []);
+
+  useEffect(() => {
+    // Parse query param cameFrom from URL
+    const params = new URLSearchParams(window.location.search);
+    const cameFrom = params.get("cameFrom");
+
+    const asyncFunc = async () => {
+      if (cameFrom) {
+        await createTrafficSource({ cameFrom })
+          .unwrap()
+          .then(() => {
+            console.log(`Traffic source '${cameFrom}' recorded`);
+          })
+          .catch((error) => {
+            console.error("Failed to record traffic source", error);
+          });
+      }
+    };
+
+    asyncFunc();
+  }, [createTrafficSource]);
 
   return (
     <div className="min-h-dvh">
       <Header />
       <Burger />
       <MobileNavMenu />
-      <main className="px-3 max-w-screen-2xl w-full mx-auto sm:px-6 md:px-12 lg:px-20 xl:px-28 2xl:px-0">
-        {children}
-      </main>
+      <main className="">{children}</main>
       <Footer />
     </div>
   );

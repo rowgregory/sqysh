@@ -16,9 +16,9 @@ const Header = () => {
   if (!path) return;
 
   return (
-    <div className="px-4 w-full">
+    <div className="w-full">
       <header
-        className={`sticky w-full sm:pt-5 z-50 top-0 left-0 bg-black shadow-[0_25px_50px_-12px_rgb(0,0.0,1)]`}
+        className={`sticky w-full p-2 z-50 top-0 left-0 bg-black shadow-[0_25px_50px_-12px_rgb(0,0.0,1)]`}
       >
         <div className="flex items-center justify-between mx-auto max-w-screen-2xl">
           <section className="flex items-center">

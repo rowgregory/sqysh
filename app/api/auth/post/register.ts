@@ -26,13 +26,10 @@ export async function register(req: Request) {
       },
     });
 
-    console.log("CREATED USER: ", createdUser);
-
     const token = generateToken(
       { firstName, lastName, phoneNumber, isAdmin: createdUser.isAdmin },
       "1d"
     );
-    console.log("TOKEN: ", token);
 
     const response = NextResponse.json({
       success: true,
@@ -48,7 +45,6 @@ export async function register(req: Request) {
 
     return response;
   } catch (error: any) {
-    console.error("Error creating user:", error);
     return NextResponse.json(
       { error: "Failed to create user", details: error.message },
       { status: 500 }

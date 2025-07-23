@@ -27,7 +27,6 @@ const RequestAQuote = () => {
       setSuccessState({ success: true, id: response.id });
       window.scrollTo(0, 0);
     } else {
-      console.log("Validation failed", validationErrors);
       window.scrollTo({ behavior: "smooth", top: 250 });
     }
   };

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Changa, Inter } from "next/font/google";
-import PageWrapper from "./page-wrapper";
 import { HeaderProvider } from "./contexts/headerContext";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ReduxWrapper from "./redux-wrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -209,7 +209,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${changa.variable}`}>
         <HeaderProvider>
-          <PageWrapper>{children}</PageWrapper>
+          <ReduxWrapper>{children}</ReduxWrapper>
         </HeaderProvider>
       </body>
     </html>

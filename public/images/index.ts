@@ -10,6 +10,7 @@ import DD from "./dd.jpeg";
 import SB from "./SB.png";
 import Platorum from "./platorum.png";
 import TC from "./tc.png";
+import ThePops from "./pops-logo.png";
 
 export {
   NeonRightChevron,
@@ -24,4 +25,5 @@ export {
   SB,
   Platorum,
   TC,
+  ThePops,
 };
