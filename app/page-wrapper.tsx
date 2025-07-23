@@ -23,24 +23,24 @@ const PageWrapper: FC<PageWrapperProps> = ({ children }) => {
   }, []);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     // Parse query param cameFrom from URL
     const params = new URLSearchParams(window.location.search);
     const cameFrom = params.get("cameFrom");
 
-    const asyncFunc = async () => {
+    const recordTrafficSource = async () => {
       if (cameFrom) {
-        await createTrafficSource({ cameFrom })
-          .unwrap()
-          .then(() => {
-            console.log(`Traffic source '${cameFrom}' recorded`);
-          })
-          .catch((error) => {
-            console.error("Failed to record traffic source", error);
-          });
+        try {
+          await createTrafficSource({ cameFrom }).unwrap();
+          console.log(`Traffic source '${cameFrom}' recorded`);
+        } catch (error) {
+          console.error("Failed to record traffic source", error);
+        }
       }
     };
 
-    asyncFunc();
+    recordTrafficSource();
   }, [createTrafficSource]);
 
   return (

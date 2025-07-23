@@ -13,7 +13,7 @@ const SqyshQuoteBtn = () => {
       <FontAwesomeIcon
         icon={faArrowRight}
         color="#fff"
-        className="-rotate-45 group-hover:rotate-[0deg] duration-200"
+        className="-rotate-45 group-hover:rotate-[0deg] duration-200 w-4 h-4"
         size="sm"
       />
     </Link>

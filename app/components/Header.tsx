@@ -36,7 +36,9 @@ const Header = () => {
                   Services
                 </Link>
               </div>
-              <SqyshQuoteBtn />
+              <div className="hidden sm:block">
+                <SqyshQuoteBtn />
+              </div>
             </section>
           )}
         </div>
