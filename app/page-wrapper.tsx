@@ -27,7 +27,10 @@ const PageWrapper: FC<PageWrapperProps> = ({ children }) => {
 
     // Parse query param cameFrom from URL
     const params = new URLSearchParams(window.location.search);
-    const cameFrom = params.get("cameFrom");
+    const traffic = params.get("cameFrom");
+    const leadSource = params.get("lead_source");
+
+    const cameFrom = traffic || leadSource;
 
     const recordTrafficSource = async () => {
       if (cameFrom) {
