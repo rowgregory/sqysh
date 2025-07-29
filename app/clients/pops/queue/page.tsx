@@ -291,6 +291,15 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "7-29-2025",
+    sentences: [
+      {
+        text: "Create new 'Sponsorship Opportunities page under Support tab. Align with attached brochure'",
+        isCompleted: false,
+      },
+    ],
+  },
 ];
 
 const PopsQueue = () => {

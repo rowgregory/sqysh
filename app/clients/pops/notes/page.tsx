@@ -65,6 +65,10 @@ const notesData = [
     date: "7-22-2025",
     message: `Robyn reaches out needing a button on the Advertise page.`,
   },
+  {
+    date: "7-29-2025",
+    message: `Robyn reaches out to request a "Sponsorship Opportunities" page be visible under the Support tab`,
+  },
 ];
 
 const PopsNotes = () => {
