@@ -47,7 +47,7 @@ const notesData = [
   },
   {
     date: "6-15-2025",
-    message: `Robyn reached out over text explaining the issue with the Login/Register at the top. Initially we were going to just change the naming to "Admin" but then thought to put a light gray arrow which opens an InconspicuousSignInDrawer for adnim only. Robyn liked it. Robyn also explained how they are having an issue with Audience View not loading their seat maps correctly and only loading all seats at $120. wtf. They are waiting on an AV ticket. >;|`,
+    message: `Robyn reached out over text explaining the issue with the Login/Register at the top. Initially we were going to just change the naming to "Admin" but then thought to put a light gray arrow which opens an InconspicuousSignInDrawer for adnim only. Robyn liked it. Robyn also explained how they are having an issue with Audience View not loading their seat maps correctly and only loading all seats at $120. wtf. They are waiting on an AV ticket`,
   },
   {
     date: "6-19-2025",
@@ -63,11 +63,15 @@ const notesData = [
   },
   {
     date: "7-22-2025",
-    message: `Robyn reaches out needing a button on the Advertise page.`,
+    message: `Robyn reaches out needing a button on the Advertise page`,
   },
   {
     date: "7-29-2025",
     message: `Robyn reaches out to request a "Sponsorship Opportunities" page be visible under the Support tab`,
+  },
+  {
+    date: "7-30-2025",
+    message: `Robyn reaches out to request a single ticket button added to the home golden section to route single ticket purchaers to single ticket purchases. Also, update the wording to include single tickets. Also to add a new dynamic seat map for the Manatee High School and add it to Venues page`,
   },
 ];
 

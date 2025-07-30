@@ -33,7 +33,7 @@ const queueData = [
       { text: "Remove the magnifying glass icon", isCompleted: true },
       {
         text: "Move the Login/Register link to a more discreet location",
-        isCompleted: false,
+        isCompleted: true,
         isResolved: true,
       },
       {
@@ -296,6 +296,23 @@ const queueData = [
     sentences: [
       {
         text: "Create new 'Sponsorship Opportunities page under Support tab. Align with attached brochure'",
+        isCompleted: false,
+      },
+    ],
+  },
+  {
+    date: "7-30-2025",
+    sentences: [
+      {
+        text: "Manatee High School seat map on venues page",
+        isCompleted: false,
+      },
+      {
+        text: "Update wording in golden section to include single tickets",
+        isCompleted: false,
+      },
+      {
+        text: "Add singles tickets button in golden section",
         isCompleted: false,
       },
     ],
