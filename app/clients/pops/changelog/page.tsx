@@ -1,76 +1,235 @@
-import React from "react";
+"use client";
 
-const changelogData = [
-  {
-    date: "5-9-2025",
-    message: `Replace HomeHero image component with a div background image for better layout control. Received new 50th anniversary logo. Include steps to enable push notifications`,
-  },
-  {
-    date: "5-11-2025",
-    message: `Fix EditableTextArea component's value and textKeyBlock attributes for consistent updating`,
-  },
-  {
-    date: "5-12-2025",
-    message: `Create additional sections for two seat maps`,
-  },
-  {
-    date: "5-13-2025",
-    message: `Reduce the height of the HeaderTop component. Add ternary to HeaderLower component so gold logo displays on home page and white on all others. Hide call box office if screen is < 1200; call office button is still in the FixedHeader component which reveals itself as soon as you scroll, and in the NavigationDrawer, and on all the concerts; this was done to avoid the header navigation links from overlapping. Make link text in NavigationDrawer component 18 pixels and center links in middle of screen. Update Newsletter link to say Connect With Us. Update all other links that previously had '/newsletter'. All camp page text now editable. Update camp application file HTML structure to match new data. Remove red checkmark and student conductor bullet point editable text. Breadcrumb component height reduced. Add advertising pdf to repository and add link download button to pdf for instant downloading. Add new ticket banner video showing important dates`,
-  },
-  {
-    date: "5-14-2025",
-    message: `Add the instrument attribute to the CampApplication model. Migrate the Prisma schema to Raleway and regenerate the schema. Add validation for the instrument field and include it in Step 4 of the application form. Test and validate that the form receives the new attribute, with 30 minutes of testing. Remove the success state from fetching and deleting camp applications. Split staff members into a separate page and move PublicTeamMemberCard into its own file for modularity. Add optional chaining to the concerts map function to handle empty arrays. Increase the negative margin on HomeHero so the image fits perfectly within the screen. Add missing camp values to AdminCampApplicationViewDrawer. Update the getNavigationLinks function to include new paths for board members and staff, and add these paths to the showFooter and showHeader functions. Add missing venue seat maps to the Venue page`,
-  },
-  {
-    date: "5-20-2025",
-    message: `The OpenCage Data API is integrated into the venue creation and update process, automatically converting venue addresses into accurate geographic coordinates. The venue creation/update flow is updated to fetch and store latitude and longitude for each new venue, improving location accuracy. Error handling is added to the geocoding process to ensure data integrity. Additionally, a media page is built featuring a PhotoCarousel, a VideoMedia player, and a TestimonialCarousel to showcase multimedia content and enhance user engagement. Use longitude and latitude from the concert details page to populate coordinates for map`,
-  },
-  {
-    date: "6-4-2025",
-    message: `Revise the privacy policy language for better clarity. Update the chair sponsorships table header background color to align with the 50th anniversary logo. Improve form switch colors to provide stronger contrast. Modify the team member description parsing to use a pipe (|) after each period, enabling bullet point formatting on the frontend, and add instructional text in the form to guide admins on how and where to use the pipe. Change all gray text to white to improve overall readability across the site. Create Hotjar account. Add script to website. Push new code to Github and Vercel`,
-  },
-  {
-    date: "6-5-2025",
-    message: `Create an analytics overview page showcasing GA4, Meta Pixel, and Hotjar as powerful tools for understanding user behavior. Each section highlights what the tool does, why it matters, and how it can help businesses make smarter decisions. The goal is to give clients a clear, side by side look at what each platform offers so they can decide which ones to move forward with implementing. This page serves as a pitch to demonstrate the value of integrating GA4 & Pixel into the site`,
-  },
-  {
-    date: "6-14-2025",
-    message: `This release introduces the comprehensive SeasonPackageBanner component that enhances administrative control across the platform. The admin dashboard receives significant updates with new graphical capabilities, now displaying interactive charts optimized for both desktop and mobile viewing that track daily metrics. Admin gain complete control over the season package banner through a dedicated backend card interface featuring toggle switches for visibility management - one switch allows administrators to make the banner visible only to admin users for testing and editing purposes, while a second switch makes the banner publicly visible to all users. When in admin-only mode, administrators can click directly on the banner text or button text within the component for real-time editing. The platform now features a powerful Header Button Studio that provides admin with comprehensive control over header button configurations, styling, and behavior. The Header Button Studio serves as a centralized command center for all header button management across the application. This administrative tool empowers admin to create, customize, and deploy header buttons without requiring developer intervention. The studio provides an intuitive interface where administrators can define button text, colors, hover states, and destinations. Admin can preview button appearances in real-time`,
-  },
-  {
-    date: "6-19-2025",
-    message: `Modify click handler logic; EditableTextarea only calls e.stopPropagation() and e.preventDefault() when the user is authenticated. For non logged in users, the event bubbles up to the parent button, allowing the external link to open; updated cursor styling so entire button shows the cursor; remove pointer-events-auto from the EditableTextArea as it's not needed and could interfere with the click behavior; Now the behavior will be admin users can click on the text to open the editable modal and public users can click anywhere on the button, including the text, to open the external link`,
-  },
-  {
-    date: "7-22-2025",
-    message: `Add Framer Motion animations with staggered reveals and hover effects, implement responsive call-to-action button with adaptive text ("Advertise Now" on mobile, "Start Advertising" on desktop), refactor repetitive code blocks into efficient loops, modernize pricing table with card-based design and interactive states, improve mobile responsiveness with adaptive sizing and spacing, and link CTA button directly to advertising purchase portal`,
-  },
-];
+import React, { useMemo, useState } from "react";
+import { motion } from "framer-motion";
+import { getChangelogVersions } from "@/lib/utils/modern/statUtils";
+import { versions } from "@/lib/constants/pops/changelog";
+import {
+  cardVariants,
+  containerVariants,
+  itemVariants,
+} from "@/lib/constants/modern/framerMotion";
+import {
+  getChangeColor,
+  getChangeIcon,
+  getTypeColor,
+} from "@/lib/utils/modern/displayUtils";
+import { Calendar, Search } from "lucide-react";
 
 const PopsChangelog = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const stats = useMemo(() => getChangelogVersions(versions), []);
+  const changelogStats = [
+    {
+      label: "Total Releases",
+      value: stats.totalReleases,
+      color: "cyan",
+    },
+    {
+      label: "Features Added",
+      value: stats.featuresAdded,
+      color: "green",
+    },
+    {
+      label: "Bugs Squashed",
+      value: stats.bugsSquashed,
+      color: "yellow",
+    },
+  ];
+
+  const filteredVersions = versions.filter(
+    (version) =>
+      version.version.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      Object.values(version.changes)
+        .flat()
+        .some((change) =>
+          change.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+  );
   return (
-    <div className="w-full">
-      <h1 className="text-3xl font-bold mb-6">Changelog</h1>
-      <div className="flex flex-col">
-        {changelogData?.map((log, i) => (
-          <div
-            key={i}
-            className="grid grid-cols-[1fr_4fr] gap-y-4 py-3 text-[#b2b2b2] font-lato text-sm"
+    <div className="min-h-[calc(100vh-80px)] bg-gray-950 text-white">
+      {/* Animated background grid */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black">
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(6,182,212,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
+        {/* Header */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          className="text-center mb-16"
+        >
+          <motion.div variants={itemVariants}>
+            <h1 className="text-6xl md:text-7xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+              The Pops of Bradenton & Sarasota
+            </h1>
+            <div className="h-1 w-32 mx-auto bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full mb-6 shadow-lg shadow-cyan-400/20"></div>
+          </motion.div>
+
+          <motion.p
+            variants={itemVariants}
+            className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
           >
-            <div className="font-semibold text-right pr-4 border-r border-[#555]">
-              {log.date}
-            </div>
-            <div className={`text-zinc-200 pl-4`}>
-              <ul className="list-disc pl-5">
-                {log.message.split(".").map((sentence, index) => (
-                  <li key={index} className="text-sm ">
-                    {sentence.trim()}
-                  </li>
-                ))}
-              </ul>
+            Track every evolution, feature, and improvement in our journey to
+            build the ultimate musical synergy experience
+          </motion.p>
+
+          {/* Stats */}
+          <motion.div
+            variants={itemVariants}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
+          >
+            {changelogStats.map((stat, index) => (
+              <div
+                key={index}
+                className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 hover:border-cyan-400/30 transition-all duration-300"
+              >
+                <div
+                  className={`text-3xl font-bold text-${stat.color}-400 mb-2`}
+                >
+                  {stat.value}
+                </div>
+                <div className="text-gray-400 text-sm uppercase tracking-wider">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        </motion.div>
+
+        {/* Search */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={itemVariants}
+          className="mb-12"
+        >
+          <div className="relative max-w-md mx-auto">
+            <input
+              type="text"
+              placeholder="Search versions or changes..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 focus:shadow-lg focus:shadow-cyan-400/20 transition-all duration-300"
+            />
+            <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
+              <Search className="w-5 h-5 text-gray-400" />
             </div>
           </div>
-        ))}
+        </motion.div>
+
+        {/* Changelog Items */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          className="space-y-8"
+        >
+          {filteredVersions.map((version, index) => (
+            <motion.div
+              key={version.version}
+              variants={cardVariants}
+              whileHover="hover"
+              className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-3xl p-8 hover:border-cyan-400/30 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-cyan-400/10"
+            >
+              {/* Version Header */}
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
+                <div className="flex items-center gap-4 mb-4 md:mb-0">
+                  <h2 className="text-3xl font-bold text-white">
+                    {version.version}
+                  </h2>
+                  <span
+                    className={`px-4 py-2 rounded-full text-sm font-semibold bg-gradient-to-r ${getTypeColor(
+                      version.type
+                    )} text-white shadow-lg`}
+                  >
+                    {version.type}
+                  </span>
+                </div>
+                <div className="text-gray-400 font-mono text-lg flex items-center gap-x-2">
+                  <Calendar className="w-5 h-5" />{" "}
+                  {new Date(version.date).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </div>
+              </div>
+
+              {/* Changes */}
+              <div className="grid gap-6">
+                {Object.entries(version.changes).map(
+                  ([changeType, changes]) => (
+                    <div key={changeType} className="space-y-3">
+                      <h3
+                        className={`text-lg font-semibold capitalize flex items-center gap-3 ${
+                          getChangeColor(changeType).split(" ")[0]
+                        }`}
+                      >
+                        <span className="text-2xl">
+                          {getChangeIcon(changeType)}
+                        </span>
+                        {changeType}
+                        <span className="text-sm font-normal text-gray-500">
+                          ({changes.length})
+                        </span>
+                      </h3>
+                      <div
+                        className={`border-l-2 ${
+                          getChangeColor(changeType).split(" ")[1]
+                        } pl-6 space-y-2`}
+                      >
+                        {changes.map((change: any, changeIndex: number) => (
+                          <motion.div
+                            key={changeIndex}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{
+                              delay: index * 0.1 + changeIndex * 0.05,
+                            }}
+                            className="text-gray-300 bg-gray-800/30 rounded-lg p-3 border border-gray-700/50 hover:border-gray-600/50 transition-colors duration-200"
+                          >
+                            {change}
+                          </motion.div>
+                        ))}
+                      </div>
+                    </div>
+                  )
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {filteredVersions.length === 0 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center py-16"
+          >
+            <div className="text-6xl mb-4">🔍</div>
+            <h3 className="text-2xl font-semibold text-gray-400 mb-2">
+              No results found
+            </h3>
+            <p className="text-gray-500">Try adjusting your search terms</p>
+          </motion.div>
+        )}
+
+        {/* Footer */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
+          className="text-center mt-20 pt-12 border-t border-gray-800"
+        >
+          <p className="text-gray-400">
+            Built with Love by Sqysh • Last updated{" "}
+            {new Date().toLocaleDateString()}
+          </p>
+        </motion.div>
       </div>
     </div>
   );

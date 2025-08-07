@@ -1,5 +1,42 @@
 export const versions = [
   {
+    version: "v1.4.0",
+    date: "2025-08-06",
+    type: "Minor Release",
+    changes: {
+      features: [
+        "Add member system with comprehensive drawer components",
+        "Face-to-face meeting management with dedicated drawer and slice components",
+        "Profile management",
+        "Chapter management functionality with settings and navigation",
+        "Member status tracking and badge system",
+        "Leadership role management and hierarchy system",
+        "Toast notification system for user feedback",
+        "Admin navigation with role-based access control",
+      ],
+      improvements: [
+        "Completely restructured application architecture",
+        "Enhanced Redux state management with specialized slices",
+        "Improved component organization with feature-based structure",
+        "Better separation of concerns with dedicated service layers",
+        "Enhanced routing system with nested page structures",
+        "Improved dashboard with comprehensive member analytics",
+        "Better form handling with dynamic field management",
+        "Enhanced drawer system for multi-step workflows",
+        "Streamlined API architecture with centralized services",
+        "Better error handling and validation throughout the application",
+        "Improved user experience with intuitive navigation patterns",
+        "Enhanced data management with normalized state structure",
+      ],
+      technical: [
+        "Added comprehensive TypeScript definitions",
+        "Implemented Prisma database schema and migrations",
+        "Enhanced component props validation",
+        "Improved code splitting",
+      ],
+    },
+  },
+  {
     version: "v1.3.0",
     date: "2025-07-31",
     type: "Minor Release",
