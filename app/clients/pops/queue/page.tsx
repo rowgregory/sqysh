@@ -324,20 +324,20 @@ const queueData = [
     date: "8-9-2025",
     sentences: [
       {
-        text: "Enhance Header Button with animated dropdown and blurred blackground with single and season ticket buttons",
-        isCompleted: false,
+        text: "Enhance Header Button Studio with dropdown functionality",
+        isCompleted: true,
       },
       {
         text: "Merge golden section and ticket details section",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Remove neon section on home page",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Remove seat maps from home page",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Fix seatmap on venues page that looks too small",
