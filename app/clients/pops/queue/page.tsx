@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+
+import { Calendar, CheckCircle, Code, Target, Zap } from "lucide-react";
+import React, { useState } from "react";
 
 const queueData = [
   {
@@ -296,7 +299,7 @@ const queueData = [
     sentences: [
       {
         text: "Create new 'Sponsorship Opportunities page under Support tab. Align with attached brochure'",
-        isCompleted: false,
+        isCompleted: true,
       },
     ],
   },
@@ -305,53 +308,214 @@ const queueData = [
     sentences: [
       {
         text: "Manatee High School seat map on venues page",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Update wording in golden section to include single tickets",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Add singles tickets button in golden section",
+        isCompleted: true,
+      },
+    ],
+  },
+  {
+    date: "8-9-2025",
+    sentences: [
+      {
+        text: "Enhance Header Button with animated dropdown and blurred blackground with single and season ticket buttons",
+        isCompleted: false,
+      },
+      {
+        text: "Merge golden section and ticket details section",
+        isCompleted: false,
+      },
+      {
+        text: "Remove neon section on home page",
+        isCompleted: false,
+      },
+      {
+        text: "Remove seat maps from home page",
+        isCompleted: false,
+      },
+      {
+        text: "Fix seatmap on venues page that looks too small",
+        isCompleted: false,
+      },
+      {
+        text: "Add dynamic sponsorship section to home page above the footer to display all paid sponsorships",
+        isCompleted: false,
+      },
+      {
+        text: "Create Sponsorship data model - name, externalUrl, filePath, filename, description, title, subtitle, phone",
+        isCompleted: false,
+      },
+      {
+        text: "Build SponsorshipDrawer with new form",
+        isCompleted: false,
+      },
+      {
+        text: "Build sponsorship API routes to create/read/update/delete sponsorships from the database",
+        isCompleted: false,
+      },
+      {
+        text: "Add sponsorship card to admin dashboaard",
+        isCompleted: false,
+      },
+      {
+        text: "Increase mailchimp subscribers on Sponsorship Opportunities page",
         isCompleted: false,
       },
     ],
   },
 ];
 
+const CategoryIcon = ({ category }: any) => {
+  const icons: any = {
+    "UI/UX": <Target className="w-4 h-4" />,
+    Layout: <Code className="w-4 h-4" />,
+    Cleanup: <Zap className="w-4 h-4" />,
+    "Bug Fix": <Code className="w-4 h-4" />,
+    Feature: <Target className="w-4 h-4" />,
+    Backend: <Code className="w-4 h-4" />,
+    Component: <Target className="w-4 h-4" />,
+    API: <Code className="w-4 h-4" />,
+    Admin: <Target className="w-4 h-4" />,
+    Marketing: <Zap className="w-4 h-4" />,
+  };
+
+  return icons[category] || <Code className="w-4 h-4" />;
+};
+
 const PopsQueue = () => {
+  const totalTasks = queueData.reduce(
+    (acc, queue) => acc + queue.sentences.length,
+    0
+  );
+  const completedTasks = queueData.reduce(
+    (acc, queue) => acc + queue.sentences.filter((s) => s.isCompleted).length,
+    0
+  );
+
+  const queueStats = [
+    { value: totalTasks, label: "Total Tasks", color: "cyan" },
+    { value: completedTasks, label: "Completed", color: "green" },
+  ];
+
   return (
-    <>
-      <h1 className="text-3xl font-bold mb-6">In Queue</h1>
-      <ul className="flex flex-col">
-        {queueData?.map((queue, queueIndex) => (
-          <li
-            key={queueIndex}
-            className="list-desc grid grid-cols-[1fr_4fr] gap-y-4 py-3 text-[#b2b2b2] font-lato text-sm"
-          >
-            <div className="font-semibold text-right pr-4 border-r border-[#555]">
-              {queue.date}
-            </div>
-            <div className={`"text-zinc-200 pl-4`}>
-              <ul className="list-disc pl-5">
-                {queue.sentences.map((sentence, sentenceIndex) => (
-                  <li
-                    key={sentenceIndex}
-                    className={`text-sm ${
-                      sentence.isCompleted
-                        ? "line-through text-lime-500"
-                        : "text-white"
-                    }`}
-                  >
-                    {sentence.text}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </>
+    <div className="">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div>
+            <h1 className="text-6xl md:text-7xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+              Development Queue
+            </h1>
+            <div className="h-1 w-32 mx-auto bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full mb-6 shadow-lg shadow-cyan-400/20"></div>
+          </div>
+
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Track every enhancement, performance, and innovation in our journey
+            to create the ultimate concert experience for The Pops Orchestra
+          </p>
+
+          {/* Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {queueStats.map((stat, index) => (
+              <div
+                key={index}
+                className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 hover:border-cyan-400/30 transition-all duration-300"
+              >
+                <div
+                  className={`text-3xl font-bold text-${stat.color}-400 mb-2`}
+                >
+                  {stat.value}
+                </div>
+                <div className="text-gray-400 text-sm uppercase tracking-wider">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Queue Items */}
+        <div className="space-y-8">
+          {queueData
+            ?.map((queue, queueIndex) => (
+              <div
+                key={queueIndex}
+                className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden hover:border-cyan-400/30 transition-all duration-300"
+              >
+                {/* Date Header */}
+                <div className="bg-gradient-to-r from-cyan-500/10 to-purple-600/10 border-b border-gray-800 p-6">
+                  <div className="flex items-center gap-3">
+                    <Calendar className="w-6 h-6 text-cyan-400" />
+                    <h3 className="text-2xl font-bold text-white">
+                      Sprint: {queue.date}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Tasks List */}
+                <div className="p-6">
+                  <div className="grid gap-4">
+                    {queue.sentences.map((sentence: any, sentenceIndex) => (
+                      <div
+                        key={sentenceIndex}
+                        className={`group relative p-4 rounded-xl border transition-all duration-300 hover:scale-[1.01] cursor-pointer ${
+                          sentence.isCompleted
+                            ? "bg-green-500/10 border-green-500/30 hover:bg-green-500/20"
+                            : "bg-gray-900/30 border-gray-700/50 hover:bg-gray-800/50 hover:border-cyan-400/30"
+                        }`}
+                      >
+                        <div className="flex items-start gap-4">
+                          {/* Status Icon */}
+                          <div
+                            className={`flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${
+                              sentence.isCompleted
+                                ? "bg-green-500 border-green-500"
+                                : "border-gray-600 group-hover:border-cyan-400"
+                            }`}
+                          >
+                            {sentence.isCompleted && (
+                              <CheckCircle className="w-4 h-4 text-white" />
+                            )}
+                          </div>
+
+                          {/* Content */}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-3 mb-2">
+                              <div className="flex items-center gap-2 text-gray-400">
+                                <CategoryIcon category={sentence.category} />
+                                <span className="text-sm font-medium">
+                                  {sentence.category}
+                                </span>
+                              </div>
+                            </div>
+
+                            <p
+                              className={`text-base leading-relaxed transition-all duration-300 ${
+                                sentence.isCompleted
+                                  ? "line-through text-green-400/70"
+                                  : "text-white group-hover:text-cyan-100"
+                              }`}
+                            >
+                              {sentence.text}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))
+            .reverse()}
+        </div>
+      </div>
+    </div>
   );
 };
 

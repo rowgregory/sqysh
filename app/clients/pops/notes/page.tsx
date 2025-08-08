@@ -73,6 +73,10 @@ const notesData = [
     date: "7-30-2025",
     message: `Robyn reaches out to request a single ticket button added to the home golden section to route single ticket purchaers to single ticket purchases. Also, update the wording to include single tickets. Also to add a new dynamic seat map for the Manatee High School and add it to Venues page`,
   },
+  {
+    date: "7-30-2025",
+    message: `Zoom call with Robyn @ 10:30 to discuss website updates/additions`,
+  },
 ];
 
 const PopsNotes = () => {
