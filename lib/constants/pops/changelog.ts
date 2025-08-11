@@ -203,4 +203,15 @@ export const versions = [
       ],
     },
   },
+  {
+    version: "v2.3.4",
+    date: "2025-08-11",
+    type: "Patch Release",
+    changes: {
+      features: [],
+      improvements: [
+        "Updated Sarasota Contemporary Dance image and information on Hidden Gems page",
+      ],
+    },
+  },
 ];

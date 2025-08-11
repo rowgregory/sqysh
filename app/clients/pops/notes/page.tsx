@@ -77,6 +77,10 @@ const notesData = [
     date: "7-30-2025",
     message: `Zoom call with Robyn @ 10:30 to discuss website updates/additions`,
   },
+  {
+    date: "8-11-2025",
+    message: `Robyn requests the Hidden Gems page be updated with relevant info and image for Sarasota Contemporary Dance school and also updated info and image for The Pops on the same page`,
+  },
 ];
 
 const PopsNotes = () => {

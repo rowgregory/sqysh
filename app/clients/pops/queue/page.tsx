@@ -369,6 +369,15 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "8-11-2025",
+    sentences: [
+      {
+        text: "Add new images and info for Sarasota Contemporary Dance school and The Pops on the Hidden Gems page",
+        isCompleted: true,
+      },
+    ],
+  },
 ];
 
 const CategoryIcon = ({ category }: any) => {
