@@ -1,6 +1,26 @@
 export const versions = [
   {
-    version: "v1.4.0",
+    version: "v0.5.0",
+    date: "2025-08-13",
+    type: "Minor Release",
+    changes: {
+      features: [
+        "Update admin layout with notification bell and dropdown",
+        "Added notification system with API endpoints and database migrations",
+        "Added explorer basecamp functionality with dedicated pages and forms",
+        "Added new explorer form with validation for explorer registration",
+        "Integrated location attribute for user model",
+      ],
+      improvements: [
+        "Enhanced Redux store with notification",
+        "Updated API services for notifications",
+        "Refactored routing structure for better chapter and user organization",
+        "Updated Prisma schema with new notification model and user attribute enhancements",
+      ],
+    },
+  },
+  {
+    version: "v0.4.0",
     date: "2025-08-06",
     type: "Minor Release",
     changes: {
@@ -37,7 +57,7 @@ export const versions = [
     },
   },
   {
-    version: "v1.3.0",
+    version: "v0.3.0",
     date: "2025-07-31",
     type: "Minor Release",
     changes: {
