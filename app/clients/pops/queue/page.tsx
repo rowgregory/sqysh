@@ -152,23 +152,19 @@ const queueData = [
       },
       {
         text: "Add new option in concert form dropdown to include Sundays@Neel.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
-        text: "Build new page starting with full screen with PageBanner (some feature design by Matthew)",
-        isCompleted: false,
+        text: "Build new page Sundays at Neel page with dual criss cross marquees",
+        isCompleted: true,
       },
       {
-        text: "Develop content of page which will consist of two columns. Main large column on the left(col-span-8) and right side column(col-span-4). Elements will shift to mobile view at 990px.",
-        isCompleted: false,
-      },
-      {
-        text: "Create variety of concert cards for main content. i.e. Full column width image with description below. Small image on left with description on the right. Full column width carousel(requires more than one for this particular concert) with description below",
-        isCompleted: false,
+        text: "Create concert cards for main content",
+        isCompleted: true,
       },
       {
         text: "Add new boolean(true or false) attribute to Prisma Concert model called isLive which will allow admin to create/update a concert without it being visible to the public. Once the switch is flipped, the concert will be visible on the frontend.",
-        isCompleted: false,
+        isCompleted: true,
       },
     ],
   },
@@ -349,15 +345,15 @@ const queueData = [
       },
       {
         text: "Create Sponsorship data model - name, externalUrl, filePath, filename, description, title, subtitle, phone",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Build SponsorshipDrawer with new form",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Build sponsorship API routes to create/read/update/delete sponsorships from the database",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Add sponsorship card to admin dashboaard",

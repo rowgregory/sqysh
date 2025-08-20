@@ -214,4 +214,23 @@ export const versions = [
       ],
     },
   },
+  {
+    version: "v2.4.0",
+    date: "2025-08-20",
+    type: "Minor Release",
+    changes: {
+      features: [
+        "Introduced full sponsor management with brand-new API CRUD (create, read, update, delete) routes for seamless backend handling",
+        "Launched a dedicated Admin Sponsor Page for streamlined control and oversight",
+        "Added a robust Sponsor Model to structure and organize sponsor data efficiently",
+        "Integrated a modern Sponsor Drawer for quick access and interaction",
+        "Designed a flexible Sponsor Form for smooth sponsor creation and updates",
+        "Rolled out the Sundays at Neel page featuring a unique dual criss-cross marquee layout for a dynamic visual experience",
+      ],
+      improvements: [
+        "Enhanced concert form with a new Sundays-at-Neel dropdown option for quicker event setup",
+        "Implemented Sqysh tracking parameters in URLs to better understand and measure incoming traffic sources",
+      ],
+    },
+  },
 ];
