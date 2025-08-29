@@ -38,50 +38,38 @@ const PopsChangelog = () => {
     },
   ];
 
-  const filteredVersions = versions.filter(
-    (version) =>
-      version.version.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      Object.values(version.changes)
-        .flat()
-        .some((change) =>
-          change.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-  );
-  return (
-    <div className="min-h-[calc(100vh-80px)] bg-gray-950 text-white">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(6,182,212,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
-      </div>
+  const filteredVersions = versions
+    .filter(
+      (version) =>
+        version.version.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        Object.values(version.changes)
+          .flat()
+          .some((change) =>
+            change.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+    )
+    .reverse();
 
+  return (
+    <>
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
         {/* Header */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-          className="text-center mb-16"
-        >
-          <motion.div variants={itemVariants}>
+
+        <div className="text-center mb-16">
+          <div>
             <h1 className="text-6xl md:text-7xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-              The Pops of Bradenton & Sarasota
+              Changelog
             </h1>
             <div className="h-1 w-32 mx-auto bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full mb-6 shadow-lg shadow-cyan-400/20"></div>
-          </motion.div>
+          </div>
 
-          <motion.p
-            variants={itemVariants}
-            className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
-          >
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Track every evolution, feature, and improvement in our journey to
             build the ultimate musical synergy experience
-          </motion.p>
+          </p>
 
           {/* Stats */}
-          <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
-          >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {changelogStats.map((stat, index) => (
               <div
                 key={index}
@@ -97,8 +85,8 @@ const PopsChangelog = () => {
                 </div>
               </div>
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Search */}
         <motion.div
@@ -151,11 +139,14 @@ const PopsChangelog = () => {
                 </div>
                 <div className="text-gray-400 font-mono text-lg flex items-center gap-x-2">
                   <Calendar className="w-5 h-5" />{" "}
-                  {new Date(version.date).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
+                  {new Date(version.date + "T00:00:00").toLocaleDateString(
+                    "en-US",
+                    {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    }
+                  )}
                 </div>
               </div>
 
@@ -231,7 +222,7 @@ const PopsChangelog = () => {
           </p>
         </motion.div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -81,6 +81,26 @@ const notesData = [
     date: "8-11-2025",
     message: `Robyn requests the Hidden Gems page be updated with relevant info and image for Sarasota Contemporary Dance school and also updated info and image for The Pops on the same page`,
   },
+  {
+    date: "8-11-2025",
+    message: `Robyn reaches out, noting that camp applications and contact form submissions aren’t being received. I ask for more details and test the contact form myself—submissions go through successfully. I haven’t heard back from Robyn since`,
+  },
+  {
+    date: "8-14-2025",
+    message: `Robyn reaches out with a Hidden Geme page update`,
+  },
+  {
+    date: "8-16-2025",
+    message: `Robyn reaches out with logos in a shared drive for the sponsors. Caryn responded she put all the media sponsor logos in the program ad shared folder under logos, media sponsors. Caryn also emailed Matthew and I separately asking if we received the Schwab logo`,
+  },
+  {
+    date: "8-20-2025",
+    message: `Robyn reaches out, noting that camp applications and contact form submissions aren’t being received. I ask for more details and test the contact form myself—submissions go through successfully. I haven’t heard back from Robyn since`,
+  },
+  {
+    date: "8-29-2025",
+    message: `Caryn reaches out asking when the sponsor API will be ready. I tell her it will be ready with the new update on September 15th`,
+  },
 ];
 
 const PopsNotes = () => {

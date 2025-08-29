@@ -61,7 +61,7 @@ const PopsLayout: FC<ChildrenProps> = ({ children }) => {
               </div>
               <div className="text-center sm:text-left">
                 <h1 className="text-3xl sm:text-4xl font-black bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  The POPS Orchestra
+                  The Pops Orchestra
                 </h1>
                 <p className="text-gray-400 text-base sm:text-lg">
                   Bradenton & Sarasota

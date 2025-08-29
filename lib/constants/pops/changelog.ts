@@ -233,4 +233,20 @@ export const versions = [
       ],
     },
   },
+  {
+    version: "v2.4.2",
+    date: "2025-08-29",
+    type: "Patch Release",
+    changes: {
+      features: [
+        "Added Sundays at Neel concert filtering and display functionality",
+      ],
+      improvements: [
+        "Enhanced admin concert management with improved Form UI",
+        "Updated header lower component with new Sunday at Neel's link",
+        "Improved concert page filtering to properly handle Sundays-at-Neel concert types",
+        "Refactored admin concert drawer with better state management and form handling",
+      ],
+    },
+  },
 ];

@@ -148,7 +148,7 @@ const queueData = [
       },
       {
         text: "Add new Sundays@Neel link to HeaderLower component.",
-        isCompleted: false,
+        isCompleted: true,
       },
       {
         text: "Add new option in concert form dropdown to include Sundays@Neel.",
@@ -374,6 +374,15 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "8-14-2025",
+    sentences: [
+      {
+        text: "Add new images and info for Choral Artists of Sarasota school on the Hidden Gems page",
+        isCompleted: false,
+      },
+    ],
+  },
 ];
 
 const CategoryIcon = ({ category }: any) => {
@@ -409,7 +418,7 @@ const PopsQueue = () => {
   ];
 
   return (
-    <div className="">
+    <>
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
         {/* Header */}
         <div className="text-center mb-16">
@@ -520,7 +529,7 @@ const PopsQueue = () => {
             .reverse()}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
