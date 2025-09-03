@@ -16,7 +16,7 @@ const appSlice = createSlice({
       state.garconModal = true;
     },
     setCloseGarconModal: (state) => {
-      state.garconModal = true;
+      state.garconModal = false;
     },
   },
 });
