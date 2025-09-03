@@ -21,13 +21,13 @@ const PopsLayout: FC<ChildrenProps> = ({ children }) => {
       href: "/clients/pops/queue",
       isActive: activeQueuePath,
     },
-    {
-      id: "changelog",
-      label: "Changelog",
-      icon: FileText,
-      href: "/clients/pops/changelog",
-      isActive: activeChangelogPath,
-    },
+    // {
+    //   id: "changelog",
+    //   label: "Changelog",
+    //   icon: FileText,
+    //   href: "/clients/pops/changelog",
+    //   isActive: activeChangelogPath,
+    // },
     {
       id: "notes",
       label: "Notes",

@@ -384,7 +384,7 @@ const queueData = [
     ],
   },
   {
-    date: "9-22-2025",
+    date: "9-3-2025",
     sentences: [
       {
         text: "Remove the cool 'radio' bracket and the 'Live • Intimate • Unforgettable' wording.",
