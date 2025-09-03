@@ -5,9 +5,11 @@ import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { api } from "./services/api";
 import { trafficSourceReducer } from "./features/trafficSourceSlice";
+import { appReducer } from "./features/appslice";
 
 const rootReducer = combineReducers({
   trafficSource: trafficSourceReducer,
+  app: appReducer,
   [api.reducerPath]: api.reducer,
 });
 

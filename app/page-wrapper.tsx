@@ -7,6 +7,9 @@ import Footer from "./components/Footer";
 import MobileNavMenu from "./components/MobileNavMenu";
 import Burger from "./components/Burger";
 import { useCreateTrafficSourceMutation } from "./redux/services/trafficSourceApi";
+import { setOpenGarconModal } from "./redux/features/appslice";
+import { useAppDispatch } from "./redux/store";
+import GarconDiscountModal from "./modals/GarconDiscountModal";
 
 interface PageWrapperProps {
   children: ReactNode;
@@ -17,6 +20,7 @@ const hotjarVersion = 6;
 
 const PageWrapper: FC<PageWrapperProps> = ({ children }) => {
   const [createTrafficSource] = useCreateTrafficSourceMutation();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     Hotjar.init(siteId, hotjarVersion);
@@ -44,10 +48,15 @@ const PageWrapper: FC<PageWrapperProps> = ({ children }) => {
     };
 
     recordTrafficSource();
-  }, [createTrafficSource]);
+
+    if (traffic === "garconFlag") {
+      dispatch(setOpenGarconModal());
+    }
+  }, [createTrafficSource, dispatch]);
 
   return (
     <div className="min-h-dvh">
+      <GarconDiscountModal />
       <Header />
       <Burger />
       <MobileNavMenu />

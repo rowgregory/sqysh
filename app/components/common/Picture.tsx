@@ -3,8 +3,8 @@ import React, { FC, MouseEventHandler, RefObject } from "react";
 
 interface PitureProps {
   src: string;
-  alt: string;
   className: string;
+  alt?: string;
   priority: boolean;
   imgRef?: RefObject<HTMLImageElement>;
   onClick?: MouseEventHandler<HTMLImageElement>;
@@ -23,7 +23,7 @@ const Picture: FC<PitureProps> = ({
       onClick={onClick}
       ref={imgRef}
       src={src}
-      alt={alt}
+      alt={alt ?? "Sqysh"}
       width="0"
       height="0"
       sizes="100vw"
