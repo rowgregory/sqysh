@@ -101,6 +101,14 @@ const notesData = [
     date: "8-29-2025",
     message: `Caryn reaches out asking when the sponsor API will be ready. I tell her it will be ready with the new update on September 15th`,
   },
+  {
+    date: "8-30-2025",
+    message: `Robyn asked for the ability to reorder how people appear on the page, specifically wanting Melissa between Robyn and Ben Maynard, and they also suggested adding an email field in the form that would display in each person’s box, though they were concerned it might lead to spam`,
+  },
+  {
+    date: "9-2-2025",
+    message: `Got a text from Robyn with new team member Melissa. Sent Robyn an email to clarify the communication flow and included a reminder about the proposal to have me more involved in the organization. Also, recieved additional email with list of changes`,
+  },
 ];
 
 const PopsNotes = () => {

@@ -383,6 +383,51 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "9-22-2025",
+    sentences: [
+      {
+        text: "Remove the cool 'radio' bracket and the 'Live • Intimate • Unforgettable' wording.",
+        isCompleted: false,
+      },
+      {
+        text: "Remove the red and yellow tape/sash graphic.",
+        isCompleted: false,
+      },
+      {
+        text: "Change 'Featured Events' to 'A New Concert Series Sponsored by The Pops Orchestra'",
+        isCompleted: false,
+      },
+      {
+        text: "Change 'Don't miss these incredible upcoming performances' to 'Though The Pops Orchestra won't be performing, these are acts we know you will love. All shows are on Sundays at 3:00 p.m., at the Neel Performing Arts Center on the campus of State College of Florida: 5840 26th St. W., Bradenton, FL 34207'",
+        isCompleted: false,
+      },
+      {
+        text: "For the 'Single Concert' button, have that jump down to the three blocks below that show each concert separately.",
+        isCompleted: false,
+      },
+      {
+        text: "Make 'Any 2 Concerts' a drop-down with options: 1) Stiletto Brass and Essentially Ellington, 2) Stiletto Brass and John Denver, 3) Essentially Ellington and John Denver",
+        isCompleted: false,
+      },
+      {
+        text: "Add links for 'Any 2 Concerts' dropdown: 1) https://ci.ovationtix.com/35505/store/packages/149084, 2) https://ci.ovationtix.com/35505/store/packages/149085, 3) https://ci.ovationtix.com/35505/store/packages/149086",
+        isCompleted: false,
+      },
+      {
+        text: "Link 'All 3 Concerts' button to https://ci.ovationtix.com/35505/store/packages/149083",
+        isCompleted: false,
+      },
+      {
+        text: "Change 'Select Concerts' buttons in the three concert boxes to 'Buy Tickets'",
+        isCompleted: false,
+      },
+      {
+        text: "Remove the 'Ready to experience all three concerts' section at the bottom.",
+        isCompleted: false,
+      },
+    ],
+  },
 ];
 
 const CategoryIcon = ({ category }: any) => {
