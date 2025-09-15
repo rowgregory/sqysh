@@ -106,8 +106,8 @@ const notesData = [
     message: `Robyn asked for the ability to reorder how people appear on the page, specifically wanting Melissa between Robyn and Ben Maynard, and they also suggested adding an email field in the form that would display in each person’s box, though they were concerned it might lead to spam`,
   },
   {
-    date: "9-2-2025",
-    message: `Got a text from Robyn with new team member Melissa. Sent Robyn an email to clarify the communication flow and included a reminder about the proposal to have me more involved in the organization. Also, recieved additional email with list of changes`,
+    date: "9-15-2025",
+    message: `Robyn reported several technical issues that need to be addressed. She said she has tried to add sponsors through the admin panel, but they are not saving after clicking the "add sponsor" button. She also mentioned that when she tries to change the copy on the Sundays@Neel page, the text reverts back to the previous content after clicking "Save" instead of keeping her edits. Additionally, she indicated that she is not receiving any notifications when people contact us through the contact page. Finally, she requested that Melissa Warthen's photo and information be moved up on the Staff Page so that Melissa appears right after Robyn in the order`,
   },
 ];
 

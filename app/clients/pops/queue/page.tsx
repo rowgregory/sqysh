@@ -428,6 +428,27 @@ const queueData = [
       },
     ],
   },
+  {
+    date: "9-15-2025",
+    sentences: [
+      {
+        text: "Fix sponsor addition functionality - sponsors not saving after clicking 'add sponsor' button",
+        isCompleted: true,
+      },
+      {
+        text: "Fix content editor on Sundays@Neel page - text reverts to previous content instead of saving edits",
+        isCompleted: true,
+      },
+      {
+        text: "Explain contact form functionality to Robyn - form works correctly and submissions are received when tested live",
+        isCompleted: true,
+      },
+      {
+        text: "Implement drag and drop functionality for admin to reorder board members and staff lists - including creating new API endpoint to save reordered list data",
+        isCompleted: true,
+      },
+    ],
+  },
 ];
 
 const CategoryIcon = ({ category }: any) => {
