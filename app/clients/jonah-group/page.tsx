@@ -191,8 +191,8 @@ const JonahGroupClientPortal = () => {
           <h3 className="text-2xl font-bold mb-3">Questions or Updates?</h3>
           <p className="text-zinc-400 mb-6 max-w-2xl mx-auto">
             This roadmap is your guide to dominating AI-powered search results.
-            We'll keep you updated on progress and adjust strategies as needed
-            to ensure optimal results.
+            We&apos;ll keep you updated on progress and adjust strategies as
+            needed to ensure optimal results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
