@@ -117,10 +117,7 @@ const Banner = () => {
   const words = "Custom Websites, Mobile Apps, Social Media".split(" ");
 
   return (
-    <div
-      ref={containerRef}
-      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black"
-    >
+    <div ref={containerRef} className="relative min-h-screen overflow-hidden">
       {/* Animated background canvas */}
       <canvas
         ref={canvasRef}

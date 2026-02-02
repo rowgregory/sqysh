@@ -15,11 +15,6 @@ const carouselData = [
     linkKey: "https://danielles-dogs.herokuapp.com/",
   },
   {
-    img: "/images/ci3.png",
-    alt: `Royal Caribbean`,
-    linkKey: "https://royal-caribbean-clone.vercel.app/",
-  },
-  {
     img: "/images/ci4.png",
     alt: `Devon Hunt with Proper Nest`,
     linkKey: "https://www.devonhuntrealtor.com/",
@@ -46,8 +41,13 @@ const carouselData = [
   },
   {
     img: "/images/ci9.png",
-    alt: `Adrinna DelDotto with Thoroughly Cleaned, LLC`,
-    linkKey: "https://thoroughlycleaned.vercel.app",
+    alt: `Coastal Referral Exchange`,
+    linkKey: "https://coastal-referral-exchange.com",
+  },
+  {
+    img: "/images/ci9.png",
+    alt: `Boys & Girls Club of Lynn`,
+    linkKey: "https://bgcl.org",
   },
 ];
 
