@@ -177,7 +177,7 @@ export const metadata: Metadata = {
     siteName: "Sqysh",
     images: [
       {
-        url: "https://firebasestorage.googleapis.com/v0/b/devon-hunt-nextjs.appspot.com/o/images%2Fsqysh-rich-preview-2.png?alt=media&token=b9c2e838-ca79-4a0d-8fe7-bf18e3529b4c",
+        url: "https://firebasestorage.googleapis.com/v0/b/devon-hunt-nextjs.appspot.com/o/images%2Fsqysh-og-1200x630-lite.gif?alt=media&token=a5c26b31-ac00-4adf-b144-c97bc5b48142",
         width: 1200,
         height: 630,
         alt: "Sqysh logo",
