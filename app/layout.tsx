@@ -20,6 +20,7 @@ const satoshi = localFont({
   ],
   variable: "--font-satoshi",
   display: "swap",
+  preload: false,
 });
 
 const inter = Inter({

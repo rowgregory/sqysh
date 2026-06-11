@@ -70,7 +70,7 @@ export async function sendOrderConfirmation(
       </div>
 
       <!-- mascot -->
-      <img src="${baseUrl}/gif/sqysh-mascot.gif" width="84" height="84"
+      <img src="https://firebasestorage.googleapis.com/v0/b/devon-hunt-nextjs.appspot.com/o/images%2Fsqysh-mascot%20(2).gif?alt=media&token=6bc454f4-120f-4312-a066-e3db53b65f14" width="84" height="84"
            alt="Sqysh" style="display:block;margin:0 auto 16px;border:0;outline:none;" />
 
       <!-- order confirmed bubble (inline-block so it hugs the text, centered) -->

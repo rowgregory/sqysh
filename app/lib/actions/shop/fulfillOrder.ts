@@ -100,6 +100,7 @@ export async function fulfillOrder(
     data: {
       status: "SUBMITTED",
       printfulOrderId: result.data.printfulOrderId,
+      printfulCost: result.data.cost ?? null,
       failureReason: null, // clear any prior failure
     },
   });

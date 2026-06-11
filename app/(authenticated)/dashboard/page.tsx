@@ -16,10 +16,13 @@ export default async function DashboardPage() {
     take: 100,
   });
 
-  // stats
-  const totalRevenue = orders
-    .filter((o) => o.status === "SUBMITTED")
-    .reduce((sum, o) => sum + o.amountTotal, 0);
+  const totalRevenue = orders.reduce((sum, o) => sum + (o.amountTotal ?? 0), 0);
+
+  const totalCost = orders
+    .filter((o) => o.status === "SUBMITTED" || o.status === "SHIPPED")
+    .reduce((sum, o) => sum + (o.printfulCost ?? 0), 0);
+
+  const netProfit = totalRevenue - totalCost;
   const orderCount = orders.length;
   const failedCount = orders.filter(
     (o) => o.status === "FULFILLMENT_FAILED",
@@ -42,12 +45,13 @@ export default async function DashboardPage() {
     createdAt: o.createdAt.toISOString(),
     trackingNumber: o.trackingNumber,
     trackingUrl: o.trackingUrl,
+    printfulCost: o.printfulCost,
   }));
 
   return (
     <DashboardClient
       orders={serialized}
-      stats={{ totalRevenue, orderCount, failedCount }}
+      stats={{ totalRevenue, netProfit, orderCount, failedCount }}
     />
   );
 }

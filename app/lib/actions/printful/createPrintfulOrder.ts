@@ -25,7 +25,7 @@ export async function createPrintfulOrder(params: {
   recipient: Recipient;
   items: OrderItem[];
   externalId?: string; // pass the Stripe session id so Printful's record links back
-}): Promise<Result<{ printfulOrderId: number }>> {
+}): Promise<Result<{ printfulOrderId: number; cost: number | null }>> {
   const { recipient, items, externalId } = params;
 
   try {
@@ -50,7 +50,12 @@ export async function createPrintfulOrder(params: {
       }),
     });
 
-    return { success: true, data: { printfulOrderId: order.result.id } };
+    // Printful returns costs as dollar strings (e.g. "50.87"). Convert to cents.
+    const totalStr = order.result?.costs?.total;
+    const cost =
+      totalStr != null ? Math.round(parseFloat(totalStr) * 100) : null;
+
+    return { success: true, data: { printfulOrderId: order.result.id, cost } };
   } catch (err) {
     return {
       success: false,

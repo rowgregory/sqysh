@@ -1,5 +1,5 @@
 import { CatalogCard } from "@/app/types/shop.types";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Picture from "../common/Picture";
 import { SqyshMark } from "../SqyshMark";
 import { Lightbox } from "./LightBox";
@@ -18,6 +18,7 @@ export function ShopCard({ card }: { card: CatalogCard }) {
   const [active, setActive] = useState(0);
   const [zoom, setZoom] = useState(false);
   const [added, setAdded] = useState(false);
+  const addedTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const images = colorway.images?.length
     ? colorway.images
@@ -41,8 +42,16 @@ export function ShopCard({ card }: { card: CatalogCard }) {
       }),
     );
     setAdded(true);
-    setTimeout(() => setAdded(false), 1500);
+    // reset the 5s timer each time (so re-adding restarts the window)
+    if (addedTimer.current) clearTimeout(addedTimer.current);
+    addedTimer.current = setTimeout(() => setAdded(false), 5000);
   };
+
+  useEffect(() => {
+    return () => {
+      if (addedTimer.current) clearTimeout(addedTimer.current);
+    };
+  }, []);
 
   return (
     <li>
@@ -164,6 +173,22 @@ export function ShopCard({ card }: { card: CatalogCard }) {
             {added ? "" : "add ↵"}
           </span>
         </button>
+
+        {/* ← inline checkout affordance, appears after adding */}
+        {added && (
+          <Link
+            href="/shop/cart"
+            className="group w-full flex items-center gap-3 px-4 py-3.5 border-t border-brand-green/30 bg-brand-green/10 transition-colors hover:bg-brand-green/15"
+          >
+            <span className="font-mono text-sm text-brand-green">$</span>
+            <span className="font-mono text-sm text-brand-green">
+              sqysh checkout
+            </span>
+            <span className="font-mono text-[11px] text-brand-green/70 ml-auto group-hover:text-brand-green">
+              view cart ↵
+            </span>
+          </Link>
+        )}
       </div>
       {zoom && <Lightbox src={images[active]} onClose={() => setZoom(false)} />}
     </li>

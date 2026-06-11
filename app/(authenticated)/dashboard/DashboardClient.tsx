@@ -11,6 +11,7 @@ import {
   STATUS_STYLES,
 } from "@/app/lib/constants/dashboard.constants";
 import Link from "next/link";
+import { useMounted } from "@/app/lib/hooks/useMounted";
 
 export function DashboardClient({
   orders,
@@ -19,6 +20,7 @@ export function DashboardClient({
   orders: SerializedOrder[];
   stats: Stats;
 }) {
+  const mounted = useMounted();
   const [selected, setSelected] = useState<SerializedOrder | null>(null);
 
   return (
@@ -50,9 +52,14 @@ export function DashboardClient({
             accent="green"
           />
           <StatTile
+            label="profit"
+            value={fmtMoney(stats.netProfit)}
+            accent="purple"
+          />
+          <StatTile
             label="orders"
             value={String(stats.orderCount)}
-            accent="purple"
+            accent="muted"
           />
           <StatTile
             label="failed"
@@ -85,7 +92,7 @@ export function DashboardClient({
                     {o.email}
                   </p>
                   <p className="font-mono text-[11px] text-sqysh-subtle">
-                    {fmtDate(o.createdAt)} ·{" "}
+                    {mounted ? fmtDate(o.createdAt) : ""} ·{" "}
                     {o.items.reduce((n, it) => n + it.quantity, 0)} item
                     {o.items.reduce((n, it) => n + it.quantity, 0) !== 1
                       ? "s"

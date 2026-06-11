@@ -1,5 +1,6 @@
 export type Stats = {
   totalRevenue: number;
+  netProfit: number;
   orderCount: number;
   failedCount: number;
 };
@@ -30,4 +31,5 @@ export type SerializedOrder = {
   createdAt: string;
   trackingNumber: string | null;
   trackingUrl: string | null;
+  printfulCost: number | null;
 };

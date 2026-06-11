@@ -180,6 +180,8 @@ model ShopOrder {
   trackingUrl    String? @map("tracking_url") @db.Text
   carrier        String?
 
+  printfulCost Int? @map("printful_cost") // cents, what Printful charges you
+
   @@index([status, createdAt(sort: Desc)])
   @@index([createdAt(sort: Desc)])
   @@map("shop_orders")
