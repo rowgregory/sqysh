@@ -98,6 +98,7 @@ export async function POST(req: NextRequest) {
           stripePaymentIntent: session.payment_intent as string | null,
           items, // Json
           amountTotal: session.amount_total ?? 0,
+          shippingAmount: session.shipping_cost?.amount_total ?? 0,
           currency: session.currency ?? "usd",
           email: ship?.email ?? "unknown",
           country: addr?.country ?? null,

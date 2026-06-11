@@ -119,6 +119,7 @@ export async function fulfillOrder(
         image: i.image,
       })),
       amountTotal: order.amountTotal,
+      shippingAmount: order.shippingAmount ?? 0,
       currency: order.currency,
     });
     if (!emailResult.success) {

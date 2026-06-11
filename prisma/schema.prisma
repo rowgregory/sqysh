@@ -159,8 +159,9 @@ model ShopOrder {
   items Json // [{ printfulVariantId, productName, colorway, size, quantity, unitAmount }]
 
   // ─ money (snapshot at purchase) ─
-  amountTotal Int    @map("amount_total") // cents, from Stripe
-  currency    String @default("usd")
+  amountTotal    Int    @map("amount_total") // cents, from Stripe
+  shippingAmount Int?   @map("shipping_amount") // cents, what the customer paid for shipping
+  currency       String @default("usd")
 
   // ─ fulfillment ─
   status          ShopOrderStatus @default(PENDING)

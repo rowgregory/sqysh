@@ -17,15 +17,18 @@ type Args = {
   orderId: string; // stripe session id or your order id
   items: ConfirmationItem[];
   amountTotal: number; // cents
+  shippingAmount: number | null; // cents
   currency: string;
 };
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://sqysh.io";
 
 export async function sendOrderConfirmation(
   args: Args,
 ): Promise<{ success: boolean; error?: string }> {
   const { to, orderId, items, amountTotal, currency } = args;
-
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://sqysh.io";
+  const shippingAmount = args.shippingAmount ?? 0;
+  const subtotal = items.reduce((s, i) => s + i.unitAmount * i.quantity, 0);
 
   const fmt = (cents: number) =>
     new Intl.NumberFormat("en-US", {
@@ -59,61 +62,72 @@ export async function sendOrderConfirmation(
     .join("");
 
   const html = `
-<div style="background:#0f1115;padding:40px 16px;">
-  <!--[if mso]><table role="presentation" width="480" align="center"><tr><td><![endif]-->
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:480px;margin:0 auto;">
-    <tr><td align="center" style="text-align:center;font-family:Arial,Helvetica,sans-serif;">
+    <div style="background:#000000;padding:40px 16px;">
+      <!--[if mso]><table role="presentation" width="480" align="center"><tr><td><![endif]-->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:480px;margin:0 auto;">
+        <tr><td align="center" style="text-align:center;font-family:Arial,Helvetica,sans-serif;">
 
-      <!-- ✓ PAID -->
-      <div style="font-family:'Courier New',monospace;color:#a6ff4d;font-size:13px;letter-spacing:0.3em;text-transform:uppercase;margin:0 0 16px;">
-        ✓ paid
-      </div>
+          <!-- ✓ PAID -->
+          <div style="font-family:'Courier New',monospace;color:#a6ff4d;font-size:13px;letter-spacing:0.3em;text-transform:uppercase;margin:0 0 16px;">
+            ✓ paid
+          </div>
 
-      <!-- mascot -->
-      <img src="https://firebasestorage.googleapis.com/v0/b/devon-hunt-nextjs.appspot.com/o/images%2Fsqysh-mascot%20(2).gif?alt=media&token=6bc454f4-120f-4312-a066-e3db53b65f14" width="84" height="84"
-           alt="Sqysh" style="display:block;margin:0 auto 16px;border:0;outline:none;" />
+          <!-- mascot -->
+          <img src="https://firebasestorage.googleapis.com/v0/b/devon-hunt-nextjs.appspot.com/o/images%2Fsqysh-mascot%20(2).gif?alt=media&token=6bc454f4-120f-4312-a066-e3db53b65f14" width="84" height="84"
+              alt="Sqysh" style="display:block;margin:0 auto 16px;border:0;outline:none;" />
 
-      <!-- order confirmed bubble (inline-block so it hugs the text, centered) -->
-      <div style="display:inline-block;background:#16161e;border:1px solid #23232e;border-radius:14px;padding:10px 22px;margin:0 0 24px;">
-        <span style="font-family:'Courier New',monospace;color:#a6ff4d;font-size:14px;white-space:nowrap;">order confirmed.</span>
-      </div>
+          <!-- order confirmed bubble (inline-block so it hugs the text, centered) -->
+          <div style="display:inline-block;background:#16161e;border:1px solid #23232e;border-radius:14px;padding:10px 22px;margin:0 0 24px;">
+            <span style="font-family:'Courier New',monospace;color:#a6ff4d;font-size:14px;white-space:nowrap;">order confirmed.</span>
+          </div>
 
-      <!-- intro -->
-      <div style="color:#8a8a98;font-size:14px;line-height:1.5;margin:0 0 6px;">
-        Your order's in. Here's what's coming your way —
-      </div>
-      <div style="font-family:'Courier New',monospace;color:#5a5a68;font-size:11px;margin:0 0 28px;">
-        # ${orderId.slice(-10)}
-      </div>
+          <!-- intro -->
+          <div style="color:#8a8a98;font-size:14px;line-height:1.5;margin:0 0 6px;">
+            Your order's in. Here's what's coming your way —
+          </div>
+          <div style="font-family:'Courier New',monospace;color:#5a5a68;font-size:11px;margin:0 0 28px;">
+            # ${orderId.slice(-10)}
+          </div>
 
-      <!-- items -->
-      ${rows}
+          <!-- items -->
+          ${rows}
 
-      <!-- total card -->
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:8px 0 0;">
-        <tr><td style="background:#16161e;border:1px solid #23232e;border-radius:12px;padding:16px 20px;">
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-            <td align="left" style="font-family:'Courier New',monospace;color:#8a8a98;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;">total</td>
-            <td align="right" style="font-family:'Courier New',monospace;color:#a6ff4d;font-size:18px;font-weight:bold;">${fmt(amountTotal)}</td>
-          </tr></table>
+          <!-- total card -->
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:8px 0 0;">
+            <tr><td style="background:#16161e;border:1px solid #23232e;border-radius:12px;padding:16px 20px;">
+
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="left" style="font-family:'Courier New',monospace;color:#8a8a98;font-size:11px;padding-bottom:8px;">subtotal</td>
+                  <td align="right" style="font-family:'Courier New',monospace;color:#e8e8ef;font-size:13px;padding-bottom:8px;">${fmt(subtotal)}</td>
+                </tr>
+                <tr>
+                  <td align="left" style="font-family:'Courier New',monospace;color:#8a8a98;font-size:11px;padding-bottom:8px;">shipping</td>
+                  <td align="right" style="font-family:'Courier New',monospace;color:#e8e8ef;font-size:13px;padding-bottom:8px;">${fmt(shippingAmount)}</td>
+                </tr>
+                <tr>
+                  <td align="left" style="font-family:'Courier New',monospace;color:#8a8a98;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;border-top:1px solid #23232e;padding-top:10px;">total</td>
+                  <td align="right" style="font-family:'Courier New',monospace;color:#a6ff4d;font-size:18px;font-weight:bold;border-top:1px solid #23232e;padding-top:10px;">${fmt(amountTotal)}</td>
+                </tr>
+              </table>
+
+            </td></tr>
+          </table>
+
+          <!-- what's next -->
+          <div style="color:#8a8a98;font-size:13px;line-height:1.5;margin:28px 0 0;">
+            You'll get tracking info by email once it ships.<br/>Questions? Just reply to this email.
+          </div>
+
+          <!-- footer -->
+          <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#5a5a68;margin:28px 0 0;">
+            <a href="${baseUrl}" style="color:#7b5cff;text-decoration:none;">sqysh.io</a>
+          </div>
+
         </td></tr>
       </table>
-
-      <!-- what's next -->
-      <div style="color:#8a8a98;font-size:13px;line-height:1.5;margin:28px 0 0;">
-        You'll get tracking info by email once it ships.<br/>Questions? Just reply to this email.
-      </div>
-
-      <!-- footer -->
-      <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#5a5a68;margin:28px 0 0;">
-        Sqysh · Swampscott, MA<br/>
-        <a href="${baseUrl}" style="color:#7b5cff;text-decoration:none;">sqysh.io</a>
-      </div>
-
-    </td></tr>
-  </table>
-  <!--[if mso]></td></tr></table><![endif]-->
-</div>`;
+      <!--[if mso]></td></tr></table><![endif]-->
+    </div>`;
 
   try {
     const { error } = await resend.emails.send({
