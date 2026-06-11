@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 250" preserveAspectRatio="xMidYMid meet">
+<path d="M 30 100 C 30 50, 70 30, 120 30 C 170 30, 210 50, 210 100 C 210 130, 205 155, 195 175 C 200 200, 180 222, 161 200 C 154 226, 130 228, 122 202 C 114 228, 90 226, 83 200 C 64 222, 40 200, 45 175 C 35 155, 30 130, 30 100 Z" fill="#A6FF4D"/>
+<ellipse cx="85" cy="105" rx="13" ry="17" fill="#0F1115"/>
+<ellipse cx="155" cy="105" rx="13" ry="17" fill="#0F1115"/>
+<ellipse cx="82" cy="99" rx="3" ry="4.5" fill="#FFFFFF"/>
+<ellipse cx="152" cy="99" rx="3" ry="4.5" fill="#FFFFFF"/>
+</svg>

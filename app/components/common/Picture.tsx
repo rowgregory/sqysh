@@ -1,36 +1,44 @@
 import Image from "next/image";
-import React, { FC, MouseEventHandler, RefObject } from "react";
+import { ComponentRef, FC, MouseEventHandler, Ref } from "react";
 
-interface PitureProps {
+interface PictureProps {
   src: string;
   className: string;
   alt?: string;
-  priority: boolean;
-  imgRef?: RefObject<HTMLImageElement>;
+  priority?: boolean;
+  width?: number;
+  height?: number;
+  imgRef?: Ref<ComponentRef<typeof Image>>;
   onClick?: MouseEventHandler<HTMLImageElement>;
+  style?: any;
+  fill?: any;
 }
 
-const Picture: FC<PitureProps> = ({
+const Picture: FC<PictureProps> = ({
   src,
-  alt,
+  alt = "",
   className,
   priority = false,
+  width = 0,
+  height = 0,
   imgRef,
   onClick,
-}) => {
-  return (
-    <Image
-      onClick={onClick}
-      ref={imgRef}
-      src={src}
-      alt={alt ?? "Sqysh"}
-      width="0"
-      height="0"
-      sizes="100vw"
-      className={className}
-      priority={priority}
-    />
-  );
-};
+  style,
+  fill,
+}) => (
+  <Image
+    onClick={onClick}
+    ref={imgRef}
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    sizes={width ? undefined : "100vw"}
+    className={className}
+    priority={priority}
+    style={style}
+    fill={fill}
+  />
+);
 
 export default Picture;

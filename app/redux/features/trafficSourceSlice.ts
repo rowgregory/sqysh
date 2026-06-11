@@ -1,6 +1,4 @@
-// src/features/trafficSource/trafficSourceSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { trafficSourceApi } from "../services/trafficSourceApi";
 
 interface TrafficSourceState {
   lastCount: number | null;
@@ -28,40 +26,13 @@ const trafficSourceSlice = createSlice({
     },
     setLastCount(
       state,
-      action: PayloadAction<{ flag: string; count: number }>
+      action: PayloadAction<{ flag: string; count: number }>,
     ) {
       state.lastFlag = action.payload.flag;
       state.lastCount = action.payload.count;
       state.error = null;
       state.loading = false;
     },
-  },
-  extraReducers: (builder) => {
-    builder
-      .addMatcher(
-        trafficSourceApi.endpoints.createTrafficSource.matchPending,
-        (state) => {
-          state.loading = true;
-          state.error = null;
-        }
-      )
-      .addMatcher(
-        trafficSourceApi.endpoints.createTrafficSource.matchFulfilled,
-        (state, action) => {
-          state.loading = false;
-          state.error = null;
-          state.lastCount = action.payload.count;
-          state.lastFlag = action.meta.arg.originalArgs.cameFrom;
-        }
-      )
-      .addMatcher(
-        trafficSourceApi.endpoints.createTrafficSource.matchRejected,
-        (state, action) => {
-          state.loading = false;
-          state.error =
-            action.error?.message || "Failed to record traffic source";
-        }
-      );
   },
 });
 

@@ -1,27 +1,36 @@
 import type { Metadata } from "next";
-import { Changa, Inter } from "next/font/google";
-import { HeaderProvider } from "./contexts/headerContext";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import ReduxWrapper from "./redux-wrapper";
+import RootLayoutWrapper from "./root-layout-wrapper";
+import localFont from "next/font/local";
+import { AnimatedFavicon } from "./components/AnimatedFavicon";
+
+const satoshi = localFont({
+  src: [
+    {
+      path: "./fonts/Satoshi-Variable.woff",
+      weight: "300 900", // the full variable range
+      style: "normal",
+    },
+    {
+      path: "./fonts/Satoshi-VariableItalic.woff",
+      weight: "300 900",
+      style: "italic",
+    },
+  ],
+  variable: "--font-satoshi",
+  display: "swap",
+});
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "900"],
-  preload: false,
   variable: "--font-inter",
-});
-const changa = Changa({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700"],
-  preload: false,
-  variable: "--font-changa",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sqysh.io"),
-  title: "Sqysh",
+  title: "SQYSH",
   description:
     "Sqysh offers custom web development solutions to create digital experiences that drive growth. From building innovative websites to developing custom applications, we tailor everything to your needs.",
   keywords: [
@@ -202,15 +211,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${satoshi.variable} ${inter.variable}`}
+      data-scroll-behavior="smooth"
+    >
       <head>
         <meta property="fb:app_id" content="953131993018901" />
         <meta property="og:url" content="https://sqysh.io/" />
       </head>
-      <body className={`${inter.variable} ${changa.variable}`}>
-        <HeaderProvider>
-          <ReduxWrapper>{children}</ReduxWrapper>
-        </HeaderProvider>
+      <body>
+        <AnimatedFavicon />
+        <RootLayoutWrapper>{children}</RootLayoutWrapper>
       </body>
     </html>
   );

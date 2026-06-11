@@ -1,108 +1,420 @@
-@import url("https://fonts.googleapis.com/css2?family=Crushed&family=Oswald:wght@200..700&family=Paytone+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ─────────────────────────────────────────────────────────────────────────────
+   SQYSH — Tailwind v4 Design Tokens
+   All brand colors, typography, spacing, gradients, shadows, and animations
+   live here. Reference via Tailwind utilities: bg-brand-green, text-sqysh-muted,
+   shadow-glow-purple, etc.
+───────────────────────────────────────────────────────────────────────────── */
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 5, 7, 26;
-  --background-end-rgb: 5, 7, 26;
+@theme {
+  /* ── Fonts ────────────────────────────────────────────────────────────────── */
+  --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* ── Brand palette ────────────────────────────────────────────────────────── */
+  /* Primary accents */
+  --color-brand-green: #a6ff4d; /* Neon chartreuse — primary CTA, highlights  */
+  --color-brand-purple: #7b5cff; /* Electric violet — secondary accent         */
+  --color-brand-teal: #37e1c2; /* Cyan-green — tertiary accent, success      */
+  --color-brand-pink: #ff5ce8; /* Hot magenta — quaternary, decorative       */
+
+  /* Brand green scale */
+  --color-green-50: #f2ffe0;
+  --color-green-100: #deffb3;
+  --color-green-200: #c6ff80;
+  --color-green-300: #a6ff4d; /* = brand-green */
+  --color-green-400: #84e620;
+  --color-green-500: #62c400;
+  --color-green-600: #44960a;
+  --color-green-700: #2c6a0a;
+  --color-green-800: #173e06;
+  --color-green-900: #081a00;
+
+  /* Brand purple scale */
+  --color-purple-50: #f0eeff;
+  --color-purple-100: #d9d4ff;
+  --color-purple-200: #b5abff;
+  --color-purple-300: #9180ff;
+  --color-purple-400: #7b5cff; /* = brand-purple */
+  --color-purple-500: #6040f0;
+  --color-purple-600: #4828d4;
+  --color-purple-700: #3318a8;
+  --color-purple-800: #1e0c72;
+  --color-purple-900: #0c0430;
+
+  /* Brand teal scale */
+  --color-teal-50: #e6fdf9;
+  --color-teal-100: #c0f8ef;
+  --color-teal-200: #86f0df;
+  --color-teal-300: #37e1c2; /* = brand-teal */
+  --color-teal-400: #12c8a8;
+  --color-teal-500: #0ca88c;
+  --color-teal-600: #0a8270;
+  --color-teal-700: #085e52;
+  --color-teal-800: #053a32;
+  --color-teal-900: #021a16;
+
+  /* Brand pink scale */
+  --color-pink-50: #fff0fe;
+  --color-pink-100: #ffd6fc;
+  --color-pink-200: #ffadf9;
+  --color-pink-300: #ff80f4;
+  --color-pink-400: #ff5ce8; /* = brand-pink */
+  --color-pink-500: #e836ce;
+  --color-pink-600: #c018ae;
+  --color-pink-700: #8c0c80;
+  --color-pink-800: #580650;
+  --color-pink-900: #280024;
+
+  /* ── Surface / background ─────────────────────────────────────────────────── */
+  --color-sqysh-bg: #000000; /* Page background — true black.
+                                FALD/OLED friendly: dimming zones shut
+                                fully off (no near-black banding), and
+                                max contrast behind the chartreuse      */
+  --color-sqysh-bg-elevated: #0a0a0e; /* Slightly elevated — modals, popovers    */
+  --color-sqysh-surface: #0e0e12; /* Cards, panels                           */
+  --color-sqysh-surface-2: #141418; /* Nested surfaces, table rows             */
+  --color-sqysh-surface-3: #1c1c22; /* Hover states on surfaces                */
+
+  /* ── Text ─────────────────────────────────────────────────────────────────── */
+  --color-sqysh-text: #e6e6eb; /* Primary body text                       */
+  --color-sqysh-text-soft: #b0b0c4; /* Secondary text                          */
+  --color-sqysh-muted: #8888a0; /* Placeholder, captions, metadata         */
+  --color-sqysh-subtle: #555568; /* Disabled, very low emphasis             */
+
+  /* ── Borders ──────────────────────────────────────────────────────────────── */
+  --color-sqysh-border: rgba(255 255 255 / 0.07); /* Default subtle border  */
+  --color-sqysh-border-soft: rgba(
+    255 255 255 / 0.04
+  ); /* Even softer            */
+  --color-sqysh-border-strong: rgba(
+    255 255 255 / 0.14
+  ); /* Focused / hover border */
+
+  /* ── State colors ─────────────────────────────────────────────────────────── */
+  --color-sqysh-success: #37e1c2; /* = brand-teal                            */
+  --color-sqysh-warning: #ffd166; /* Amber for warnings                      */
+  --color-sqysh-error: #ff5c5c; /* Red for errors                          */
+  --color-sqysh-info: #7b5cff; /* = brand-purple                          */
+
+  /* ── Gradients (registered for use in bg-* utilities) ───────────────────── */
+  --color-gradient-green-teal: linear-gradient(90deg, #a6ff4d, #37e1c2);
+  --color-gradient-purple-pink: linear-gradient(90deg, #7b5cff, #ff5ce8);
+  --color-gradient-green-teal-d: linear-gradient(135deg, #a6ff4d, #37e1c2);
+  --color-gradient-purple-pink-d: linear-gradient(135deg, #7b5cff, #ff5ce8);
+  --color-gradient-dark-surface: linear-gradient(
+    135deg,
+    rgba(123 92 255 / 0.1),
+    rgba(55 225 194 / 0.05)
+  );
+
+  /* ── Typography scale ─────────────────────────────────────────────────────── */
+  --font-size-2xs: 0.625rem; /* 10px — eyebrows, badges                        */
+  --font-size-xs: 0.75rem; /* 12px — captions, metadata                      */
+  --font-size-sm: 0.875rem; /* 14px — body small                              */
+  --font-size-base: 1rem; /* 16px — body default                            */
+  --font-size-lg: 1.125rem; /* 18px — body large                              */
+  --font-size-xl: 1.25rem; /* 20px — subheadings                             */
+  --font-size-2xl: 1.5rem; /* 24px — card titles                             */
+  --font-size-3xl: 1.875rem; /* 30px — section subheadings                     */
+  --font-size-4xl: 2.25rem; /* 36px — section headings                        */
+  --font-size-5xl: 3rem; /* 48px — page headings                           */
+  --font-size-6xl: 3.75rem; /* 60px — hero medium                             */
+  --font-size-7xl: 4.5rem; /* 72px — hero large                              */
+  --font-size-8xl: 5.5rem; /* 88px — hero xl                                 */
+
+  /* ── Font weights ─────────────────────────────────────────────────────────── */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ── Letter spacing ───────────────────────────────────────────────────────── */
+  --letter-spacing-tighter: -0.04em; /* Hero display                             */
+  --letter-spacing-tight: -0.03em; /* Headings                                 */
+  --letter-spacing-snug: -0.02em; /* Subheadings                              */
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.05em; /* Badges, tags                             */
+  --letter-spacing-wider: 0.08em; /* Eyebrows (all-caps labels)               */
+  --letter-spacing-widest: 0.12em; /* Section labels                           */
+
+  /* ── Line heights ─────────────────────────────────────────────────────────── */
+  --line-height-none: 1;
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+  --line-height-loose: 1.9;
+
+  /* ── Border radius ────────────────────────────────────────────────────────── */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+  --radius-pill: 9999px;
+
+  /* ── Spacing overrides / extensions ──────────────────────────────────────── */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-26: 6.5rem;
+  --spacing-30: 7.5rem;
+
+  /* ── Box shadows ──────────────────────────────────────────────────────────── */
+  --shadow-sm: 0 1px 3px rgba(0 0 0 / 0.3);
+  --shadow-md: 0 4px 16px rgba(0 0 0 / 0.4);
+  --shadow-lg: 0 8px 32px rgba(0 0 0 / 0.5);
+  --shadow-xl: 0 16px 64px rgba(0 0 0 / 0.6);
+
+  /* Glow shadows — use shadow-glow-{color} */
+  --shadow-glow-green: 0 0 40px rgba(166 255 77 / 0.35);
+  --shadow-glow-purple: 0 0 60px rgba(123 92 255 / 0.3);
+  --shadow-glow-teal: 0 0 60px rgba(55 225 194 / 0.2);
+  --shadow-glow-pink: 0 0 60px rgba(255 92 232 / 0.25);
+
+  /* Card hover glow */
+  --shadow-card: 0 0 0 1px rgba(255 255 255 / 0.07);
+  --shadow-card-hover:
+    0 4px 24px rgba(123 92 255 / 0.2), 0 0 0 1px rgba(123 92 255 / 0.3);
+
+  /* ── Transitions ──────────────────────────────────────────────────────────── */
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-expo: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-snappy: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-slower: 700ms;
+
+  /* ── Animations ───────────────────────────────────────────────────────────── */
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-pulse-glow: pulse-glow 2.5s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.7s var(--ease-spring) both;
+  --animate-float: float 4s ease-in-out infinite;
+
+  /* ── Z-index scale ────────────────────────────────────────────────────────── */
+  --z-below: -1;
+  --z-base: 0;
+  --z-raised: 10;
+  --z-dropdown: 20;
+  --z-sticky: 30;
+  --z-overlay: 40;
+  --z-modal: 50;
+  --z-toast: 60;
+  --z-cursor: 9999;
+
+  /* ── Breakpoints ──────────────────────────────────────────────────────────── */
+  --breakpoint-xs: 380px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
 }
 
-body {
-  color: white;
-  background: #000;
-  font-family: "Inter";
-}
+/* ─────────────────────────────────────────────────────────────────────────────
+   BASE STYLES
+   Applied globally on top of Tailwind's preflight reset
+───────────────────────────────────────────────────────────────────────────── */
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-sqysh-bg);
+    color: var(--color-sqysh-text);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  /* Selection */
+  ::selection {
+    background: rgba(166 255 77 / 0.2);
+    color: var(--color-brand-green);
+  }
+
+  /* Focus ring */
+  :focus-visible {
+    outline: 2px solid var(--color-brand-green);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Headings — tight tracking by default */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Links */
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--duration-normal) var(--ease-snappy);
+  }
+  a:hover {
+    color: var(--color-brand-green);
+  }
+
+  /* Code */
+  code,
+  pre {
+    font-family: var(--font-mono);
+  }
+
+  /* HR */
+  hr {
+    border-color: var(--color-sqysh-border);
   }
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+/* ─────────────────────────────────────────────────────────────────────────────
+   COMPONENT UTILITIES
+   Composable classes built on top of the theme tokens
+───────────────────────────────────────────────────────────────────────────── */
+
+@layer components {
+  /* ── Input ── */
+  .input-sqysh {
+    background: var(--color-sqysh-surface-2);
+    border: 1px solid var(--color-sqysh-border);
+    border-radius: var(--radius-md);
+    color: var(--color-sqysh-text);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+    padding: 0.625rem 1rem;
+    transition: border-color var(--duration-normal);
+    width: 100%;
+  }
+  .input-sqysh::placeholder {
+    color: var(--color-sqysh-subtle);
+  }
+  .input-sqysh:focus {
+    outline: none;
+    border-color: var(--color-brand-purple);
+    box-shadow: 0 0 0 3px rgba(123 92 255 / 0.15);
+  }
 }
 
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+@keyframes cursor-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+.animate-cursor {
+  animation: cursor-blink 1.06s step-end infinite;
+}
+.animate-cursor {
+  animation: cursor-blink 1.06s step-end infinite;
 }
 
-input:-webkit-autofill {
-  -webkit-text-fill-color: #fff;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  -webkit-box-shadow: 0 0 0 30px #05071a inset;
-  box-shadow: 0 0 0 30px #05071a inset;
+input,
+textarea,
+select {
+  font-size: 16px;
 }
 
-textarea:focus {
-  box-shadow: none !important;
+/* SQYSH DEBUG */
+.bug-fall {
+  animation: bug-fall linear forwards;
+}
+@keyframes bug-fall {
+  from {
+    transform: translateY(-40px);
+  }
+  to {
+    transform: translateY(100dvh);
+  }
 }
 
-.btn-anim {
-  background-size: 300% 100%;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+.bug-squash {
+  animation: bug-squash 0.25s ease-out forwards;
 }
-.btn-anim:hover {
-  background-position: 100% 0;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-/* Slide in */
-a.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -1px;
-  width: 100%;
-  height: 0.1em;
-  background-color: #fff;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-}
-a.nav-link {
-  overflow: hidden;
+@keyframes bug-squash {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.5, 0.25);
+  }
+  100% {
+    transform: scale(1.7, 0.1);
+    opacity: 0;
+  }
 }
 
-a.nav-link::after {
-  opacity: 1;
-  transform: translate3d(-100%, 0, 0);
+.hotfix-collect {
+  animation: hotfix-collect 0.3s ease-out forwards;
+}
+@keyframes hotfix-collect {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2) translateY(-10px);
+    opacity: 0;
+  }
 }
 
-a.nav-link:hover::after,
-a.nav-link:focus::after {
-  transform: translate3d(0, 0, 0);
+/* SQYSH DEPLOY */
+@keyframes deploy-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-/* buger menu */
-.line {
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke-width: 5.5;
+.deploy-flow {
+  background-size: 300% 300%;
+  animation: deploy-flow 6s ease infinite;
 }
 
-.slick-slide {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+.deploy-flow-fast {
+  background-size: 300% 300%;
+  animation: deploy-flow 2.5s ease infinite;
 }
 
-.slick-dots > li > button:before {
-  color: white !important;
-}
-
-.slick-prev:before,
-.slick-next:before,
-.slick-arrow {
-  display: none !important;
+@media (prefers-reduced-motion: reduce) {
+  .deploy-flow,
+  .deploy-flow-fast {
+    animation: none;
+  }
 }
