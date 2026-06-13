@@ -1,70 +1,4 @@
-import { Project, WorkProject } from "@/app/types/home.types";
-
-export const PROJECTS: Project[] = [
-  {
-    name: "Education Comes First",
-    desc: "Donation platform",
-    url: "https://educationcomesfirst.org",
-  },
-  {
-    name: "Elect Zosia VanMeter",
-    desc: "9th District Essex County State Rep",
-    url: "https://electzvm.com",
-  },
-  {
-    name: "Boys & Girls Club of Lynn",
-    desc: "Nonprofit events & ticketing",
-    url: "https://bgcl.org",
-  },
-  {
-    name: "Coastal Referral Exchange",
-    desc: "Referral network platform",
-    url: "https://coastal-referral-exchange.com",
-  },
-  {
-    name: "The Pops Orchestra of Bradenton & Sarasota",
-    desc: "Orchestra ticketing",
-    url: "https://thepopsorchestra.org",
-  },
-
-  {
-    name: "The Iron Roses",
-    desc: "Touring punk band",
-    url: "https://theironroses.info",
-  },
-  { name: "Rosie Paws", desc: "Pet health tracking SaaS" },
-  { name: "Platorum", desc: "Music Promotion" },
-  { name: "Thoroughly Cleaned", desc: "Cleaning Service" },
-  {
-    name: "Story Construction",
-    desc: "Construction & remodeling",
-  },
-  {
-    name: "Saltwater Bookkeeping",
-    desc: "Bookkeeping",
-    url: "https://saltwaterbookkeeping.com",
-  },
-  {
-    name: "Century 21 North East",
-    desc: "Jonah Groug & Repliers integration",
-    url: "https://jonahgroupre.com",
-  },
-  {
-    name: "The Proper Nest",
-    desc: "Devon Hunt - Residential Realtor",
-    url: "https://devonhuntrealtor.com",
-  },
-  {
-    name: "Danielle's Dogs",
-    desc: "Dog walking & care",
-    url: "https://daniellesdogs.com",
-  },
-  {
-    name: "Little Paws Dachshund Rescue",
-    desc: "Rescue & live auctions",
-    url: "https://littlepawsdr.org",
-  },
-];
+import { WorkProject } from "@/app/types/home.types";
 
 export const boopLines = [
   "hehe",
@@ -114,9 +48,16 @@ export const WORK: WorkProject[] = [
   {
     name: "Little Paws Dachshund Rescue",
     desc: "Rescue · auctions · ecommerce",
-    url: "https://...",
+    url: "https://www.littlepawsdr.org/sqysh",
     blurb:
       "my first client, picked up 6 years back while i was still at rediminds — and still going strong. live auctions, ecards, a full shop, rescue-group integrations. i rebuild it every time i level up.",
+  },
+  {
+    name: "The Pops Orchestra",
+    desc: "Orchestra ticketing",
+    url: "https://thepopsorchestra.org/sqysh",
+    blurb:
+      "the orchestra's whole web presence — public concerts, admin tools, camp applications. dark mode, red accent, runs itself.",
   },
   {
     name: "Rosie Paws",
@@ -127,56 +68,49 @@ export const WORK: WorkProject[] = [
   {
     name: "The Iron Roses",
     desc: "Touring punk band",
-    url: "https://...",
+    url: "https://theironroses.info/sqysh",
     blurb:
       "devon's band. touring punk. fan portal, access codes, the whole dark-mode rockshow vibe.",
   },
   {
     name: "Boys & Girls Club of Lynn",
     desc: "Nonprofit events & ticketing",
-    url: "https://...",
+    url: "https://bgcl.org",
     blurb:
       "events + ticketing for the club. live stripe, full admin control panel. real money, real stakes.",
   },
   {
-    name: "The Pops Orchestra",
-    desc: "Orchestra ticketing",
-    url: "https://...",
-    blurb:
-      "the orchestra's whole web presence — public concerts, admin tools, camp applications. dark mode, red accent, runs itself.",
-  },
-  {
     name: "Education Comes First",
     desc: "Donation platform",
-    url: "https://...",
+    url: "https://educationcomesfirst.org",
     blurb:
       "donation platform with saved cards and a clean checkout. nonprofits deserve nice things too.",
   },
   {
     name: "Jonah Group Real Estate",
     desc: "Real estate & MLS",
-    url: "https://...",
+    url: "https://jonahgroupre.com",
     blurb:
       "every listing in massachusetts, live on her own site — not some portal that buries her. realtors deserve their own front door.",
   },
   {
     name: "Coastal Referral Exchange",
     desc: "Referral network platform",
-    url: "https://...",
+    url: "https://coastal-referral-exchange.com",
     blurb:
       "my own 7am networking crew — and where a lot of these clients found me. live stripe billing, quarterly + annual dues all on autopilot, presenter queue that rotates itself. a real platform, not a spreadsheet.",
   },
   {
     name: "Elect Zosia VanMeter",
     desc: "9th Essex District State Rep",
-    url: "https://...",
+    url: "https://electzvm.com",
     blurb:
       "a whole campaign site — live canvassing map, the district drawn from census data. democracy, shipped.",
   },
   {
     name: "Saltwater Bookkeeping",
     desc: "Bookkeeping",
-    url: "https://...",
+    url: "https://saltwaterbookkeeping.com",
     blurb:
       "clean, trustworthy site for a bookkeeper. sometimes the job is just doing it *right*.",
   },
@@ -188,14 +122,14 @@ export const WORK: WorkProject[] = [
   {
     name: "The Proper Nest",
     desc: "Devon Hunt · real estate",
-    url: "https://...",
+    url: "https://devonhuntrealtor.com",
     blurb:
       "devon's realtor site — clean intro, easy way to reach him, done. not every build needs to be a platform.",
   },
   {
     name: "Danielle's Dogs",
     desc: "Dog walking & care",
-    url: "https://...",
+    url: "https://daniellesdogs.com",
     blurb:
       "dog walking & care — and the only one i ever wired up with graphql. every project teaches you something new.",
   },
